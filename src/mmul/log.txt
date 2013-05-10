@@ -1,0 +1,19 @@
+in clBuildProgram
+USER_OPTIONS="" /home/nat/Apps/pocl/share/pocl/pocl-build -t x86_64-unknown-linux-gnu -o /tmp/poclxECcjK/pthread/program.bc /tmp/poclxECcjK//program.cl
+clBuildProgram - build source: 1.743009
+in clCreateKernel
+/home/nat/Apps/pocl/share/pocl/pocl-kernel -k fmma -t x86_64-unknown-linux-gnu -o /tmp/poclxECcjK/pthread/fmma/descriptor.so /tmp/poclxECcjK/pthread/fmma/kernel.bc
+clCreateKernel: 0.083794
+in clEnqueueNDRangeKernel
+/home/nat/Apps/pocl/share/pocl/pocl-workgroup -k fmma -x 8 -y 1 -z 1 -t x86_64-unknown-linux-gnu -o /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.bc /tmp/poclxECcjK/pthread/fmma/kernel.bc
+clEnqueueNDRangeKernel: 5.205758
+in pocl_pthread_run
+/usr/local/bin/llc -relocation-model=pic -o /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.s /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.bc
+/usr/local/bin/clang -target x86_64-unknown-linux-gnu  -c -o /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.so.o /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.s
+ld -shared -lm -o /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.so /tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.so.o
+lt_dlopen'ing:
+/tmp/poclxECcjK/pthread/fmma/8-1-1.0-0-0/parallel.so
+workgroup_string:
+_fmma_workgroup
+pocl_pthread_run setup: 0.129343
+pocl_pthread_run kernel execution: 2.020074

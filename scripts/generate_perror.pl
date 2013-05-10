@@ -30,7 +30,8 @@ while (<$clh>) {
 }
 close $clh;
 
-open my $ph, ">", "include/cl_perror.h";
+open my $ph, ">", "include/cl_perror.h"
+    or die "Cannot open output ($!)";
 $ph->print(<<"DONE");
 #ifndef CL_PERROR_H
 #define CL_PERROR_H
@@ -56,8 +57,8 @@ END
 }
 
 $ph->print(<<"DONE");
-        default:
-            return "UNKNOWN_ERROR";
+    default:
+        return "UNKNOWN_ERROR";
     }
 }
 

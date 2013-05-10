@@ -1,0 +1,24 @@
+Cakemark is a framework for benchmarking tweaked versions of pocl, maybe against
+the AMD OpenCL runtime.
+
+The src directory contains the availble benchmarks.
+
+A test run needs a set of benchmarks to run and a set of permutations to try
+for "opt" flags to pass in when kernels are compiled by the custom pocl.
+
+The benchmarks will print timing information, which will be parsed out of their
+stdout.
+
+The following timings are interesting:
+ - Full kernel JIT process.
+ - Each step of the JIT process.
+ - Kernel execution time.
+
+Useful environment variables. These should be supported by custom pocls:
+
+    SHOW_LLVM_COMMANDS - When set, runtime libraries should print commands used 
+                         to run llvm command line tools.
+
+    CAKE_TIMINGS       - When set to a file name, records timings for all pocl
+                         operations to that file.
+                         
