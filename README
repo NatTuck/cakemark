@@ -14,7 +14,7 @@ The following timings are interesting:
  - Each step of the JIT process.
  - Kernel execution time.
 
-Useful environment variables. These should be supported by custom pocls:
+Useful environment variables supported by either stock or custom POCL:
 
     SHOW_LLVM_COMMANDS - When set, runtime libraries should print commands used 
                          to run llvm command line tools.
@@ -22,3 +22,7 @@ Useful environment variables. These should be supported by custom pocls:
     CAKE_TIMINGS       - When set to a file name, records timings for all pocl
                          operations to that file.
                          
+
+    POCL_LEAVE_TEMP_DIRS - If set to 1, temp dirs are not deleted.
+
+    POCL_MAX_PTHREAD_COUNT - Sets number of pthreads to use.

@@ -1,0 +1,6 @@
+
+OpenCL C declarations live in:
+
+/home/nat/Code/pocl/include/x86_64/types.h
+/home/nat/Code/pocl/include/_kernel.h
+
