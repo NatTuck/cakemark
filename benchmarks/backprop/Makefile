@@ -14,5 +14,8 @@ backprop: backprop.o imagenet.o facetrain.o backprop_ocl.o
 %.o: %.[ch]
 	$(CC) $(FLAGS) $< -c
 
+test:
+	./backprop 65536
+
 clean:
 	rm -f *.o *~ backprop *.linkinfo

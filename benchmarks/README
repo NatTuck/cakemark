@@ -1,0 +1,21 @@
+Cakemark benchmarks are built and run by a series of standard "make"
+targets. Behavior is modified using standard environment variables.
+
+Environment Variables:
+
+ - OPENCL specifies which OpenCL implementation to use. Sample values
+   are "pocl" for standard POCL, "cake" for specializing POCL, and
+   "amd" for AMD OpenCL (CPU target).
+ - CAKE_TIMINGS sets the file name where timings will be output.
+
+Make targets:
+
+ - "make all" builds the benchmark binary.
+ - "make test" runs the benchmark binary.
+ - "make bench" cleans, builds, and runs the benchmark binary.
+
+To be helpful, benchmarks must also:
+    
+ - Have specialization annotations for an OpenCL kernel.
+ - Check the result of that kernel for correctness and output that
+   information in a form suitable for automatic validation.

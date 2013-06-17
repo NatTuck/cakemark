@@ -140,7 +140,7 @@ check_result(matrix * cc, matrix * aa)
 
             if (abs(SPIN*xx - yy) > EPS) {
                 printf("ERROR - Incorrect result.\n");
-                printf("At %d, %d got %f instead of %f\n",
+                printf("At %ld, %ld got %f instead of %f\n",
                        ii, jj, yy, xx);
                 return;
             }
@@ -148,6 +148,7 @@ check_result(matrix * cc, matrix * aa)
     }
 
     printf("Result is correct.\n");
+    printf("[cake: OK]\n");
 }
 
 void
@@ -177,8 +178,18 @@ matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
     cl_long spin = SPIN;
 
     timer* tt = timer_alloc();
-    pclu_call_kernel(pgm, "fmma", range, 5, buf_arg(cc_buf), buf_arg(aa_buf),
-                     buf_arg(bb_buf), lit_arg(nn), lit_arg(spin));
+
+    cl_kernel kernel = pclu_get_kernel(pgm, "fmma");
+    pclu_set_arg_buf(kernel, 0, cc_buf); 
+    pclu_set_arg_buf(kernel, 1, aa_buf); 
+    pclu_set_arg_buf(kernel, 2, bb_buf); 
+    printf("nn = %ld = 0x%lx\n", nn, nn);
+    pclu_set_arg_lit(kernel, 3, nn);
+    printf("spin = %ld = 0x%lx\n", spin, spin);
+    pclu_set_arg_lit(kernel, 4, spin);
+    
+    pclu_call_kernel(pgm, kernel, range);
+
     double kt = timer_read(tt);
     timer_free(tt);
 

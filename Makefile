@@ -3,15 +3,14 @@ ifndef DERP
 	DERP=burp
 endif
 
-all:
-	scripts/generate_perror.pl
+all: include/cl_perror.h
+
+include/cl_perror.h: /usr/include/CL/cl.h
+	./include/generate_perror.pl
 
 clean:
 	rm -f include/cl_perror.h
-	find ./src -name "Makefile" -exec sh -c 'cd `dirname {}` && make clean' \;
+	find ./benchmarks -name "Makefile" -exec sh -c 'cd `dirname {}` && make clean' \;
 	find ./tests -name "Makefile" -exec sh -c 'cd `dirname {}` && make clean' \;
-   
-## Random experiments:
 
-derp:
-	@echo $(DERP)
+.PHONY: all clean

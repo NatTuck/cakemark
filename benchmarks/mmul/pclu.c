@@ -38,37 +38,37 @@ pclu_find_best_device(pclu_context* pclu)
     pclu_check_call("clGetPlatformIDs", clGetPlatformIDs(num_platforms, platforms, 0));
 
     for (size_t ii = 0; ii < num_platforms; ++ii) {
-	cl_uint num_devices;
-	pclu_check_call("clGetDeviceIDs", 
-			clGetDeviceIDs(platforms[ii], dev_type, 0, 0, &num_devices));
-
-	printf("Platform #%ld: %d devices found\n", ii, num_devices);
-
-	size_t name_size;
-	pclu_check_call("clGetPlatformInfo", 
-			clGetPlatformInfo(platforms[ii], CL_PLATFORM_NAME, 0, 0, &name_size));
-	char* plat_name = (char*) alloca(name_size);
-	pclu_check_call("clGetPlatformInfo", 
-			clGetPlatformInfo(platforms[ii], CL_PLATFORM_NAME, name_size, 
-					  (void*)plat_name, 0));
-
-	printf("Platform name: %s\n", plat_name);
-
-	if (num_devices > 0) {
-	    cl_device_id* devices = (cl_device_id*) malloc(sizeof(cl_device_id)*num_devices);
-	    pclu_check_call("clGetDeviceIDs", 
-			    clGetDeviceIDs(platforms[ii], dev_type, num_devices, devices, 0));
-
-	    pclu->platform = platforms[ii];
-	    pclu->device   = devices[0];
-
-	    free(devices);
-	    free(platforms);
-
-	    return;
-	}
+        cl_uint num_devices;
+        pclu_check_call("clGetDeviceIDs", 
+                clGetDeviceIDs(platforms[ii], dev_type, 0, 0, &num_devices));
+        
+        printf("Platform #%ld: %d devices found\n", ii, num_devices);
+        
+        size_t name_size;
+        pclu_check_call("clGetPlatformInfo", 
+                clGetPlatformInfo(platforms[ii], CL_PLATFORM_NAME, 0, 0, &name_size));
+        char* plat_name = (char*) alloca(name_size);
+        pclu_check_call("clGetPlatformInfo", 
+                clGetPlatformInfo(platforms[ii], CL_PLATFORM_NAME, name_size, 
+                    (void*)plat_name, 0));
+        
+        printf("Platform name: %s\n", plat_name);
+        
+        if (num_devices > 0) {
+            cl_device_id* devices = (cl_device_id*) malloc(sizeof(cl_device_id)*num_devices);
+            pclu_check_call("clGetDeviceIDs", 
+                    clGetDeviceIDs(platforms[ii], dev_type, num_devices, devices, 0));
+            
+            pclu->platform = platforms[ii];
+            pclu->device   = devices[0];
+            
+            free(devices);
+            free(platforms);
+            
+            return;
+        }
     }
-
+    
     fprintf(stderr, "No valid OpenCL device found.\n");
     exit(1);
 }
@@ -239,24 +239,24 @@ pclu_slurp_file(const char* path)
     FILE*  file     = fopen(path, "r");
 
     if (file == NULL) {
-	perror("Could not open file");
-	exit(1);
+        perror("Could not open file");
+        exit(1);
     }
     
     size_t count = 0;
 
     while ( (count = fread(data + size, 1, BLOCK, file)) ) {
-	size += count;
+        size += count;
 
-	if (capacity < (size + BLOCK + 1)) {
-	    capacity *= 2;
-	    data = (char*) realloc(data, capacity);
-	}
+        if (capacity < (size + BLOCK + 1)) {
+            capacity *= 2;
+            data = (char*) realloc(data, capacity);
+        }
     }
 
     if (ferror(file)) {
-	perror("read error");
-	exit(1);
+        perror("read error");
+        exit(1);
     }
 
     fclose(file);
@@ -362,23 +362,33 @@ pclu_program_build_log(pclu_program* pgm)
     return pgm->build_log;
 }
 
-void
-pclu_call_kernel(pclu_program* pgm, const char* name, pclu_range range, size_t argc, ...)
+cl_kernel 
+pclu_get_kernel(pclu_program* pgm, const char* name)
 {
     cl_int errcode;
     cl_kernel kern = clCreateKernel(pgm->program, name, &errcode);
     pclu_check_call("clCreateKernel", errcode);
+    return kern;
+}
 
-    va_list ap;
-    va_start(ap, argc);
+void 
+pclu_set_arg_buf(cl_kernel kern, cl_int arg, pclu_buffer* buffer)
+{
+    pclu_check_call("clSetKernelArg",
+            clSetKernelArg(kern, arg, sizeof(cl_mem), &(buffer->data)));
+}
 
-    for (cl_uint ii = 0; ii < argc; ++ii) {
-        size_t size = va_arg(ap, size_t);	
-        void*  arg  = va_arg(ap, void*);
-        pclu_check_call("clSetKernelArg", clSetKernelArg(kern, ii, size, arg));
-    }
+void 
+pclu_set_arg_lit_real(cl_kernel kern, cl_int arg, size_t size, void* data)
+{
+    pclu_check_call("clSetKernelArg",
+            clSetKernelArg(kern, arg, size, data));
+}
 
-    va_end(ap);
+void 
+pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
+{
+    int errcode;
 
 #define NO_CL_EVENTS 1
 
@@ -389,7 +399,7 @@ pclu_call_kernel(pclu_program* pgm, const char* name, pclu_range range, size_t a
     pclu_check_call("clCreateUserEvent", errcode);
 #endif
 
-    errcode = clEnqueueNDRangeKernel(pgm->pclu->queue, kern, range.nd, 0, 
+    errcode = clEnqueueNDRangeKernel(pgm->pclu->queue, kernel, range.nd, 0, 
 				     range.global, 0, 0, 0, &kernel_done);
     pclu_check_call("clEnqueueNDRangeKernel", errcode);
 
@@ -397,5 +407,5 @@ pclu_call_kernel(pclu_program* pgm, const char* name, pclu_range range, size_t a
     pclu_check_call("clWaitForEvents", clWaitForEvents(1, &kernel_done));
 #endif
 
-    pclu_check_call("clReleaseKernel", clReleaseKernel(kern));
+    //pclu_check_call("clReleaseKernel", clReleaseKernel(kern));
 }

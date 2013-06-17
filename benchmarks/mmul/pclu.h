@@ -77,10 +77,16 @@ pclu_program* pclu_create_program(pclu_context* pclu, const char* path);
 void pclu_destroy_program(pclu_program* pgm);
 char* pclu_program_build_log(pclu_program* pgm);
 
-void pclu_call_kernel(pclu_program* pgm, const char* name, pclu_range range, size_t argc, ...);
+cl_kernel pclu_get_kernel(pclu_program* pgm, const char* name);
 
-#define buf_arg(xx) sizeof(cl_mem),(&(xx->data))
-#define lit_arg(xx) sizeof(xx),(&xx)
+void pclu_set_arg_buf(cl_kernel kern, cl_int arg, pclu_buffer* buffer);
+void pclu_set_arg_lit_real(cl_kernel kern, cl_int arg, size_t size, void* data);
+
+#define pclu_set_arg_lit(kern,arg,data) \
+    pclu_set_arg_lit_real((kern), (arg), sizeof(data), &(data))
+
+void pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range);
+
 
 /*
  * Random untility functions.
