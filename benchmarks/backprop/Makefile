@@ -1,21 +1,34 @@
+BASE = ../../
+
+include $(BASE)/benchmarks/platforms.mk
+
 # C compiler
 CC = g++
-FLAGS = -g -O2 -I../../include
+CFLAGS = -g -O2 -I$(BASE)/include
+LDLIBS = $(OCL_LDLIBS)
 
-# LIBS = -lOpenCL
-LIBS = -L$(HOME)/Apps/pocl/lib -lpocl -lltdl -lpthread
+CSRCS =$(wildcard *.c)
+CCSRCS=$(wildcard *.cpp)
+OBJS=$(CSRCS:.c=.o) $(CCSRCS:.cpp=.o)
 
-backprop: backprop.o imagenet.o facetrain.o backprop_ocl.o
-	$(CC) $(FLAGS) -o backprop backprop_ocl.o backprop.o imagenet.o facetrain.o $(LIBS)
+all: backprop
+
+backprop: $(OBJS)
+	$(CC) $(LDFLAGS) -o backprop $(OBJS) $(LDLIBS)
 
 %.o: %.cpp
-	$(CC) $(FLAGS) $< -c
+	$(CC) $(CFLAGS) $< -c
 
 %.o: %.[ch]
-	$(CC) $(FLAGS) $< -c
+	$(CC) $(CFLAGS) $< -c
 
 test:
-	./backprop 65536
+	LD_LIBRARY_PATH=$(OCL_LDPATH) ./backprop 65536
+
+bench:
+	make clean
+	make all OPENCL=$(OPENCL)
+	make test OPENCL=$(OPENCL)
 
 clean:
 	rm -f *.o *~ backprop *.linkinfo

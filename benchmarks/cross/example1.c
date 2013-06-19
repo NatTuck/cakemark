@@ -100,5 +100,6 @@ main (void)
     }
 
   printf ("OK\n");
+  printf ("[cake: OK]\n");
   return 0;
 }

@@ -1,26 +1,35 @@
+BASE = ../../
+
+include $(BASE)/benchmarks/platforms.mk
+
 CC=gcc
-CFLAGS=-g -Wall
-#LDFLAGS=-g -L$(HOME)/Apps/pocl/lib
-LDFLAGS=-g -L$(HOME)/Apps/llvm-3.2/lib
-LDLIBS=-lpocl -lltdl -lpoclu
-#LDLIBS=-lOpenCL -lpancake `../../scripts/llvm-libs.pl` -lpthread
+CFLAGS=-g -Wall -I$(BASE)/include
+LDFLAGS=-g -L$(OCL_LDPATH)
+LDLIBS =$(OCL_LDLIBS) -lpoclu
 
 BINF=example1
-OBJS=$(shell ls *.c | perl -pe 's/\.c\b/.o/')
+SRCS=$(wildcard *.c)
+OBJS=$(SRCS:.c=.o)
 
 all:
+	(cd $(BASE) && make include/cl_perror.h)
 	make $(BINF)
 
 $(BINF): $(OBJS)
 
 $(OBJS): %.o: %.c 
 
-pclu_perror.c pclu_perror.h: generate_perror.pl
-	./generate_perror.pl
+test: $(BINF)
+	LD_LIBRARY_PATH=$(OCL_LDPATH) ./$(BINF)
+
+bench:
+	make clean
+	make all OPENCL=$(OPENCL)
+	make test OPENCL=$(OPENCL)
 
 clean:
 	rm -f *.o *~ $(BINF) pclu_perror.c pclu_perror.h
 
-.PHONY: clean
+.PHONY: all clean test bench
 
 

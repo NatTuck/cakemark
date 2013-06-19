@@ -3,7 +3,8 @@
 
 #include <CL/cl.h>
 
-#include "pclu_perror.h"
+#include "cl_perror.h"
+#define pclu_perror cl_perror
 
 #define pclu_check_call(msg,code) pclu_check_call_real((msg),(code), __FILE__, __LINE__)
 

@@ -1,33 +1,31 @@
+BASE = ../../
 
-include ../bench-common.mk
+include $(BASE)/benchmarks/platforms.mk
 
 CC=g++
-CFLAGS=-g -Wall
+CFLAGS =-g -Wall -I$(BASE)/include
 LDFLAGS=-g -L$(OCL_LDPATH)
 LDLIBS =$(OCL_LDLIBS)
-#LDLIBS=-lOpenCL -lpancake `../../scripts/llvm-libs.pl` -lpthread
 
 BINF=mmul
-OBJS=$(shell ls *.c | perl -pe 's/\.c\b/.o/')
+SRCS=$(wildcard *.c)
+OBJS=$(SRCS:.c=.o)
 
 all:
-	./generate_perror.pl
+	(cd $(BASE) && make include/cl_perror.h)
 	make $(BINF)
 
 $(BINF): $(OBJS)
 
-$(OBJS): %.o: %.c *.h pclu_perror.h
-
-pclu_perror.c pclu_perror.h: generate_perror.pl
-	./generate_perror.pl
+$(OBJS): %.o: %.c *.h 
 
 test: $(BINF)
 	LD_LIBRARY_PATH=$(OCL_LDPATH) ./$(BINF)
 
 bench:
 	make clean
-	make all OPENCL=$(OPENCL)
-	make test OPENCL=$(OPENCL)
+	make all
+	make test
 
 clean:
 	rm -f *.o *~ $(BINF) pclu_perror.c pclu_perror.h

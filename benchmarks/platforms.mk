@@ -15,3 +15,7 @@ ifeq ($(OPENCL),amd)
 	OCL_LDLIBS = -lamdocl64
 	OCL_LDPATH = /usr/lib 
 endif
+
+export OPENCL
+export OCL_LDLIBS
+export OCL_LDPATH
