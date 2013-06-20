@@ -42,6 +42,7 @@ void main_0(__global int *colidx,
             __global int *rowstr,
             int firstcol,
             int n)
+/* @spec main_0(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -59,6 +60,7 @@ void main_0(__global int *colidx,
 
 __kernel __attribute__((reqd_work_group_size(1,1,1)))
 void main_1(__global double *x)
+/* @spec main_1() global_size(0) */
 {
   int n = NA+1;
   int id = get_global_id(0);
@@ -79,6 +81,7 @@ void main_2(__global double *q,
             __global double *r,
             __global double *p,
             int n)
+/* @spec main_2(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -103,6 +106,7 @@ void main_3(__global double *x,
             __local double *l_norm_temp1,
             __local double *l_norm_temp2,
             int n)
+/* @spec main_3(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -126,6 +130,7 @@ void main_4(__global double *x,
             __global double *z,
             double norm_temp2,
             int n)
+/* @spec main_4(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -152,6 +157,7 @@ void conj_grad_0(__global double *q,
                  __global double *r,
                  __global double *x,
                  __global double *p)
+/* @spec conj_grad_0() global_size(0) */
 {
   int n = NA+1;
   int id = get_global_id(0);
@@ -179,6 +185,7 @@ __kernel __attribute__((reqd_work_group_size(1,1,1)))
 void conj_grad_1(__global double *r,
                  __global double *g_rho,
                  int n)
+/* @spec conj_grad_1(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -206,6 +213,7 @@ void conj_grad_2(__global int *rowstr,
                  __global int *colidx,
                  __global double *q,
                  int n)
+/* @spec conj_grad_2(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -232,6 +240,7 @@ void conj_grad_3(__global double *p,
                  __global double *q,
                  __global double *g_d,
                  int n)
+/* @spec conj_grad_3(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -260,6 +269,7 @@ void conj_grad_4(__global double *p,
                  __global double *g_rho,
                  double alpha,
                  int n)
+/* @spec conj_grad_4(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -291,6 +301,7 @@ void conj_grad_5(__global double *p,
                  __global double *r,
                  const double beta,
                  int n)
+/* @spec conj_grad_5(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -317,6 +328,7 @@ void conj_grad_6(__global int *rowstr,
                  __global int *colidx,
                  __global double *r,
                  int n)
+/* @spec conj_grad_6(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);
@@ -343,6 +355,7 @@ void conj_grad_7(__global double *x,
                  __global double *r,
                  __global double *g_sum,
                  int n)
+/* @spec conj_grad_7(n) global_size(0) */
 {
   int id = get_global_id(0);
   int gsize = get_global_size(0);

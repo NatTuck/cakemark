@@ -2,7 +2,7 @@
 include ../platforms.mk
 
 CLASS=A
-BENCH=ep
+BENCH=cg
 NPB  =../NPB3.3-OCL
 
 all:
