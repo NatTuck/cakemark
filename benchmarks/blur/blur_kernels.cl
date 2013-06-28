@@ -3,6 +3,7 @@ kernel
 void
 blur_hor(global uchar* im1, global uchar* im0, global double* bvec, 
         int ww, int hh, int sigma)
+/* @spec blur_hor(ww, hh, sigma) global_size(0, 1) */
 {
     int ii = get_global_id(0);
     int jj = get_global_id(1);
@@ -22,6 +23,7 @@ kernel
 void
 blur_ver(global uchar* im1, global uchar* im0, global double* bvec, 
         int ww, int hh, int sigma)
+/* @spec blur_ver(ww, hh, sigma) global_size(0, 1) */
 {
     int ii = get_global_id(0);
     int jj = get_global_id(1);

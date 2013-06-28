@@ -77,11 +77,13 @@ read_image(const char* filename)
 
     fscanf(imf, "%ld", &ww);
     fscanf(imf, "%ld", &hh);
+    fscanf(imf, "%d",  &cc);
+
+    assert(cc == 255);
     
     image* im = alloc_image(ww, hh);
 
     for (int ii = 0; ii < ww * hh; ++ii) {
-        int cc;
         fscanf(imf, "%d", &cc);
         im->data[ii] = (byte) cc;
     }
@@ -98,7 +100,7 @@ write_image(const char* filename, image* im)
     
     fprintf(imf, "P2\n");
     fprintf(imf, "# Output from Cakemark Blur\n");
-    fprintf(imf, "%ld %ld\n", im->width, im->height);
+    fprintf(imf, "%ld %ld\n255\n", im->width, im->height);
     
     size_t data_size = im->width * im->height;
 

@@ -3,7 +3,7 @@ use 5.10.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(mmul);
+our @BENCHMARKS = qw(mmul blur);
 our @PLATFORMS  = qw(cake pocl);
 our @TIMINGS    = ("clEnqueueNDRangeKernel", "kernel execution");
 our $REPEAT     = 10;

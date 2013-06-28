@@ -79,11 +79,13 @@ read_image(const char* filename)
 
     fscanf(imf, "%ld", &ww);
     fscanf(imf, "%ld", &hh);
+    fscanf(imf, "%d",  &cc);
+
+    assert(cc == 255);
     
     image* im = alloc_image(ww, hh);
 
     for (int ii = 0; ii < ww * hh; ++ii) {
-        int cc;
         fscanf(imf, "%d", &cc);
         im->data[ii] = (byte) cc;
     }
@@ -100,7 +102,7 @@ write_image(const char* filename, image* im)
     
     fprintf(imf, "P2\n");
     fprintf(imf, "# Output from Cakemark Blur\n");
-    fprintf(imf, "%ld %ld\n", im->width, im->height);
+    fprintf(imf, "%ld %ld\n255\n", im->width, im->height);
     
     size_t data_size = im->width * im->height;
 
@@ -171,13 +173,16 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
 
     pclu_range range = pclu_range_2d(hh, ww);
 
+    /* Kernel expects 32 bit args */
+    int ww32 = (int) ww, hh32 = (int) hh;
+
     /* Blur horizontally */
     cl_kernel blur_hor = pclu_get_kernel(pgm, "blur_hor");
     pclu_set_arg_buf(blur_hor, 0, im1_buf);
     pclu_set_arg_buf(blur_hor, 1, im0_buf);
     pclu_set_arg_buf(blur_hor, 2, bvc_buf);
-    pclu_set_arg_lit(blur_hor, 3, ww);
-    pclu_set_arg_lit(blur_hor, 4, hh);
+    pclu_set_arg_lit(blur_hor, 3, ww32);
+    pclu_set_arg_lit(blur_hor, 4, hh32);
     pclu_set_arg_lit(blur_hor, 5, sigma);
 
     pclu_call_kernel(pgm, blur_hor, range);
@@ -187,8 +192,8 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
     pclu_set_arg_buf(blur_ver, 0, im0_buf);
     pclu_set_arg_buf(blur_ver, 1, im1_buf);
     pclu_set_arg_buf(blur_ver, 2, bvc_buf);
-    pclu_set_arg_lit(blur_ver, 3, ww);
-    pclu_set_arg_lit(blur_ver, 4, hh);
+    pclu_set_arg_lit(blur_ver, 3, ww32);
+    pclu_set_arg_lit(blur_ver, 4, hh32);
     pclu_set_arg_lit(blur_ver, 5, sigma);
     
     pclu_call_kernel(pgm, blur_ver, range);
