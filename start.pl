@@ -2,18 +2,46 @@
 use 5.10.0;
 use warnings FATAL => 'all';
 
+#our @BENCHMARKS = qw(mmul nas-cg nas-ft);
 our @BENCHMARKS = qw(mmul);
-our @PLATFORMS  = qw(cake);
+our @PLATFORMS  = qw(cake pocl);
 our @TIMINGS    = ("clEnqueueNDRangeKernel", "kernel execution");
-our $OUTPUT     = "results.csv";
+our $REPEAT     = 10;
+our $RESULTS    = "results.csv";
+our $SUMMARY    = "summary.csv";
 
 use Cwd qw(abs_path);
 use File::Basename;
 use Text::CSV;
+use IO::Handle;
 
 my $base = dirname(abs_path($0));
 
-open my $out, ">", $OUTPUT;
+open my $out, ">", $RESULTS;
+my $csv = Text::CSV->new();
+
+sub get_times {
+    my ($file, $tag) = @_;
+
+    my @times = ();
+
+    open my $ff, "<", $file;
+    while (<$ff>) {
+        if (/$tag.*:\s*([\d\.]+)/) {
+            my $time = $1;
+            my $kern = "none";
+
+            if (/\((\w+)\)/) {
+                $kern = $1;
+            }
+
+            push @times, [$kern, $time];
+        }
+    }
+    close $ff;
+
+    return @times;
+}
 
 sub run_benchmark {
     my ($benchmark, $platform) = @_;
@@ -31,10 +59,15 @@ sub run_benchmark {
     }
    
     for my $timing (@TIMINGS) {
-        my $line   = `grep "$timing.*:" "$tim" | head -n 1`;
-        my ($time) = ($line =~ /:\s*([\d\.]+)\s*$/);
+        my @times = get_times($tim, $timing);
 
-        say "Saw timing: $timing = $time";
+        for my $tt (@times) {
+            my ($kern, $time) = @$tt; 
+
+            say "Saw timing: $timing ($kern) = $time"; 
+            $csv->print($out, [$platform, $benchmark, $timing, $kern, $time]);
+            $out->print("\n");
+        }
     }
     
     unlink($log);
@@ -42,9 +75,11 @@ sub run_benchmark {
 }
 
 # Execute the benchmarks.
-for my $platform (@PLATFORMS) {
+for my $platform (@PLATFORMS) { 
     for my $benchmark (@BENCHMARKS) {
-        run_benchmark($benchmark, $platform);
+        for (my $ii = 0; $ii < $REPEAT; ++$ii) {
+            run_benchmark($benchmark, $platform);
+        }
     }
 }
 

@@ -40,7 +40,7 @@ void fftz2(int is, int l, int m, int n,
            __global dcomplex *u, 
            __global dcomplex *x,
            __global dcomplex *y);
-void vranlc(int n, double *x, double a, __global double y[]);
+void vranlc(int n, double *x, double a, __global double* y);
 
 
 __kernel void init_ui(__global dcomplex *u0,
@@ -62,6 +62,7 @@ __kernel void compute_indexmap(__global double *twiddle,
                                int d2,
                                int d3,
                                double ap)
+/* @spec compute_indexmap(d1, d2, d3) global_size(0, 1, 2) */
 {
 #if COMPUTE_IMAP_DIM == 3
   int kk, kk2, jj, kj2, ii;
@@ -156,6 +157,7 @@ __kernel void compute_initial_conditions(__global dcomplex *u0,
                                          int d1,
                                          int d2,
                                          int d3)
+/* @spec compute_initial_conditions(d1, d2, d3) global_size(0) */
 {
   double x0;
   int j;
@@ -181,6 +183,7 @@ __kernel void evolve(__global dcomplex *u0,
                      int d1,
                      int d2,
                      int d3)
+/* @spec evolve(d1, d2, d3) global_size(0, 1, 2) */
 {
 #if EVOLVE_DIM == 3
   int k = get_global_id(2);
@@ -226,6 +229,7 @@ __kernel void checksum(__global dcomplex *u1,
                        __local dcomplex *l_chk,
                        int d1,
                        int d2)
+/* @spec checksum(d1, d2) global_size(0) */
 {
   int q, r, s;
   int j = get_global_id(0) + 1;
@@ -263,6 +267,7 @@ __kernel void cffts1(__global dcomplex *x,
                      int logd1,
                      __global dcomplex *g_ty1,
                      __global dcomplex *g_ty2)
+/* @spec cffts(d1, d2, d3) global_size(0, 1) */
 {
   int i, j, k;
   k = get_global_id(1);
@@ -295,6 +300,7 @@ __kernel void cffts2(__global dcomplex *x,
                      int logd2,
                      __global dcomplex *g_ty1,
                      __global dcomplex *g_ty2)
+/* @spec cffts2(d1, d2, d3, logd2) global_size(0, 1) */
 {
   int i, j, k;
   k = get_global_id(1);
@@ -327,6 +333,7 @@ __kernel void cffts3(__global dcomplex *x,
                      int logd3,
                      __global dcomplex *g_ty1,
                      __global dcomplex *g_ty2)
+/* @spec cffts3(d1, d2, d3, logd3) global_size(0, 1) */
 {
   int i, j, k;
   j = get_global_id(1);
@@ -435,7 +442,7 @@ void fftz2(int is, int l, int m, int n,
 }
 
 
-void vranlc(int n, double *x, double a, __global double y[])
+void vranlc(int n, double *x, double a, __global double* y)
 {
   /*--------------------------------------------------------------------
    This routine generates N uniform pseudorandom double precision numbers in
