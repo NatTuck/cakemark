@@ -1,7 +1,7 @@
 
 include ../platforms.mk
 
-CLASS=A
+CLASS=B
 BENCH=cg
 NPB  =../NPB3.3-OCL
 

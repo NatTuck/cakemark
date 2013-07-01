@@ -21,6 +21,8 @@ Useful environment variables supported by either stock or custom POCL:
 
     CAKE_TIMINGS       - When set to a file name, records timings for all pocl
                          operations to that file.
+
+    CAKE_OPT_HARDER    - Extra LLVM transformation passes.
                          
 
     POCL_LEAVE_TEMP_DIRS - If set to 1, temp dirs are not deleted.
