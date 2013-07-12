@@ -22,6 +22,9 @@ $(OBJS): %.o: %.c *.h
 test: $(BINF)
 	LD_LIBRARY_PATH=$(OCL_LDPATH) ./$(BINF)
 
+keep-test: $(BINF)
+	SHOW_LLVM_COMMANDS=1 POCL_LEAVE_TEMP_DIRS=1 LD_LIBRARY_PATH=$(OCL_LDPATH) ./$(BINF)
+
 bench:
 	make clean
 	make all

@@ -6,10 +6,9 @@ our @ISA = qw(Exporter);
 our @EXPORT = qw(run_benchmark);
 
 our %TAGS = (
-    "clEnqueueNDRangeKernel" => "setup",
-    "kernel execution"       => "execution"
+    parallel_bc => 'parallel_bc',
+    execute     => 'execute',
 );
-
 
 use Cwd qw(getcwd);
 
@@ -22,18 +21,19 @@ use Cwd qw(getcwd);
 #    {"type of timing" => {"kernel name" => [time1, time2]}}
 #
 sub run_benchmark {
-    my ($bench, $plat, $opts) = @_;
+    my ($bench, $plat, $spec, $opts) = @_;
     my $cwd = getcwd();
 
     $plat ||= "cake";
     $opts ||= "";
+    $spec = $spec ? 'CAKE_SPEC="1"' : "";
 
     my $dir = "$cwd/benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 
     chdir $dir;
-    system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" } .
+    system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" $spec } .
            qq{make bench OPENCL="$plat" > "$log" });
     chdir $cwd;
 
@@ -47,15 +47,18 @@ sub run_benchmark {
 
     open my $ct, "<", $tim;
     while (<$ct>) {
-        for my $tag (keys %TAGS) {
-            if (/$tag.*?\((\w+)\):\s*([\d\.]+)/) {
-                my ($kk, $tt) = ($1, $2);
-                $times->{$TAGS{$tag}}{$kk} ||= 0.0;
-                $times->{$TAGS{$tag}}{$kk}  += $tt;
-            }
+        if (/^timer_log\((\w+),\s*(\w+)\):\s*([\d\.]+)/) {
+            my ($kern, $tag, $tt) = ($1, $2, $3);
+
+            #say "kern = $kern, tag = $tag, tt = $tt";
+                
+            $times->{$TAGS{$tag}}{$kern} ||= 0.0;
+            $times->{$TAGS{$tag}}{$kern}  += $tt;
         }
     }
     close $ct;
+
+    system(qq{grep opt "$log"});
 
     unlink $log;
     unlink $tim;
