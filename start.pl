@@ -3,15 +3,16 @@ use 5.10.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(mmul blur nas-ft);
+our @BENCHMARKS = qw(mmul cross);
+#our @BENCHMARKS = qw(mmul blur nas-ft);
 #our @OPT_SETS  = ("");
 our @OPT_SETS = (
     "",
     "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
     "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-    "-simplifycfg"
+    "-simplifycfg -loop-simplify"
 );
-our $REPEAT     = 10;
+our $REPEAT     = 1;
 our $SETUP      = "setup_times.csv";
 our $EXECUTION  = "exec_times.csv";
 
@@ -29,14 +30,14 @@ my $start_time = time();
 chdir(dirname(abs_path($0)));
 
 my @cases = ();
+my $pn = 0;
 
-for my $bench (@BENCHMARKS) {
-    push @cases, [$bench, "cake", 0, ""];
-}
-
-for my $bench (@BENCHMARKS) {
+for my $spec ((0, 1)) {
     for my $opts (@OPT_SETS) {
-        push @cases, [$bench, "cake", 1, $opts];
+        for my $bench (@BENCHMARKS) {
+            push @cases, [$pn, $bench, "cake", $spec, $opts];
+        }
+        $pn += 1;
     }
 }
 
@@ -48,33 +49,35 @@ open my $e_out, ">", $EXECUTION;
 my $csv = Text::CSV->new();
 
 sub benchmark_once {
-    my ($bench, $plat, $spec, $opts) = @_;
+    my ($pn, $bench, $plat, $spec, $opts) = @_;
     my $times = run_benchmark($bench, $plat, $spec, $opts);
 
-    $plat = $plat . ($spec ? "_s" : "");
+    $plat = "$plat$pn";
     
     for my $kk (keys %{$times->{parallel_bc}}) {
         my $time = $times->{parallel_bc}{$kk};
-        $csv->print($s_out, [$plat, $bench, $kk, $time, $opts]);
+        $csv->print($s_out, [$plat, $bench, $kk, $time, $spec, $opts]);
         $s_out->print("\n");
     }
     
     for my $kk (keys %{$times->{execute}}) {
         my $time = $times->{execute}{$kk};
-        $csv->print($e_out, [$plat, $bench, $kk, $time, $opts]);
+        $csv->print($e_out, [$plat, $bench, $kk, $time, $spec, $opts]);
         $e_out->print("\n");
     }
 }
 
-my $run_count = $count * $REPEAT;
+my $total_runs = $count * $REPEAT;
 
-for my $case (@cases) {
-    my ($bench, $plat, $spec, $opts) = @$case;
+for (my $case_ii = 0; $case_ii < scalar @cases; ++$case_ii) {
+    my $case = $cases[$case_ii];
+    my ($pn, $bench, $plat, $spec, $opts) = @$case;
     say "$bench, $plat, $spec, [$opts]";
 
     for (my $ii = 0; $ii < $REPEAT; ++$ii) {
-        say "Run #$ii / $REPEAT";
-        benchmark_once($bench, $plat, $spec, $opts);
+        my $rnum = $case_ii * $REPEAT + $ii;
+        say "Run #$rnum / $total_runs";
+        benchmark_once($pn, $bench, $plat, $spec, $opts);
     }
 }
 

@@ -32,7 +32,7 @@ sub run_benchmark {
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 
-    chdir $dir;
+    chdir $dir or die "No such directory '$dir'";
     system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" $spec } .
            qq{make bench OPENCL="$plat" > "$log" });
     chdir $cwd;
