@@ -3,8 +3,8 @@ use 5.10.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(mmul cross);
-#our @BENCHMARKS = qw(mmul blur nas-ft);
+#our @BENCHMARKS = qw(mmul cross);
+our @BENCHMARKS = qw(mmul blur nas-ft);
 #our @OPT_SETS  = ("");
 our @OPT_SETS = (
     "",
@@ -12,7 +12,7 @@ our @OPT_SETS = (
     "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
     "-simplifycfg -loop-simplify"
 );
-our $REPEAT     = 1;
+our $REPEAT     = 10;
 our $SETUP      = "setup_times.csv";
 our $EXECUTION  = "exec_times.csv";
 
