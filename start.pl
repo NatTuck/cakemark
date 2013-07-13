@@ -3,14 +3,15 @@ use 5.10.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(blur);
-our @OPT_SETS  = ("");
-#    "",
-#    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-#    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-#    "-simplifycfg"
-#);
-our $REPEAT     = 1;
+our @BENCHMARKS = qw(mmul blur nas-ft);
+#our @OPT_SETS  = ("");
+our @OPT_SETS = (
+    "",
+    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
+    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
+    "-simplifycfg"
+);
+our $REPEAT     = 10;
 our $SETUP      = "setup_times.csv";
 our $EXECUTION  = "exec_times.csv";
 
@@ -39,6 +40,8 @@ for my $bench (@BENCHMARKS) {
     }
 }
 
+my $count = scalar @cases;
+
 open my $s_out, ">", $SETUP;
 open my $e_out, ">", $EXECUTION;
 
@@ -63,11 +66,14 @@ sub benchmark_once {
     }
 }
 
+my $run_count = $count * $REPEAT;
+
 for my $case (@cases) {
     my ($bench, $plat, $spec, $opts) = @$case;
     say "$bench, $plat, $spec, [$opts]";
-    
+
     for (my $ii = 0; $ii < $REPEAT; ++$ii) {
+        say "Run #$ii / $REPEAT";
         benchmark_once($bench, $plat, $spec, $opts);
     }
 }
@@ -77,7 +83,6 @@ close $e_out;
 
 my $end_time = time();
 my $elapsed  = $end_time - $start_time;
-my $count = scalar @cases;
 
 say "";
 say Dumper(\@cases);

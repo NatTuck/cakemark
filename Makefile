@@ -13,4 +13,7 @@ clean:
 	find ./benchmarks -name "Makefile" -exec sh -c 'cd `dirname {}` && make clean' \;
 	find ./tests -name "Makefile" -exec sh -c 'cd `dirname {}` && make clean' \;
 
-.PHONY: all clean
+prereqs:
+	sudo apt-get install libtext-csv-perl
+
+.PHONY: all clean prereqs
