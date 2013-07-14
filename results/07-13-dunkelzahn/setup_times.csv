@@ -1,0 +1,440 @@
+cake0,mmul,fmma,15.722825,0,
+cake0,mmul,fmma,15.707421,0,
+cake0,mmul,fmma,15.678109,0,
+cake0,mmul,fmma,15.666017,0,
+cake0,mmul,fmma,15.669184,0,
+cake0,mmul,fmma,15.68868,0,
+cake0,mmul,fmma,15.632512,0,
+cake0,mmul,fmma,15.653452,0,
+cake0,mmul,fmma,15.581414,0,
+cake0,mmul,fmma,15.679129,0,
+cake0,blur,blur_ver,15.442447,0,
+cake0,blur,blur_hor,15.488144,0,
+cake0,blur,blur_ver,15.451019,0,
+cake0,blur,blur_hor,15.485761,0,
+cake0,blur,blur_ver,15.554469,0,
+cake0,blur,blur_hor,15.540811,0,
+cake0,blur,blur_ver,15.427688,0,
+cake0,blur,blur_hor,15.479765,0,
+cake0,blur,blur_ver,15.418157,0,
+cake0,blur,blur_hor,15.527196,0,
+cake0,blur,blur_ver,15.434927,0,
+cake0,blur,blur_hor,15.518841,0,
+cake0,blur,blur_ver,15.467347,0,
+cake0,blur,blur_hor,15.531652,0,
+cake0,blur,blur_ver,15.494442,0,
+cake0,blur,blur_hor,15.447022,0,
+cake0,blur,blur_ver,15.49255,0,
+cake0,blur,blur_hor,15.536201,0,
+cake0,blur,blur_ver,15.542927,0,
+cake0,blur,blur_hor,15.58555,0,
+cake0,nas-ft,compute_initial_conditions,15.542724,0,
+cake0,nas-ft,evolve,15.657655,0,
+cake0,nas-ft,compute_indexmap,15.680934,0,
+cake0,nas-ft,cffts3,15.906187,0,
+cake0,nas-ft,checksum,15.62367,0,
+cake0,nas-ft,init_ui,15.52241,0,
+cake0,nas-ft,cffts1,15.810042,0,
+cake0,nas-ft,cffts2,15.915987,0,
+cake0,nas-ft,compute_initial_conditions,15.51949,0,
+cake0,nas-ft,evolve,15.675304,0,
+cake0,nas-ft,compute_indexmap,15.548771,0,
+cake0,nas-ft,cffts3,15.856383,0,
+cake0,nas-ft,checksum,15.687537,0,
+cake0,nas-ft,init_ui,15.433894,0,
+cake0,nas-ft,cffts1,15.813879,0,
+cake0,nas-ft,cffts2,15.862561,0,
+cake0,nas-ft,compute_initial_conditions,15.533992,0,
+cake0,nas-ft,evolve,15.65496,0,
+cake0,nas-ft,compute_indexmap,15.625524,0,
+cake0,nas-ft,cffts3,15.843853,0,
+cake0,nas-ft,checksum,15.642937,0,
+cake0,nas-ft,init_ui,15.450445,0,
+cake0,nas-ft,cffts1,15.681262,0,
+cake0,nas-ft,cffts2,15.945927,0,
+cake0,nas-ft,compute_initial_conditions,15.500052,0,
+cake0,nas-ft,evolve,15.658162,0,
+cake0,nas-ft,compute_indexmap,15.535764,0,
+cake0,nas-ft,cffts3,15.917081,0,
+cake0,nas-ft,checksum,15.679811,0,
+cake0,nas-ft,init_ui,15.40581,0,
+cake0,nas-ft,cffts1,15.714929,0,
+cake0,nas-ft,cffts2,15.863805,0,
+cake0,nas-ft,compute_initial_conditions,15.48085,0,
+cake0,nas-ft,evolve,15.637048,0,
+cake0,nas-ft,compute_indexmap,15.581408,0,
+cake0,nas-ft,cffts3,15.873854,0,
+cake0,nas-ft,checksum,15.65766,0,
+cake0,nas-ft,init_ui,15.420632,0,
+cake0,nas-ft,cffts1,15.745768,0,
+cake0,nas-ft,cffts2,15.937759,0,
+cake0,nas-ft,compute_initial_conditions,15.533339,0,
+cake0,nas-ft,evolve,15.629169,0,
+cake0,nas-ft,compute_indexmap,15.612764,0,
+cake0,nas-ft,cffts3,15.862456,0,
+cake0,nas-ft,checksum,15.649017,0,
+cake0,nas-ft,init_ui,15.430952,0,
+cake0,nas-ft,cffts1,15.689237,0,
+cake0,nas-ft,cffts2,15.884012,0,
+cake0,nas-ft,compute_initial_conditions,15.578409,0,
+cake0,nas-ft,evolve,15.634278,0,
+cake0,nas-ft,compute_indexmap,15.504712,0,
+cake0,nas-ft,cffts3,15.930703,0,
+cake0,nas-ft,checksum,15.684865,0,
+cake0,nas-ft,init_ui,15.406761,0,
+cake0,nas-ft,cffts1,15.83434,0,
+cake0,nas-ft,cffts2,15.902288,0,
+cake0,nas-ft,compute_initial_conditions,15.510704,0,
+cake0,nas-ft,evolve,15.647893,0,
+cake0,nas-ft,compute_indexmap,15.549329,0,
+cake0,nas-ft,cffts3,15.888761,0,
+cake0,nas-ft,checksum,15.824989,0,
+cake0,nas-ft,init_ui,15.440023,0,
+cake0,nas-ft,cffts1,15.747938,0,
+cake0,nas-ft,cffts2,15.889077,0,
+cake0,nas-ft,compute_initial_conditions,15.548094,0,
+cake0,nas-ft,evolve,15.693956,0,
+cake0,nas-ft,compute_indexmap,15.615394,0,
+cake0,nas-ft,cffts3,15.897679,0,
+cake0,nas-ft,checksum,15.664761,0,
+cake0,nas-ft,init_ui,15.441585,0,
+cake0,nas-ft,cffts1,15.740786,0,
+cake0,nas-ft,cffts2,15.877312,0,
+cake0,nas-ft,compute_initial_conditions,15.583038,0,
+cake0,nas-ft,evolve,15.689489,0,
+cake0,nas-ft,compute_indexmap,15.519796,0,
+cake0,nas-ft,cffts3,15.911109,0,
+cake0,nas-ft,checksum,15.701514,0,
+cake0,nas-ft,init_ui,15.442282,0,
+cake0,nas-ft,cffts1,15.745839,0,
+cake0,nas-ft,cffts2,15.82861,0,
+cake1,mmul,fmma,15.962365,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,16.005467,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.897808,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.914737,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.999912,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.985615,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,16.005616,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.91053,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.915072,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,mmul,fmma,15.873242,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.810353,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.802238,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.921024,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.815236,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.826966,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.892217,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.881923,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.855353,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.918911,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.882188,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.910769,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.866171,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.81718,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.863714,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.861178,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.825463,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.801067,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.911988,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_ver,15.804797,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,blur,blur_hor,15.791002,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.864346,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.042421,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.908709,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.25981,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.015805,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.708775,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.199464,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.278199,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.917342,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.079273,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.919947,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.304118,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.04956,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.775279,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.206272,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.48256,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.889942,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.056517,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.878232,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.306947,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.020793,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.729249,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.248501,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.220697,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.927642,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,15.958088,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.889397,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.295964,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.02985,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.77119,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.233047,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.420163,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.92751,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,15.922662,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.894182,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.310662,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,15.962014,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.748885,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.215959,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.330724,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.854632,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.004335,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.909381,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.340343,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.043969,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.783015,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.182207,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.316226,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.888726,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,15.948392,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.95688,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.306757,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,15.949018,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.720946,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.228051,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.38562,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.909758,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.003585,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.953431,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.311445,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.061822,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.778401,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.24558,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.350471,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.860131,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,16.057458,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.885553,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.320857,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.076525,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.778919,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.179809,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.28747,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_initial_conditions,15.902104,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,evolve,15.950108,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,compute_indexmap,15.979917,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts3,16.336087,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,checksum,16.071612,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,init_ui,15.792821,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts1,16.199807,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake1,nas-ft,cffts2,16.312989,0,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake2,mmul,fmma,15.686575,1,
+cake2,mmul,fmma,15.645167,1,
+cake2,mmul,fmma,15.634915,1,
+cake2,mmul,fmma,15.618351,1,
+cake2,mmul,fmma,15.634447,1,
+cake2,mmul,fmma,15.63457,1,
+cake2,mmul,fmma,15.701695,1,
+cake2,mmul,fmma,15.6433,1,
+cake2,mmul,fmma,15.658124,1,
+cake2,mmul,fmma,15.693438,1,
+cake2,blur,blur_ver,15.431729,1,
+cake2,blur,blur_hor,15.44267,1,
+cake2,blur,blur_ver,15.477205,1,
+cake2,blur,blur_hor,15.481253,1,
+cake2,blur,blur_ver,15.389614,1,
+cake2,blur,blur_hor,15.465025,1,
+cake2,blur,blur_ver,15.405786,1,
+cake2,blur,blur_hor,15.477177,1,
+cake2,blur,blur_ver,15.487532,1,
+cake2,blur,blur_hor,15.482439,1,
+cake2,blur,blur_ver,15.426149,1,
+cake2,blur,blur_hor,15.44511,1,
+cake2,blur,blur_ver,15.400848,1,
+cake2,blur,blur_hor,15.426795,1,
+cake2,blur,blur_ver,15.39177,1,
+cake2,blur,blur_hor,15.446007,1,
+cake2,blur,blur_ver,15.385724,1,
+cake2,blur,blur_hor,15.511715,1,
+cake2,blur,blur_ver,15.444727,1,
+cake2,blur,blur_hor,15.442489,1,
+cake2,nas-ft,compute_initial_conditions,15.522548,1,
+cake2,nas-ft,evolve,15.686711,1,
+cake2,nas-ft,compute_indexmap,15.556455,1,
+cake2,nas-ft,cffts3,15.859747,1,
+cake2,nas-ft,checksum,15.709973,1,
+cake2,nas-ft,init_ui,15.412064,1,
+cake2,nas-ft,cffts1,15.74847,1,
+cake2,nas-ft,cffts2,15.829518,1,
+cake2,nas-ft,compute_initial_conditions,15.558861,1,
+cake2,nas-ft,evolve,15.668709,1,
+cake2,nas-ft,compute_indexmap,15.573124,1,
+cake2,nas-ft,cffts3,15.838849,1,
+cake2,nas-ft,checksum,15.748105,1,
+cake2,nas-ft,init_ui,15.449032,1,
+cake2,nas-ft,cffts1,15.748353,1,
+cake2,nas-ft,cffts2,15.797494,1,
+cake2,nas-ft,compute_initial_conditions,15.514164,1,
+cake2,nas-ft,evolve,15.606081,1,
+cake2,nas-ft,compute_indexmap,15.578566,1,
+cake2,nas-ft,cffts3,15.875102,1,
+cake2,nas-ft,checksum,15.683888,1,
+cake2,nas-ft,init_ui,15.459769,1,
+cake2,nas-ft,cffts1,15.80928,1,
+cake2,nas-ft,cffts2,15.893686,1,
+cake2,nas-ft,compute_initial_conditions,15.52933,1,
+cake2,nas-ft,evolve,15.698302,1,
+cake2,nas-ft,compute_indexmap,15.585711,1,
+cake2,nas-ft,cffts3,15.827235,1,
+cake2,nas-ft,checksum,15.729409,1,
+cake2,nas-ft,init_ui,15.56381,1,
+cake2,nas-ft,cffts1,15.74021,1,
+cake2,nas-ft,cffts2,15.836888,1,
+cake2,nas-ft,compute_initial_conditions,15.541391,1,
+cake2,nas-ft,evolve,15.695783,1,
+cake2,nas-ft,compute_indexmap,15.556322,1,
+cake2,nas-ft,cffts3,15.817418,1,
+cake2,nas-ft,checksum,15.739689,1,
+cake2,nas-ft,init_ui,15.435546,1,
+cake2,nas-ft,cffts1,15.827252,1,
+cake2,nas-ft,cffts2,15.850994,1,
+cake2,nas-ft,compute_initial_conditions,15.465733,1,
+cake2,nas-ft,evolve,15.7636,1,
+cake2,nas-ft,compute_indexmap,15.628761,1,
+cake2,nas-ft,cffts3,15.888588,1,
+cake2,nas-ft,checksum,15.755384,1,
+cake2,nas-ft,init_ui,15.440536,1,
+cake2,nas-ft,cffts1,15.755625,1,
+cake2,nas-ft,cffts2,15.923019,1,
+cake2,nas-ft,compute_initial_conditions,15.547958,1,
+cake2,nas-ft,evolve,15.650148,1,
+cake2,nas-ft,compute_indexmap,15.525053,1,
+cake2,nas-ft,cffts3,15.838345,1,
+cake2,nas-ft,checksum,15.708054,1,
+cake2,nas-ft,init_ui,15.437907,1,
+cake2,nas-ft,cffts1,15.761241,1,
+cake2,nas-ft,cffts2,15.861735,1,
+cake2,nas-ft,compute_initial_conditions,15.503,1,
+cake2,nas-ft,evolve,15.735739,1,
+cake2,nas-ft,compute_indexmap,15.490834,1,
+cake2,nas-ft,cffts3,15.873754,1,
+cake2,nas-ft,checksum,15.66624,1,
+cake2,nas-ft,init_ui,15.388639,1,
+cake2,nas-ft,cffts1,15.792886,1,
+cake2,nas-ft,cffts2,15.900299,1,
+cake2,nas-ft,compute_initial_conditions,15.504978,1,
+cake2,nas-ft,evolve,15.722974,1,
+cake2,nas-ft,compute_indexmap,15.546956,1,
+cake2,nas-ft,cffts3,15.918555,1,
+cake2,nas-ft,checksum,15.762676,1,
+cake2,nas-ft,init_ui,15.397296,1,
+cake2,nas-ft,cffts1,15.782469,1,
+cake2,nas-ft,cffts2,15.901907,1,
+cake2,nas-ft,compute_initial_conditions,15.539819,1,
+cake2,nas-ft,evolve,15.680657,1,
+cake2,nas-ft,compute_indexmap,15.579731,1,
+cake2,nas-ft,cffts3,15.88162,1,
+cake2,nas-ft,checksum,15.701322,1,
+cake2,nas-ft,init_ui,15.503106,1,
+cake2,nas-ft,cffts1,15.787452,1,
+cake2,nas-ft,cffts2,15.83365,1,
+cake3,mmul,fmma,15.765848,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.713794,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.759269,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.740453,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.739863,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.797199,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.757927,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.745009,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.827953,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,mmul,fmma,15.778243,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.781903,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.858377,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.76793,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.766131,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.769449,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.819631,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.77292,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.809268,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.879464,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.762367,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.845647,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.814711,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.766527,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,16.031926,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.82659,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.714166,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,16.035099,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.758994,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_ver,15.767402,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,blur,blur_hor,15.800674,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.940038,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.048676,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,16.02151,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.339341,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.025557,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.735067,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.25029,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.286183,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.972133,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.043527,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.911686,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.352559,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.056673,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.872841,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.256989,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.324887,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.923165,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,15.999215,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.882165,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.330085,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.05853,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.794877,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.252731,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.390102,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.878345,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.043014,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.885002,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.328285,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.046892,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.800509,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.210677,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.400696,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.881041,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,15.966329,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.883435,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.297736,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.018349,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.697199,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.245643,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.332309,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.884822,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.08212,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.95166,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.334208,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.01121,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.733122,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.251617,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.315856,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.884495,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.041933,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.908842,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.343229,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.065251,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.76718,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.260517,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.332589,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.919986,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.002424,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.863322,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.358698,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.044373,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.75222,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.250619,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.306814,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.886206,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,16.015157,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.907645,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.368168,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.04174,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.801561,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.285099,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.350516,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_initial_conditions,15.903195,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,evolve,15.999299,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,compute_indexmap,15.90183,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts3,16.345534,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,checksum,16.07185,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,init_ui,15.773765,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts1,16.249266,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
+cake3,nas-ft,cffts2,16.419024,1,"-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify"
