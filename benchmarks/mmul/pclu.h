@@ -53,7 +53,7 @@ void pclu_read_buffer(pclu_buffer* buf, size_t data_size, void* data);
 typedef struct pclu_range {
     size_t nd;
     size_t global[3];
-    /* size_t local[3]; */
+    size_t local[3];
 } pclu_range;
 
 pclu_range pclu_range_1d(size_t cols);
@@ -87,7 +87,6 @@ void pclu_set_arg_lit_real(cl_kernel kern, cl_int arg, size_t size, void* data);
     pclu_set_arg_lit_real((kern), (arg), sizeof(data), &(data))
 
 void pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range);
-
 
 /*
  * Random untility functions.

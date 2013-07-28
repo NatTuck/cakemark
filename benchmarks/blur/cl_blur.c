@@ -12,6 +12,14 @@ const char* INPUT  = "balloon.pgm";
 const char* OUTPUT = "balloon_blurred.pgm";
 const int   SIGMA  = 20;
 
+#ifndef XBS
+#define XBS 8
+#endif
+
+#ifndef YBS
+#define YBS 1
+#endif
+
 typedef unsigned char byte;
 
 typedef struct image {
@@ -172,6 +180,8 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
     pclu_write_buffer(bvc_buf, bvec_size, bvec);
 
     pclu_range range = pclu_range_2d(hh, ww);
+    range.local[0] = XBS;
+    range.local[1] = YBS;
 
     /* Kernel expects 32 bit args */
     int ww32 = (int) ww, hh32 = (int) hh;

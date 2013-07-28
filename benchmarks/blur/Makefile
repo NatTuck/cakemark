@@ -3,9 +3,12 @@ BASE = ../..
 
 include $(BASE)/benchmarks/platforms.mk
 
+XBS ?= 8
+YBS ?= 1
+
 OUTPUT = balloon.pgm balloon_blurred.pgm
 
-CFLAGS  = -g -std=gnu99 -Wall -I$(BASE)/include
+CFLAGS  = -g -std=gnu99 -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
 LDFLAGS = -g -L$(OCL_LDPATH)
 LDLIBS  = -lm $(OCL_LDLIBS)
 

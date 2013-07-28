@@ -12,7 +12,7 @@ our @OPT_SETS = (
     "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
     "-simplifycfg -loop-simplify"
 );
-our $REPEAT     = 10;
+our $REPEAT     = 1;
 our $SETUP      = "setup_times.csv";
 our $EXECUTION  = "exec_times.csv";
 

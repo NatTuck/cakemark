@@ -399,12 +399,8 @@ pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
     pclu_check_call("clCreateUserEvent", errcode);
 #endif
 
-    size_t* local_size = 0;
-    if (range.local[0] > 0)
-        local_size = &(range.local[0]);
-
     errcode = clEnqueueNDRangeKernel(pgm->pclu->queue, kernel, range.nd, 0, 
-				     range.global, local_size, 0, 0, &kernel_done);
+				     range.global, 0, 0, 0, &kernel_done);
     pclu_check_call("clEnqueueNDRangeKernel", errcode);
 
 #ifndef NO_CL_EVENTS
@@ -413,4 +409,3 @@ pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
 
     //pclu_check_call("clReleaseKernel", clReleaseKernel(kern));
 }
-

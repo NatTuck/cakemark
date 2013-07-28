@@ -8,20 +8,10 @@
 #include "timer.h"
 
 #define SIZE   1024
-#define SPIN   1
+#define BLOCK_SIZE 2
 #define DTYPE  float
 #define FORMAT "%.02f"
 #define ONE    1.0f
-
-#if 0
-#ifndef XBS
-#define XBS    8
-#endif
-
-#ifndef YBS
-#define YBS    1
-#endif
-#endif
 
 #define PRINT_DATA 0
 
@@ -148,7 +138,7 @@ check_result(matrix * cc, matrix * aa)
             DTYPE xx = get_cell(aa, ii, jj);
             DTYPE yy = get_cell(cc, ii, jj);
 
-            if (abs(SPIN*xx - yy) > EPS) {
+            if (abs(xx - yy) > EPS) {
                 printf("ERROR - Incorrect result.\n");
                 printf("At %ld, %ld got %f instead of %f\n",
                        ii, jj, yy, xx);
@@ -164,7 +154,7 @@ check_result(matrix * cc, matrix * aa)
 void
 matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
 {
-    pclu_program *pgm = pclu_create_program(pclu, "fmma.cl");
+    pclu_program *pgm = pclu_create_program(pclu, "bmmul.cl");
 
     char *log = pclu_program_build_log(pgm);
     if (strlen(log) > 0)
@@ -182,25 +172,22 @@ matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
     pclu_buffer *cc_buf = pclu_create_buffer(pclu, cc_size);
     pclu_write_buffer(cc_buf, cc_size, cc->data);
 
-    pclu_range range = pclu_range_2d(cc->rows, cc->cols);
-
     cl_long nn = SIZE;
-    cl_long spin = SPIN;
+    cl_long bs = BLOCK_SIZE;
+    
+    pclu_range range = pclu_range_2d(cc->rows / bs, cc->cols / bs);
 
     timer* tt = timer_alloc();
 
-    cl_kernel kernel = pclu_get_kernel(pgm, "fmma");
+    cl_kernel kernel = pclu_get_kernel(pgm, "bmmul");
     pclu_set_arg_buf(kernel, 0, cc_buf); 
     pclu_set_arg_buf(kernel, 1, aa_buf); 
     pclu_set_arg_buf(kernel, 2, bb_buf); 
     printf("nn = %ld = 0x%lx\n", nn, nn);
     pclu_set_arg_lit(kernel, 3, nn);
-    printf("spin = %ld = 0x%lx\n", spin, spin);
-    pclu_set_arg_lit(kernel, 4, spin);
-   
-    range.local[0] = XBS;
-    range.local[1] = YBS;
-
+    printf("bs = %ld = 0x%lx\n", bs, bs);
+    pclu_set_arg_lit(kernel, 4, bs);
+    
     pclu_call_kernel(pgm, kernel, range);
 
     double kt = timer_read(tt);

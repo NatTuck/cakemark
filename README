@@ -16,8 +16,8 @@ The following timings are interesting:
 
 Useful environment variables supported by either stock or custom POCL:
 
-    SHOW_LLVM_COMMANDS - When set, runtime libraries should print commands used 
-                         to run llvm command line tools.
+    CAKE_SPEC          - When set to 1, POCL will enable the extra Cake
+                         optimizations, including specialization.
 
     CAKE_TIMINGS       - When set to a file name, records timings for all pocl
                          operations to that file.

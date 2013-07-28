@@ -2,11 +2,8 @@ BASE = ../../
 
 include $(BASE)/benchmarks/platforms.mk
 
-XBS ?= 8
-YBS ?= 1
-
 CC=g++
-CFLAGS =-g -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
+CFLAGS =-g -Wall -I$(BASE)/include
 LDFLAGS=-g -L$(OCL_LDPATH)
 LDLIBS =$(OCL_LDLIBS)
 
