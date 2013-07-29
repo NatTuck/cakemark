@@ -3,15 +3,15 @@ use 5.10.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(nas-is);
-#our @OPT_SETS  = ("");
-our @OPT_SETS = (
-    "",
-    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-    "-simplifycfg -loop-simplify"
-);
-our $REPEAT     = 1;
+our @BENCHMARKS = qw(mmul);
+our @OPT_SETS  = ("");
+#our @OPT_SETS = (
+#    "",
+#    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
+#    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
+#    "-simplifycfg -loop-simplify"
+#);
+our $REPEAT     = 2;
 our $SETUP      = "setup_times.csv";
 our $EXECUTION  = "exec_times.csv";
 
@@ -48,20 +48,20 @@ open my $e_out, ">", $EXECUTION;
 my $csv = Text::CSV->new();
 
 sub benchmark_once {
-    my ($pn, $bench, $plat, $spec, $opts) = @_;
+    my ($pn, $ii, $bench, $plat, $spec, $opts) = @_;
     my $times = run_benchmark($bench, $plat, $spec, $opts);
 
     $plat = "$plat$pn";
     
     for my $kk (keys %{$times->{parallel_bc}}) {
         my $time = $times->{parallel_bc}{$kk};
-        $csv->print($s_out, [$plat, $bench, $kk, $time, $spec, $opts]);
+        $csv->print($s_out, [$plat, $ii, $bench, $kk, $time, $spec, $opts]);
         $s_out->print("\n");
     }
     
     for my $kk (keys %{$times->{execute}}) {
         my $time = $times->{execute}{$kk};
-        $csv->print($e_out, [$plat, $bench, $kk, $time, $spec, $opts]);
+        $csv->print($e_out, [$plat, $ii, $bench, $kk, $time, $spec, $opts]);
         $e_out->print("\n");
     }
 }
@@ -76,7 +76,7 @@ for (my $case_ii = 0; $case_ii < scalar @cases; ++$case_ii) {
     for (my $ii = 0; $ii < $REPEAT; ++$ii) {
         my $rnum = $case_ii * $REPEAT + $ii;
         say "Run #$rnum / $total_runs";
-        benchmark_once($pn, $bench, $plat, $spec, $opts);
+        benchmark_once($pn, $ii, $bench, $plat, $spec, $opts);
     }
 }
 
