@@ -3,7 +3,7 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(mmul);
+our @BENCHMARKS = qw(mandelbrot);
 #our @OPT_SETS  = ("");
 our @OPT_SETS = (
     "",

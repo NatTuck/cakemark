@@ -29,7 +29,9 @@ __kernel void mandelGPU(
 		const float offsetX,
 		const float offsetY,
 		const int maxIterations
-		) {
+		) 
+/* @spec mandelGPU(width, height, scale, offsetX, offsetY, maxIterations) */
+{
 	const int gid = get_global_id(0);
 	const int gid4 = 4 * gid;
 	const int maxSize = max(width, height);
