@@ -4,16 +4,16 @@ use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
 our @BENCHMARKS = qw(mmul);
-our @OPT_SETS  = ("");
-#our @OPT_SETS = (
-#    "",
-#    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-#    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-#    "-simplifycfg -loop-simplify"
-#);
-our $REPEAT     = 2;
-our $SETUP      = "setup_times.csv";
-our $EXECUTION  = "exec_times.csv";
+#our @OPT_SETS  = ("");
+our @OPT_SETS = (
+    "",
+    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
+    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
+    "-simplifycfg -loop-simplify"
+);
+our $REPEAT     = 3;
+our $SETUP      = "data/setup_times.csv";
+our $EXECUTION  = "data/exec_times.csv";
 
 use Cake::Benchmark;
 use Cake::PrettyTime;
@@ -86,8 +86,8 @@ close $e_out;
 my $end_time = time();
 my $elapsed  = $end_time - $start_time;
 
-say "";
-say Dumper(\@cases);
+my $total = $count * $REPEAT;
+
 say "  == Run Completed ==";
-say "Executed $count cases in";
+say "Executed $count cases ($total tests) in";
 say pretty_time($elapsed);
