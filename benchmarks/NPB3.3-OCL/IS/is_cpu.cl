@@ -35,6 +35,7 @@
 #include "is_kernel.h"
 
 __kernel void create_seq(__global INT_TYPE *key_array, double seed, double a)
+/* @spec create_seq(seed, a) */
 {
   double x, s;
   INT_TYPE i, k;

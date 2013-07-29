@@ -42,6 +42,7 @@ __kernel void l2norm(__global double *g_v,
                      int l_iend,
                      int l_jst,
                      int l_jend)
+/* @spec l2norm(l_nz0, l_ist, l_iend, l_jst, l_jend) */
 {
   int i, j, k, m, lid;
   __global double (*v)[ISIZ2/2*2+1][ISIZ1/2*2+1][5];
@@ -93,6 +94,7 @@ __kernel void rhs(__global double *g_u,
                   int nx,
                   int ny,
                   int nz)
+/* @spec rhs(nx, ny, nz) */
 {
   int i, j, k, m;
   double tmp;
@@ -182,6 +184,7 @@ __kernel void rhsx(__global double *g_u,
                    int nx,
                    int ny,
                    int nz)
+/* @spec rhsx(nx, ny, nz) */
 {
   int i, j, k, m;
   double q;
@@ -455,6 +458,7 @@ __kernel void rhsy(__global double *g_u,
                    int nx,
                    int ny,
                    int nz)
+/* @spec rhsy(nx, ny, nz) */
 {
   int i, j, k, m;
   double q;
@@ -743,6 +747,7 @@ __kernel void rhsz(__global double *g_u,
                    int nx,
                    int ny,
                    int nz)
+/* @spec rhsz(nx, ny, nz) */
 {
   int i, j, k, m;
   double q;
@@ -1047,6 +1052,7 @@ __kernel void ssor1(__global double *g_a,
                     __global double *g_du,
                     int nx,
                     int ny)
+/* @spec ssor1(nx, ny) */
 {
   int i, j, m, n;
   __global double (*a)[ISIZ1/2*2+1][5][5];
@@ -1147,6 +1153,7 @@ __kernel void ssor2(__global double *g_rsd,
                     int nx,
                     int ny,
                     int nz)
+/* @spec ssor2(nx, ny, nz) */
 {
   int i, j, k, m;
   __global double (*rsd)[ISIZ2/2*2+1][ISIZ1/2*2+1][5];
@@ -1255,6 +1262,7 @@ __kernel void blts(__global double *g_rsd,
                    __global double *g_rho_i,
                    int nz, int ny, int nx,
                    int wf_sum, int wf_base_k, int wf_base_j)
+/* @spec blts(nz, ny, nx, wf_base_k, wf_base_j) */
 {
   int k, j, i, m;
   double a[5][5], b[5][5], c[5][5], d[5][5];
@@ -1694,6 +1702,7 @@ __kernel void buts(__global double *g_rsd,
                    __global double *g_rho_i,
                    int nz, int ny, int nx,
                    int wf_sum, int wf_base_k, int wf_base_j)
+/* @spec buts(nz, ny, nx, wf_base_k, wf_base_j) */
 {
   int k, j, i, m;
   double au[5][5], bu[5][5], cu[5][5], du[5][5];

@@ -1,8 +1,8 @@
 
 include ../platforms.mk
 
-CLASS := B
-BENCH := is
+CLASS := S
+BENCH := lu
 NPB   := ../NPB3.3-OCL
 TEMP  := $(shell tempfile)
 
