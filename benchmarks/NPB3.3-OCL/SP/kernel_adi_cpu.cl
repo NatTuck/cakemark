@@ -49,6 +49,7 @@ __kernel void compute_rhs1(__global const double *g_u,
                            int gp0,
                            int gp1,
                            int gp2)
+/* @spec compute_rhs1(gp0, gp1, gp2) */
 {
   int i, j, k;
   double aux, rho_inv;
@@ -186,6 +187,7 @@ __kernel void compute_rhs2(__global const double *g_forcing,
                            int nx2,
                            int ny2,
                            int nz2)
+/* @spec compute_rhs2(nx2, ny2, nz2) */
 {
   int i, j, k, m;
 
@@ -254,6 +256,7 @@ __kernel void compute_rhs3(__global const double *g_u,
                            int nx2,
                            int ny2,
                            int nz2)
+/* @spec compute_rhs3(nx2, ny2, nz2) */
 {
   int i, j, k, m;
   double uijk, up1, um1;
@@ -370,6 +373,7 @@ __kernel void compute_rhs4(__global const double *g_u,
                            int nx2,
                            int ny2,
                            int nz2)
+/* @spec compute_rhs4(nx2, ny2, nz2) */
 {
   int i, j, k, m;
   double vijk, vp1, vm1;
@@ -597,6 +601,7 @@ __kernel void compute_rhs5(__global const double *g_u,
                            int gp0,
                            int gp1,
                            int gp2)
+/* @spec compute_rhs5(gp0, gp1, gp2) */
 {
   int i, j, k, m;
   double wijk, wp1, wm1;
@@ -761,6 +766,7 @@ __kernel void txinvr(__global const double *g_us,
                      int nx2,
                      int ny2,
                      int nz2)
+/* @spec txinvr(nx2, ny2, nz2) */
 {
   int i, j, k;
   double t1, t2, t3, ac, ru1, uu, vv, ww, r1, r2, r3, r4, r5, ac2inv;
@@ -922,6 +928,7 @@ __kernel void x_solve(__global double *g_us,
                       int ny2,
                       int nz2,
                       int gp0)
+/* @spec x_solve(nx2, ny2, nz2, gp0) */
 {
   int i, j, k, i1, i2, m;
   double ru1, fac1, fac2;
@@ -1490,6 +1497,7 @@ __kernel void ninvr(__global double *g_rhs,
                     int nx2,
                     int ny2,
                     int nz2)
+/* @spec ninvr(nx2, ny2, nz2) */
 {
   int i, j, k;
   double r1, r2, r3, r4, r5, t1, t2;
@@ -1591,6 +1599,7 @@ __kernel void y_solve(__global double *g_vs,
                       int ny2,
                       int nz2,
                       int gp1)
+/* @spec y_solve(nx2, ny2, nz2, gp1) */
 {
   int i, j, k, j1, j2, m;
   double ru1, fac1, fac2;
@@ -2152,6 +2161,7 @@ __kernel void pinvr(__global double *g_rhs,
                     int nx2,
                     int ny2,
                     int nz2)
+/* @spec pinvr(nx2, ny2, nz2) */
 {
   int i, j, k;
   double r1, r2, r3, r4, r5, t1, t2;
@@ -2253,6 +2263,7 @@ __kernel void z_solve(__global double *g_ws,
                       int ny2,
                       int nz2,
                       int gp2)
+/* @spec z_solve(nx2, ny2, nz2, gp2) */
 {
   int i, j, k, k1, k2, m;
   double ru1, fac1, fac2;
@@ -2839,6 +2850,7 @@ __kernel void tzetar(__global double *g_u,
                      int nx2,
                      int ny2,
                      int nz2)
+/* @spec tzetar(nx2, ny2, nz2) */
 {
   int i, j, k;
   double t1, t2, t3, ac, xvel, yvel, zvel, r1, r2, r3, r4, r5;
