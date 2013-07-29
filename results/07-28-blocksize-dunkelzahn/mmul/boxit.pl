@@ -16,10 +16,10 @@ while (<$sm>) {
 }
 close $sm;
 
-say join(",", ("", sort { $a <=> $b } keys %cols));
+#say join(",", ("", sort { $a <=> $b } keys %cols));
 
 for my $row (sort { $a <=> $b } keys %rows) {
-    my @row = ($row);
+    my @row = (); # ($row);
     for my $col (sort { $a <=> $b } keys %cols) {
         push @row, $data{"$row,$col"};
     }
