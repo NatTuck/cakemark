@@ -21,19 +21,20 @@ use Cwd qw(getcwd);
 #    {"type of timing" => {"kernel name" => [time1, time2]}}
 #
 sub run_benchmark {
-    my ($bench, $plat, $spec, $opts) = @_;
+    my ($bench, $plat, $spec, $opt, $opts) = @_;
     my $cwd = getcwd();
 
     $plat ||= "cake";
     $opts ||= "";
     $spec = $spec ? 'CAKE_SPEC="1"' : "";
+    $opt  = $opt  ? 'CAKE_OPT="1"'  : "";
 
     my $dir = "$cwd/benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 
     chdir $dir or die "No such directory '$dir'";
-    system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" $spec } .
+    system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" $opt $spec } .
            qq{make bench OPENCL="$plat" > "$log" });
     chdir $cwd;
 

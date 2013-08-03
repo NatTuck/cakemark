@@ -24,9 +24,13 @@ mandelCPU: mandelCPU.c displayfunc.c Makefile displayfunc.h
 clean:
 	rm -rf image.ppm mandelGPU mandelCPU mandelgpu-v1.3.tgz MandelGPU-v1.3 preprocessed_rendering_kernel.cl preprocessed_rendering_kernel_float4.cl
 
-preprocessed_kernels:
+preprocessed_kernelsX:
 	cpp <rendering_kernel.cl >preprocessed_rendering_kernel.cl
 	cpp <rendering_kernel_float4.cl >preprocessed_rendering_kernel_float4.cl
+
+preprocessed_kernels:
+	cat <rendering_kernel.cl >preprocessed_rendering_kernel.cl
+	cat <rendering_kernel_float4.cl >preprocessed_rendering_kernel_float4.cl
 
 tgz: all
 	mkdir MandelGPU-v1.3

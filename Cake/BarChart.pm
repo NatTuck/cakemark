@@ -56,7 +56,7 @@ sub write {
     my $gp = File::Temp->new();
 
     my $xtop = scalar @{$self->{bars}} - 0.5;
-    my $ytop = 1.0 + max(@tops);
+    my $ytop = 1.2 * max(@tops);
 
     my $xtics = join(", ", @tics); 
     
