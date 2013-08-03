@@ -1,0 +1,3 @@
+http://davibu.interfree.it/opencl/mandelgpu/mandelGPU.html
+
+Written by David Bucciarelli

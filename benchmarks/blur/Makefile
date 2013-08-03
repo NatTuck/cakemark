@@ -12,13 +12,16 @@ CFLAGS  = -g -std=gnu99 -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
 LDFLAGS = -g -L$(OCL_LDPATH)
 LDLIBS  = -lm $(OCL_LDLIBS)
 
-all: cl_blur ref_blur
+all: perror cl_blur ref_blur
 
 cl_blur: cl_blur.o pclu.o
 
 ref_blur: ref_blur.o
 
 $(BINARY): $(OBJS)
+
+perror:
+	(cd $(BASE) && make include/cl_perror.h)
 
 clean:
 	rm -f *.o ref_blur cl_blur $(OUTPUT)
@@ -52,4 +55,4 @@ bench:
 	make all
 	make test
 
-.PHONY: all clean cl_check ref_check test bench
+.PHONY: all clean cl_check ref_check test bench perror
