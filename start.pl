@@ -2,17 +2,11 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-#our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-                     nas-lu nas-sp particlefilter);
-#our @OPT_SETS  = ("");
-#our @OPT_SETS = (
-#    "",
-#    "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-#    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-#    "-simplifycfg -loop-simplify"
-#);
-our $REPEAT     = 5;
+our @BENCHMARKS = qw(blur);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+#                     nas-lu nas-sp particlefilter);
+our $OPT_FLAGS  = "-std-compile-opts -unroll-allow-partial";
+our $REPEAT     = 1;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -34,7 +28,7 @@ my $pn = 0;
 
 for my $spec ((0, 1)) {
     for my $opt ((0, 1)) {
-        my $opts = "";
+        my $opts = $opt ? $OPT_FLAGS : "";
         for my $bench (@BENCHMARKS) {
             push @cases, [$pn, $bench, "cake", $spec, $opt, $opts];
         }
