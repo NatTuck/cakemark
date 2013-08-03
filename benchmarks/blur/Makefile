@@ -30,6 +30,13 @@ cl_check: cl_blur
 	@cmp balloon_blurred.pgm correct.pgm && echo "[cake: OK]"
 	@rm -f balloon.pgm correct.pgm
 
+cl_stat: cl_blur
+	@zcat balloon.pgm.gz > balloon.pgm
+	perf stat -e cache-misses ./ref_blur
+	@zcat correct.pgm.gz > correct.pgm
+	@cmp balloon_blurred.pgm correct.pgm && echo "[cake: OK]"
+	@rm -f balloon.pgm correct.pgm
+
 ref_check: ref_blur
 	@zcat balloon.pgm.gz > balloon.pgm
 	/usr/bin/time -p ./ref_blur
