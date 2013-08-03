@@ -3,7 +3,8 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(mmul nas-cg nas-ft);
-our @BENCHMARKS = qw(particlefilter);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+                     nas-lu nas-sp particlefilter);
 #our @OPT_SETS  = ("");
 #our @OPT_SETS = (
 #    "",
@@ -11,7 +12,7 @@ our @BENCHMARKS = qw(particlefilter);
 #    "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
 #    "-simplifycfg -loop-simplify"
 #);
-our $REPEAT     = 3;
+our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 

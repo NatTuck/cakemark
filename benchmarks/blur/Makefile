@@ -28,7 +28,7 @@ clean:
 
 cl_check: cl_blur
 	@zcat balloon.pgm.gz > balloon.pgm
-	/usr/bin/time -p ./cl_blur
+	LD_LIBRARY_PATH="$(OCL_LDPATH)" /usr/bin/time -p ./cl_blur
 	@zcat correct.pgm.gz > correct.pgm
 	@cmp balloon_blurred.pgm correct.pgm && echo "[cake: OK]"
 	@rm -f balloon.pgm correct.pgm

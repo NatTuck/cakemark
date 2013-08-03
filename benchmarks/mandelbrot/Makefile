@@ -5,7 +5,7 @@ include $(BASE)/benchmarks/platforms.mk
 CC=g++
 CFLAGS =-g -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
 LDFLAGS=-g -L$(OCL_LDPATH)
-LDLIBS =$(OCL_LDLIBS)
+LDLIBS =$(OCL_LDLIBS) -lGL -lglut
 
 DIR=MandelGPU-v1.3
 CMD=mandelGPU 1 0 preprocessed_rendering_kernel.cl 2048 2048 1024
@@ -13,7 +13,7 @@ CMD=mandelGPU 1 0 preprocessed_rendering_kernel.cl 2048 2048 1024
 all: build
 
 build:
-	(cd $(DIR) && make)
+	(cd $(DIR) && make CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" LDLIBS="$(LDLIBS)")
 
 test: build
 	(cd $(DIR) && LD_LIBRARY_PATH=$(OCL_LDPATH) ./$(CMD))
