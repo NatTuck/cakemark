@@ -2,11 +2,11 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(blur);
-#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-#                     nas-lu nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+                     nas-lu nas-sp particlefilter);
 our $OPT_FLAGS  = "-std-compile-opts -unroll-allow-partial";
-our $REPEAT     = 1;
+our $REPEAT     = 3;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
