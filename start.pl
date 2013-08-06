@@ -2,17 +2,17 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(blur);
-#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-#                     nas-lu nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+                     nas-lu nas-sp particlefilter);
 
-our $OPT_EARLY  = "-gvn -sccp -instcombine -adce";
-#our $OPT_EARLY  = "--reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-#                  "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-#                  "-simplifycfg -loop-simplify -unroll-allow-partial";
+#our $OPT_EARLY  = "-gvn -sccp -instcombine -adce";
+our $OPT_EARLY  = "--reassociate -loop-simplify -indvars -licm -loop-unswitch ".
+                  "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
+                  "-simplifycfg -loop-simplify -unroll-allow-partial";
 our $OPT_LATER  = "";
 
-our $REPEAT     = 1;
+our $REPEAT     = 10;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
