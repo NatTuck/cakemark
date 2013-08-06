@@ -11,6 +11,7 @@ our %TAGS = (
 );
 
 use Cwd qw(getcwd);
+use Data::Dumper;
 
 # run_benchmark($bench, $plat, $opts)
 #
@@ -20,27 +21,43 @@ use Cwd qw(getcwd);
 #    Returns a nested hash structure like this:
 #    {"type of timing" => {"kernel name" => [time1, time2]}}
 #
-sub run_benchmark {
-    my ($bench, $plat, $spec, $opt, $opts) = @_;
+sub run_benchmark ($$$) {
+    my ($bench, $plat, $opts) = @_;
     my $cwd = getcwd();
+    
+    $plat  ||= "cake";
 
-    $plat ||= "cake";
-    $opts ||= "";
-    $spec = $spec ? 'CAKE_SPEC="1"' : "";
-    $opt  = $opt  ? 'CAKE_OPT="1"'  : "";
+    my $env = '';
+
+    if ($opts->{spec}) {
+        $env .= qq{CAKE_SPEC="1" };
+    }
+
+    if ($opts->{early}) {
+        my $early = $opts->{early};
+        $env .= qq{CAKE_OPT_EARLY="$early" };
+    }
+
+    if ($opts->{later}) {
+        my $later = $opts->{later};
+        $env .= qq{CAKE_OPT_LATER="$later" };
+    }
 
     my $dir = "$cwd/benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 
     chdir $dir or die "No such directory '$dir'";
-    system(qq{CAKE_OPT_HARDER="$opts" CAKE_TIMINGS="$tim" $opt $spec } .
-           qq{make bench OPENCL="$plat" > "$log" });
+    my $test_cmd = qq{CAKE_TIMINGS="$tim" $env } .
+                   qq{make bench OPENCL="$plat" > "$log" };
+    say "test cmd = $test_cmd"; 
+    system($test_cmd);
+                   
     chdir $cwd;
 
     my $ok = 0 + `grep "[cake: OK]" "$log" | wc -l`;
     unless ($ok) {
-        say "Opts: $opts\n";
+        say Dumper($opts);
         die "Benchmark failed: $bench on $plat.\n";
     }
 

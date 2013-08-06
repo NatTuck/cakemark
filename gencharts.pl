@@ -100,5 +100,6 @@ sub gen_charts {
     }
 }
 
-gen_charts("data/exec_times.csv", "exec");
+system("rm -f charts/*.pdf");
 gen_charts("data/setup_times.csv", "setup");
+gen_charts("data/exec_times.csv", "exec");

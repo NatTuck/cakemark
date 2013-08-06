@@ -2,11 +2,18 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(blur);
-#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-#                     nas-lu nas-sp particlefilter);
-our $OPT_FLAGS  = "-std-compile-opts -unroll-allow-partial";
-our $REPEAT     = 1;
+#our @BENCHMARKS = qw(blur mmul mandelbrot nas-ft);
+#our @BENCHMARKS = qw(mmul);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+                     nas-lu nas-sp particlefilter);
+
+#our $OPT_EARLY  = "";
+our $OPT_EARLY  = "-reassociate -loop-simplify -indvars -licm -loop-unswitch ".
+                  "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
+                  "-simplifycfg -loop-simplify -unroll-allow-partial";
+our $OPT_LATER  = "";
+
+our $REPEAT     = 10;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -18,6 +25,7 @@ use File::Basename;
 use Text::CSV;
 use IO::Handle;
 use Data::Dumper;
+use URI::Encode qw(uri_encode uri_decode);
 
 my $start_time = time();
 
@@ -28,9 +36,15 @@ my $pn = 0;
 
 for my $spec ((0, 1)) {
     for my $opt ((0, 1)) {
-        my $opts = $opt ? $OPT_FLAGS : "";
         for my $bench (@BENCHMARKS) {
-            push @cases, [$pn, $bench, "cake", $spec, $opt, $opts];
+            my $opts = {};
+            $opts->{spec}  = 1 if ($spec);
+            if ($opt) {
+                $opts->{early} = $OPT_EARLY;
+                $opts->{later} = $OPT_LATER;
+            }
+
+            push @cases, [$pn, $bench, "cake", $opts];
         }
         $pn += 1;
     }
@@ -43,21 +57,22 @@ open my $e_out, ">", $EXECUTION;
 
 my $csv = Text::CSV->new();
 
-sub benchmark_once {
-    my ($pn, $ii, $bench, $plat, $spec, $opt, $opts) = @_;
-    my $times = run_benchmark($bench, $plat, $spec, $opt, $opts);
+sub benchmark_once ($$$$$) {
+    my ($pn, $ii, $bench, $plat, $opts) = @_;
+
+    my $times = run_benchmark($bench, $plat, $opts);
 
     $plat = "$plat$pn";
     
     for my $kk (keys %{$times->{parallel_bc}}) {
         my $time = $times->{parallel_bc}{$kk};
-        $csv->print($s_out, [$plat, $ii, $bench, $kk, $time, $spec, $opt]);
+        $csv->print($s_out, [$plat, $ii, $bench, $kk, $time]);
         $s_out->print("\n");
     }
     
     for my $kk (keys %{$times->{execute}}) {
         my $time = $times->{execute}{$kk};
-        $csv->print($e_out, [$plat, $ii, $bench, $kk, $time, $spec, $opt]);
+        $csv->print($e_out, [$plat, $ii, $bench, $kk, $time]);
         $e_out->print("\n");
     }
 }
@@ -66,13 +81,14 @@ my $total_runs = $count * $REPEAT;
 
 for (my $case_ii = 0; $case_ii < scalar @cases; ++$case_ii) {
     my $case = $cases[$case_ii];
-    my ($pn, $bench, $plat, $spec, $opt, $opts) = @$case;
-    say "$bench, $plat, $spec, [$opts]";
+    my ($pn, $bench, $plat, $opts) = @$case;
+    say "$bench, $plat";
+    say Dumper($opts);
 
     for (my $ii = 0; $ii < $REPEAT; ++$ii) {
         my $rnum = $case_ii * $REPEAT + $ii;
         say "Run #$rnum / $total_runs";
-        benchmark_once($pn, $ii, $bench, $plat, $spec, $opt, $opts);
+        benchmark_once($pn, $ii, $bench, $plat, $opts);
     }
 }
 
@@ -84,6 +100,16 @@ my $elapsed  = $end_time - $start_time;
 
 my $total = $count * $REPEAT;
 
+my $pretty_elapsed = pretty_time($elapsed);
+
 say "  == Run Completed ==";
 say "Executed $count cases ($total tests) in";
-say pretty_time($elapsed);
+say $pretty_elapsed;
+
+my $ping_subj = uri_encode("cakemark done");
+my $ping_host = `hostname`; chomp $ping_host;
+my $ping_body = uri_encode("Test run done on $ping_host: " .
+    "$total tests in $pretty_elapsed");
+
+system(qq{curl "http://www.ferrus.net/ping.php?} .
+    qq{subject=$ping_subj&message=$ping_body"});
