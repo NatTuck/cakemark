@@ -2,17 +2,16 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-#our @BENCHMARKS = qw(blur);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-                     nas-lu nas-sp particlefilter);
+our @BENCHMARKS = qw(mmul);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+#                     nas-lu nas-sp particlefilter);
 
-#our $OPT_EARLY  = "-gvn -sccp -instcombine -adce";
-our $OPT_EARLY  = "--reassociate -loop-simplify -indvars -licm -loop-unswitch ".
-                  "-loop-unroll -gvn -sccp -loop-deletion -instcombine -adce ".
-                  "-simplifycfg -loop-simplify -unroll-allow-partial";
-our $OPT_LATER  = "";
+use Cake::OptFlags; 
 
-our $REPEAT     = 10;
+our $OPT_EXTRA = "-globaldce";
+our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
+
+our $REPEAT     = 1;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -34,13 +33,17 @@ my @cases = ();
 my $pn = 0;
 
 for my $spec ((0, 1)) {
-    for my $opt ((0, 1)) {
+    for my $opt ((0, 1, 2)) {
         for my $bench (@BENCHMARKS) {
             my $opts = {};
             $opts->{spec}  = 1 if ($spec);
-            if ($opt) {
-                $opts->{early} = $OPT_EARLY;
-                $opts->{later} = $OPT_LATER;
+            $opts->{extra} = $OPT_EXTRA;
+
+            if ($opt == 1) {
+                $opts->{early} = $OPT_FLAGS;
+            }
+            if ($opt == 2) {
+                $opts->{later} = $OPT_FLAGS;
             }
 
             push @cases, [$pn, $bench, "cake", $opts];
@@ -60,6 +63,8 @@ sub benchmark_once ($$$$$) {
     my ($pn, $ii, $bench, $plat, $opts) = @_;
 
     my $times = run_benchmark($bench, $plat, $opts);
+    die "No execute times" unless defined $times->{execute};
+    die "No setup times" unless defined $times->{parallel_bc};
 
     $plat = "$plat$pn";
     
