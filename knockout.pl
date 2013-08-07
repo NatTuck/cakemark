@@ -2,7 +2,7 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(blur);
+our @BENCHMARKS = qw(mmul blur gaussian mandelbrot nas-ft particlefilter);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-lu nas-sp particlefilter);
 
@@ -10,7 +10,7 @@ our @BENCHMARKS = qw(blur);
 our $OPT_LATER = "";
 our $OPT_EXTRA = "-globaldce"; # Needs this for some reason.
 
-our $REPEAT     = 3;
+our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
