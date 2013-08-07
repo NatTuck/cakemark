@@ -2,18 +2,21 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mmul);
-#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-#                     nas-lu nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+                     nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 
-our $REPEAT     = 1;
+our $REPEAT     = 10;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
+
+our $LABEL1     = "early";
+our $LABEL2     = "later";
 
 use Cake::Benchmark;
 use Cake::PrettyTime;
@@ -36,17 +39,26 @@ for my $spec ((0, 1)) {
     for my $opt ((0, 1, 2)) {
         for my $bench (@BENCHMARKS) {
             my $opts = {};
-            $opts->{spec}  = 1 if ($spec);
             $opts->{extra} = $OPT_EXTRA;
 
+            my $label = "default";
+
             if ($opt == 1) {
+                $label = $LABEL1;
                 $opts->{early} = $OPT_FLAGS;
             }
+
             if ($opt == 2) {
+                $label = $LABEL2;
                 $opts->{later} = $OPT_FLAGS;
             }
+            
+            if ($spec) {
+                $opts->{spec} = 1;
+                $label = "$label-spec";
+            }
 
-            push @cases, [$pn, $bench, "cake", $opts];
+            push @cases, [$pn, $bench, "cake", $opts, $label];
         }
         $pn += 1;
     }
@@ -59,8 +71,8 @@ open my $e_out, ">", $EXECUTION;
 
 my $csv = Text::CSV->new();
 
-sub benchmark_once ($$$$$) {
-    my ($pn, $ii, $bench, $plat, $opts) = @_;
+sub benchmark_once ($$$$$$) {
+    my ($pn, $ii, $bench, $plat, $opts, $label) = @_;
 
     my $times = run_benchmark($bench, $plat, $opts);
     die "No execute times" unless defined $times->{execute};
@@ -70,13 +82,13 @@ sub benchmark_once ($$$$$) {
     
     for my $kk (keys %{$times->{parallel_bc}}) {
         my $time = $times->{parallel_bc}{$kk};
-        $csv->print($s_out, [$plat, $ii, $bench, $kk, $time]);
+        $csv->print($s_out, [$plat, $ii, $bench, $kk, $time, $label]);
         $s_out->print("\n");
     }
     
     for my $kk (keys %{$times->{execute}}) {
         my $time = $times->{execute}{$kk};
-        $csv->print($e_out, [$plat, $ii, $bench, $kk, $time]);
+        $csv->print($e_out, [$plat, $ii, $bench, $kk, $time, $label]);
         $e_out->print("\n");
     }
 }
@@ -85,14 +97,14 @@ my $total_runs = $count * $REPEAT;
 
 for (my $case_ii = 0; $case_ii < scalar @cases; ++$case_ii) {
     my $case = $cases[$case_ii];
-    my ($pn, $bench, $plat, $opts) = @$case;
+    my ($pn, $bench, $plat, $opts, $label) = @$case;
     say "$bench, $plat";
     say Dumper($opts);
 
     for (my $ii = 0; $ii < $REPEAT; ++$ii) {
         my $rnum = $case_ii * $REPEAT + $ii;
         say "Run #$rnum / $total_runs";
-        benchmark_once($pn, $ii, $bench, $plat, $opts);
+        benchmark_once($pn, $ii, $bench, $plat, $opts, $label);
     }
 }
 

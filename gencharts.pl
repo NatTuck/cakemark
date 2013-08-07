@@ -22,19 +22,13 @@ use PDL::Stats::Basic;
 #     A bar chart with error bars for each benchmark,
 #     showing median total time per POCL config.
 
-# First, read in raw data.
-our %plat_labels = (
-    cake0 => "default",
-    cake1 => "opt",
-    cake2 => "spec",
-    cake3 => "opt+spec"
-);
 
 sub gen_charts {
     my ($input, $tag) = @_;
     
     my $benchs = {};
     my $plats  = {};
+    my $labels = {};
 
     my $data = {};
     my $runs = {};
@@ -43,9 +37,16 @@ sub gen_charts {
         or die "Cannot open '$input': $!";
     my $csv = Text::CSV->new();
     while (my $row = $csv->getline($ff)) {
-        my ($plat, $ii, $bench, $kk, $time, $spec, $opts) = @$row;
+        my ($plat, $ii, $bench, $kk, $time, $label) = @$row;
         $plats->{$plat} = 1;
         $benchs->{$bench} = 1;
+        
+        if (defined $labels->{$plat}) {
+            die "Label mismatch" unless $label eq $labels->{$plat};
+        }
+        else {
+            $labels->{$plat} = $label;
+        }
         
         my $key = "$plat:$bench";
         $data->{"$key:$ii"} ||= 0.0;
@@ -88,7 +89,7 @@ sub gen_charts {
             "$bench - $input", "POCL Config", "Time");
         
         for my $plat (sort keys %$plats) {
-            my $name = $plat_labels{$plat};
+            my $name = $labels->{$plat};
             my $key = "$plat:$bench";
             my $med = $meds->{$key};
             say "med = $med";
