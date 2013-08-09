@@ -69,7 +69,7 @@ set xlabel "${\$self->{xlabel}}"
 set ylabel "${\$self->{ylabel}}"
 set xrange [-0.5:$xtop]
 set yrange [0:$ytop]
-set xtics  ($xtics)
+set xtics  ($xtics) rotate by 90
 
 plot "$df" with boxerrorbars title "${\$self->{title}}"
 ENDGP
