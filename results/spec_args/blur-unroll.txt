@@ -1,0 +1,16 @@
+"blur_hor()", 5.9161
+"blur_hor(hh)", 5.9206
+"blur_hor(hh, sigma)", 5.9227
+"blur_hor(sigma)", 5.9154
+"blur_hor(ww)", 5.9456
+"blur_hor(ww, hh)", 5.9111
+"blur_hor(ww, hh, sigma)", 5.9207
+"blur_hor(ww, sigma)", 5.9131
+"blur_ver()", 6.8955
+"blur_ver(hh)", 6.8973
+"blur_ver(hh, sigma)", 6.9231
+"blur_ver(sigma)", 6.9233
+"blur_ver(ww)", 6.9039
+"blur_ver(ww, hh)", 6.9186
+"blur_ver(ww, hh, sigma)", 6.9289
+"blur_ver(ww, sigma)", 6.8993

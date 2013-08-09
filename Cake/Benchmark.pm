@@ -48,6 +48,11 @@ sub run_benchmark ($$$) {
         $env .= qq{CAKE_OPT_EXTRA="$extra" };
     }
 
+    if ($opts->{force}) {
+        my $force = $opts->{force};
+        $env .= qq{CAKE_SPEC_FORCE="$force" };
+    }
+
     my $dir = "$cwd/benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
