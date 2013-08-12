@@ -12,7 +12,11 @@ NAME := ipow
 POW ?= 7
 
 FLAGS ?= -domtree
-SPEC  ?= kk=$(POW)
+SPEC  ?= -spec-text="kk=$(POW)"
+
+ifneq ($(SPEC),) 
+SPEC1 := -specialize -kernel=ipow $(SPEC)
+endif
 
 all: $(NAME)
 
@@ -22,7 +26,8 @@ $(NAME): main.bc $(NAME)-opt.bc
 	gcc -o $(NAME) $(NAME).s $(LDLIBS)
 
 $(NAME)-opt.bc: $(NAME).bc
-	opt -load=$(SLIB) -specialize -kernel=ipow -spec-text="$(SPEC)" \
+	opt -load=$(SLIB) \
+		$(SPEC1) \
 		$(FLAGS) \
 	   	-o $(NAME)-opt.bc $(NAME).bc
 

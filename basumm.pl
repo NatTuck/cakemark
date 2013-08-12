@@ -45,6 +45,8 @@ for my $spec (sort keys %$times) {
 
 # Print the results.
 
+open my $ba, ">", "data/basumm.txt";
+
 for my $spec (sort keys %$meds) {
     $spec =~ /^(\w+)\((.*)\)$/ or die "bad input";
     my ($sk, $sargs) = ($1, $2);
@@ -54,5 +56,8 @@ for my $spec (sort keys %$meds) {
 
     my $speedup = $bas / $med;
 
-    printf(qq{$sk, "$sargs", %.04f, %.04f\n}, $med, $speedup);
+    $ba->printf(qq{$sk, "$sargs", %.04f, %.04f\n}, $med, $speedup);
 }
+
+close $ba;
+system("cat data/basumm.txt");

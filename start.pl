@@ -2,24 +2,27 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-#our @BENCHMARKS = qw(blur);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
-                     nas-sp particlefilter);
+our @BENCHMARKS = qw(mmul mandelbrot);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
+#                     nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 
-our $REPEAT     = 10;
+our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
-our $LABEL1     = "early";
-our $LABEL2     = "later";
-
 use Cake::Benchmark;
 use Cake::PrettyTime;
+
+start_benchmark(<<"EOF");
+Comparison Test
+Benchs = ${\ join(' ', @BENCHMARKS) }
+Repeat = $REPEAT
+EOF
 
 use Cwd qw(abs_path);
 use File::Basename;
@@ -40,17 +43,21 @@ for my $spec ((0, 1)) {
         for my $bench (@BENCHMARKS) {
             my $opts = {};
             $opts->{extra} = $OPT_EXTRA;
+            $opts->{early} = "";
+            $opts->{later} = "";
 
             my $label = "default";
 
             if ($opt == 1) {
-                $label = $LABEL1;
-                $opts->{early} = $OPT_FLAGS;
+                $label = "unroll-2";
+                $opts->{early} = "-mem2reg -sccp -loop-rotate -loop-unroll ".
+                                 "-unroll-allow-partial -simplifycfg -reassociate";
             }
 
             if ($opt == 2) {
-                $label = $LABEL2;
-                $opts->{later} = $OPT_FLAGS;
+                next;
+                $label = "no height";
+                $opts->{early} = "";
             }
             
             if ($spec) {

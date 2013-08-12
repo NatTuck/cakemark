@@ -22,16 +22,23 @@ main(int argc, char* argv[])
     if (getenv("NUMBER_TO_IGNORE"))
         kk = atoi(getenv("NUMBER_TO_IGNORE"));
 
-    int zz = 1;
+    int zz = 50 * 1000 * 1000;  
     if (getenv("ITERS"))
         zz = atoi(getenv("ITERS"));
+
+    cake_timer tm;
+
+    cake_timer_reset(&tm);
 
     int yy = xx;
     for (int ii = 0; ii < zz; ++ii) {
         yy = ipow(yy, kk);
     }
 
+    double secs = cake_timer_read(&tm);
+
     printf("%d^%d (%d) = %d\n", xx, kk, zz, yy);
+    printf("time: %.04f\n", secs);
 
     return 0;
 }

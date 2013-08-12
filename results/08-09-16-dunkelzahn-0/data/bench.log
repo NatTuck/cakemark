@@ -1,0 +1,966 @@
+## Started test on dunkelzahn at Fri Aug  9 16:00:16 EDT 2013 ##
+# Best Args
+# Early  = 
+# Later  = -targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify
+# Extra  = -globaldce
+# Repeat = 5
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_ver() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(sigma) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww, hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(hh) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor(ww) */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor() */'
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '-targetlibinfo -no-aa -tbaa -basicaa -notti -preverify -domtree -verify -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline-cost -inline -functionattrs -argpromotion -sroa -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -domtree -loops -loop-simplify -lcssa -scalar-evolution -loop-simplify -lcssa -loop-vectorize -scalar-evolution -bb-vectorize -preverify -verify',
+            'extra' => '-globaldce',
+            'force' => '/* @spec blur_hor() */'
+          }
+        ];
+

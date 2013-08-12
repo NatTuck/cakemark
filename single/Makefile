@@ -12,3 +12,5 @@ clean:
 	(cd cake && make clean)
 	(cd spec && make clean)
 	find tests -name Makefile -exec sh -c 'cd `dirname {}` && make clean' \;
+
+.PHONY: all cake spec clean

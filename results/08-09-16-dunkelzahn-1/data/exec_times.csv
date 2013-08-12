@@ -1,0 +1,20 @@
+cake0,0,mmul,fmma,4.827938,"fmma(nn, spin)"
+cake0,1,mmul,fmma,4.848303,"fmma(nn, spin)"
+cake0,2,mmul,fmma,4.810583,"fmma(nn, spin)"
+cake0,3,mmul,fmma,4.835775,"fmma(nn, spin)"
+cake0,4,mmul,fmma,4.913593,"fmma(nn, spin)"
+cake0,0,mmul,fmma,4.858727,fmma(spin)
+cake0,1,mmul,fmma,4.878556,fmma(spin)
+cake0,2,mmul,fmma,4.774781,fmma(spin)
+cake0,3,mmul,fmma,4.854116,fmma(spin)
+cake0,4,mmul,fmma,4.866945,fmma(spin)
+cake0,0,mmul,fmma,4.84285,fmma(nn)
+cake0,1,mmul,fmma,4.859804,fmma(nn)
+cake0,2,mmul,fmma,4.832261,fmma(nn)
+cake0,3,mmul,fmma,4.891583,fmma(nn)
+cake0,4,mmul,fmma,4.793414,fmma(nn)
+cake0,0,mmul,fmma,4.97277,fmma()
+cake0,1,mmul,fmma,4.859027,fmma()
+cake0,2,mmul,fmma,4.816023,fmma()
+cake0,3,mmul,fmma,4.774786,fmma()
+cake0,4,mmul,fmma,4.887271,fmma()

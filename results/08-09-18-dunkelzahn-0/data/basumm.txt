@@ -1,0 +1,64 @@
+mandelGPU, "", 5.1090, 1.0000
+mandelGPU, "height", 5.0559, 1.0105
+mandelGPU, "height, maxIterations", 5.0818, 1.0053
+mandelGPU, "height, offsetX", 5.1018, 1.0014
+mandelGPU, "height, offsetX, maxIterations", 5.1104, 0.9997
+mandelGPU, "height, offsetX, offsetY", 5.2083, 0.9809
+mandelGPU, "height, offsetX, offsetY, maxIterations", 5.1147, 0.9989
+mandelGPU, "height, offsetY", 5.1060, 1.0006
+mandelGPU, "height, offsetY, maxIterations", 5.0634, 1.0090
+mandelGPU, "height, scale", 5.0876, 1.0042
+mandelGPU, "height, scale, maxIterations", 5.1260, 0.9967
+mandelGPU, "height, scale, offsetX", 5.0845, 1.0048
+mandelGPU, "height, scale, offsetX, maxIterations", 5.0656, 1.0086
+mandelGPU, "height, scale, offsetX, offsetY", 5.1539, 0.9913
+mandelGPU, "height, scale, offsetX, offsetY, maxIterations", 5.0749, 1.0067
+mandelGPU, "height, scale, offsetY", 5.1079, 1.0002
+mandelGPU, "height, scale, offsetY, maxIterations", 5.1006, 1.0016
+mandelGPU, "maxIterations", 5.1006, 1.0016
+mandelGPU, "offsetX", 5.1811, 0.9861
+mandelGPU, "offsetX, maxIterations", 5.1231, 0.9973
+mandelGPU, "offsetX, offsetY", 5.2378, 0.9754
+mandelGPU, "offsetX, offsetY, maxIterations", 5.1628, 0.9896
+mandelGPU, "offsetY", 5.0855, 1.0046
+mandelGPU, "offsetY, maxIterations", 5.0027, 1.0212
+mandelGPU, "scale", 5.0432, 1.0131
+mandelGPU, "scale, maxIterations", 5.0502, 1.0116
+mandelGPU, "scale, offsetX", 5.0689, 1.0079
+mandelGPU, "scale, offsetX, maxIterations", 5.1224, 0.9974
+mandelGPU, "scale, offsetX, offsetY", 5.1234, 0.9972
+mandelGPU, "scale, offsetX, offsetY, maxIterations", 5.1092, 1.0000
+mandelGPU, "scale, offsetY", 5.1293, 0.9960
+mandelGPU, "scale, offsetY, maxIterations", 5.0949, 1.0028
+mandelGPU, "width", 5.1674, 0.9887
+mandelGPU, "width, height", 5.1425, 0.9935
+mandelGPU, "width, height, maxIterations", 5.0209, 1.0175
+mandelGPU, "width, height, offsetX", 5.0568, 1.0103
+mandelGPU, "width, height, offsetX, maxIterations", 5.0098, 1.0198
+mandelGPU, "width, height, offsetX, offsetY", 5.0245, 1.0168
+mandelGPU, "width, height, offsetX, offsetY, maxIterations", 5.0463, 1.0124
+mandelGPU, "width, height, offsetY", 5.0736, 1.0070
+mandelGPU, "width, height, offsetY, maxIterations", 5.0775, 1.0062
+mandelGPU, "width, height, scale", 5.1159, 0.9987
+mandelGPU, "width, height, scale, maxIterations", 5.1308, 0.9957
+mandelGPU, "width, height, scale, offsetX", 5.1020, 1.0014
+mandelGPU, "width, height, scale, offsetX, maxIterations", 5.1123, 0.9994
+mandelGPU, "width, height, scale, offsetX, offsetY", 5.1097, 0.9999
+mandelGPU, "width, height, scale, offsetX, offsetY, maxIterations", 5.0254, 1.0166
+mandelGPU, "width, height, scale, offsetY", 5.1843, 0.9855
+mandelGPU, "width, height, scale, offsetY, maxIterations", 5.1621, 0.9897
+mandelGPU, "width, maxIterations", 5.0695, 1.0078
+mandelGPU, "width, offsetX", 5.0561, 1.0105
+mandelGPU, "width, offsetX, maxIterations", 5.0901, 1.0037
+mandelGPU, "width, offsetX, offsetY", 5.1698, 0.9882
+mandelGPU, "width, offsetX, offsetY, maxIterations", 5.1006, 1.0017
+mandelGPU, "width, offsetY", 5.1552, 0.9910
+mandelGPU, "width, offsetY, maxIterations", 5.0644, 1.0088
+mandelGPU, "width, scale", 5.1332, 0.9953
+mandelGPU, "width, scale, maxIterations", 5.1238, 0.9971
+mandelGPU, "width, scale, offsetX", 5.1102, 0.9998
+mandelGPU, "width, scale, offsetX, maxIterations", 5.1719, 0.9878
+mandelGPU, "width, scale, offsetX, offsetY", 5.1524, 0.9916
+mandelGPU, "width, scale, offsetX, offsetY, maxIterations", 5.0007, 1.0217
+mandelGPU, "width, scale, offsetY", 5.0968, 1.0024
+mandelGPU, "width, scale, offsetY, maxIterations", 5.0806, 1.0056

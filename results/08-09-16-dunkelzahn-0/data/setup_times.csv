@@ -1,0 +1,160 @@
+cake0,0,blur,blur_ver,0.523699,"blur_ver(ww, hh, sigma)"
+cake0,0,blur,blur_hor,0.49974,"blur_ver(ww, hh, sigma)"
+cake0,1,blur,blur_ver,0.602514,"blur_ver(ww, hh, sigma)"
+cake0,1,blur,blur_hor,0.50357,"blur_ver(ww, hh, sigma)"
+cake0,2,blur,blur_ver,0.529414,"blur_ver(ww, hh, sigma)"
+cake0,2,blur,blur_hor,0.501653,"blur_ver(ww, hh, sigma)"
+cake0,3,blur,blur_ver,0.50261,"blur_ver(ww, hh, sigma)"
+cake0,3,blur,blur_hor,0.498377,"blur_ver(ww, hh, sigma)"
+cake0,4,blur,blur_ver,0.537028,"blur_ver(ww, hh, sigma)"
+cake0,4,blur,blur_hor,0.509621,"blur_ver(ww, hh, sigma)"
+cake0,0,blur,blur_ver,0.502366,"blur_ver(hh, sigma)"
+cake0,0,blur,blur_hor,0.500464,"blur_ver(hh, sigma)"
+cake0,1,blur,blur_ver,0.501462,"blur_ver(hh, sigma)"
+cake0,1,blur,blur_hor,0.499582,"blur_ver(hh, sigma)"
+cake0,2,blur,blur_ver,0.522056,"blur_ver(hh, sigma)"
+cake0,2,blur,blur_hor,0.498193,"blur_ver(hh, sigma)"
+cake0,3,blur,blur_ver,0.546642,"blur_ver(hh, sigma)"
+cake0,3,blur,blur_hor,0.499314,"blur_ver(hh, sigma)"
+cake0,4,blur,blur_ver,0.538744,"blur_ver(hh, sigma)"
+cake0,4,blur,blur_hor,0.497774,"blur_ver(hh, sigma)"
+cake0,0,blur,blur_ver,0.522613,"blur_ver(ww, sigma)"
+cake0,0,blur,blur_hor,0.499707,"blur_ver(ww, sigma)"
+cake0,1,blur,blur_ver,0.526768,"blur_ver(ww, sigma)"
+cake0,1,blur,blur_hor,0.501943,"blur_ver(ww, sigma)"
+cake0,2,blur,blur_ver,0.501451,"blur_ver(ww, sigma)"
+cake0,2,blur,blur_hor,0.506375,"blur_ver(ww, sigma)"
+cake0,3,blur,blur_ver,0.501676,"blur_ver(ww, sigma)"
+cake0,3,blur,blur_hor,0.499709,"blur_ver(ww, sigma)"
+cake0,4,blur,blur_ver,0.501366,"blur_ver(ww, sigma)"
+cake0,4,blur,blur_hor,0.517473,"blur_ver(ww, sigma)"
+cake0,0,blur,blur_ver,0.532673,blur_ver(sigma)
+cake0,0,blur,blur_hor,0.501092,blur_ver(sigma)
+cake0,1,blur,blur_ver,0.501133,blur_ver(sigma)
+cake0,1,blur,blur_hor,0.494873,blur_ver(sigma)
+cake0,2,blur,blur_ver,0.501019,blur_ver(sigma)
+cake0,2,blur,blur_hor,0.501,blur_ver(sigma)
+cake0,3,blur,blur_ver,0.501904,blur_ver(sigma)
+cake0,3,blur,blur_hor,0.501605,blur_ver(sigma)
+cake0,4,blur,blur_ver,0.522463,blur_ver(sigma)
+cake0,4,blur,blur_hor,0.498904,blur_ver(sigma)
+cake0,0,blur,blur_ver,0.501968,"blur_ver(ww, hh)"
+cake0,0,blur,blur_hor,0.505737,"blur_ver(ww, hh)"
+cake0,1,blur,blur_ver,0.499665,"blur_ver(ww, hh)"
+cake0,1,blur,blur_hor,0.502882,"blur_ver(ww, hh)"
+cake0,2,blur,blur_ver,0.502853,"blur_ver(ww, hh)"
+cake0,2,blur,blur_hor,0.497468,"blur_ver(ww, hh)"
+cake0,3,blur,blur_ver,0.505337,"blur_ver(ww, hh)"
+cake0,3,blur,blur_hor,0.500618,"blur_ver(ww, hh)"
+cake0,4,blur,blur_ver,0.520954,"blur_ver(ww, hh)"
+cake0,4,blur,blur_hor,0.49956,"blur_ver(ww, hh)"
+cake0,0,blur,blur_ver,0.540275,blur_ver(hh)
+cake0,0,blur,blur_hor,0.500646,blur_ver(hh)
+cake0,1,blur,blur_ver,0.6579,blur_ver(hh)
+cake0,1,blur,blur_hor,0.499473,blur_ver(hh)
+cake0,2,blur,blur_ver,0.501064,blur_ver(hh)
+cake0,2,blur,blur_hor,0.498827,blur_ver(hh)
+cake0,3,blur,blur_ver,0.532101,blur_ver(hh)
+cake0,3,blur,blur_hor,0.49766,blur_ver(hh)
+cake0,4,blur,blur_ver,0.503474,blur_ver(hh)
+cake0,4,blur,blur_hor,0.499516,blur_ver(hh)
+cake0,0,blur,blur_ver,0.54327,blur_ver(ww)
+cake0,0,blur,blur_hor,0.499336,blur_ver(ww)
+cake0,1,blur,blur_ver,0.500064,blur_ver(ww)
+cake0,1,blur,blur_hor,0.499708,blur_ver(ww)
+cake0,2,blur,blur_ver,0.501303,blur_ver(ww)
+cake0,2,blur,blur_hor,0.49785,blur_ver(ww)
+cake0,3,blur,blur_ver,0.710938,blur_ver(ww)
+cake0,3,blur,blur_hor,0.52256,blur_ver(ww)
+cake0,4,blur,blur_ver,0.500763,blur_ver(ww)
+cake0,4,blur,blur_hor,0.49709,blur_ver(ww)
+cake0,0,blur,blur_ver,0.524931,blur_ver()
+cake0,0,blur,blur_hor,0.497194,blur_ver()
+cake0,1,blur,blur_ver,0.536269,blur_ver()
+cake0,1,blur,blur_hor,0.496357,blur_ver()
+cake0,2,blur,blur_ver,0.529318,blur_ver()
+cake0,2,blur,blur_hor,0.500034,blur_ver()
+cake0,3,blur,blur_ver,0.522985,blur_ver()
+cake0,3,blur,blur_hor,0.500081,blur_ver()
+cake0,4,blur,blur_ver,0.500605,blur_ver()
+cake0,4,blur,blur_hor,0.498166,blur_ver()
+cake0,0,blur,blur_ver,0.500112,"blur_hor(ww, hh, sigma)"
+cake0,0,blur,blur_hor,0.498258,"blur_hor(ww, hh, sigma)"
+cake0,1,blur,blur_ver,0.501559,"blur_hor(ww, hh, sigma)"
+cake0,1,blur,blur_hor,0.501139,"blur_hor(ww, hh, sigma)"
+cake0,2,blur,blur_ver,0.504537,"blur_hor(ww, hh, sigma)"
+cake0,2,blur,blur_hor,0.500732,"blur_hor(ww, hh, sigma)"
+cake0,3,blur,blur_ver,0.53857,"blur_hor(ww, hh, sigma)"
+cake0,3,blur,blur_hor,0.499974,"blur_hor(ww, hh, sigma)"
+cake0,4,blur,blur_ver,0.50182,"blur_hor(ww, hh, sigma)"
+cake0,4,blur,blur_hor,0.497686,"blur_hor(ww, hh, sigma)"
+cake0,0,blur,blur_ver,0.503176,"blur_hor(hh, sigma)"
+cake0,0,blur,blur_hor,0.498809,"blur_hor(hh, sigma)"
+cake0,1,blur,blur_ver,0.518614,"blur_hor(hh, sigma)"
+cake0,1,blur,blur_hor,0.500809,"blur_hor(hh, sigma)"
+cake0,2,blur,blur_ver,0.520239,"blur_hor(hh, sigma)"
+cake0,2,blur,blur_hor,0.515461,"blur_hor(hh, sigma)"
+cake0,3,blur,blur_ver,0.502061,"blur_hor(hh, sigma)"
+cake0,3,blur,blur_hor,0.500934,"blur_hor(hh, sigma)"
+cake0,4,blur,blur_ver,0.521228,"blur_hor(hh, sigma)"
+cake0,4,blur,blur_hor,0.498761,"blur_hor(hh, sigma)"
+cake0,0,blur,blur_ver,0.529648,"blur_hor(ww, sigma)"
+cake0,0,blur,blur_hor,0.495929,"blur_hor(ww, sigma)"
+cake0,1,blur,blur_ver,0.528121,"blur_hor(ww, sigma)"
+cake0,1,blur,blur_hor,0.49794,"blur_hor(ww, sigma)"
+cake0,2,blur,blur_ver,0.520635,"blur_hor(ww, sigma)"
+cake0,2,blur,blur_hor,0.498445,"blur_hor(ww, sigma)"
+cake0,3,blur,blur_ver,0.506065,"blur_hor(ww, sigma)"
+cake0,3,blur,blur_hor,0.499528,"blur_hor(ww, sigma)"
+cake0,4,blur,blur_ver,0.501652,"blur_hor(ww, sigma)"
+cake0,4,blur,blur_hor,0.498972,"blur_hor(ww, sigma)"
+cake0,0,blur,blur_ver,0.522644,blur_hor(sigma)
+cake0,0,blur,blur_hor,0.49734,blur_hor(sigma)
+cake0,1,blur,blur_ver,0.503722,blur_hor(sigma)
+cake0,1,blur,blur_hor,0.499384,blur_hor(sigma)
+cake0,2,blur,blur_ver,0.503711,blur_hor(sigma)
+cake0,2,blur,blur_hor,0.497832,blur_hor(sigma)
+cake0,3,blur,blur_ver,0.500602,blur_hor(sigma)
+cake0,3,blur,blur_hor,0.498999,blur_hor(sigma)
+cake0,4,blur,blur_ver,0.50969,blur_hor(sigma)
+cake0,4,blur,blur_hor,0.499983,blur_hor(sigma)
+cake0,0,blur,blur_ver,0.501904,"blur_hor(ww, hh)"
+cake0,0,blur,blur_hor,0.499625,"blur_hor(ww, hh)"
+cake0,1,blur,blur_ver,0.519495,"blur_hor(ww, hh)"
+cake0,1,blur,blur_hor,0.498735,"blur_hor(ww, hh)"
+cake0,2,blur,blur_ver,0.500209,"blur_hor(ww, hh)"
+cake0,2,blur,blur_hor,0.498528,"blur_hor(ww, hh)"
+cake0,3,blur,blur_ver,0.501131,"blur_hor(ww, hh)"
+cake0,3,blur,blur_hor,0.498948,"blur_hor(ww, hh)"
+cake0,4,blur,blur_ver,0.500078,"blur_hor(ww, hh)"
+cake0,4,blur,blur_hor,0.500424,"blur_hor(ww, hh)"
+cake0,0,blur,blur_ver,0.522657,blur_hor(hh)
+cake0,0,blur,blur_hor,0.49767,blur_hor(hh)
+cake0,1,blur,blur_ver,0.528792,blur_hor(hh)
+cake0,1,blur,blur_hor,0.499527,blur_hor(hh)
+cake0,2,blur,blur_ver,0.519607,blur_hor(hh)
+cake0,2,blur,blur_hor,0.499409,blur_hor(hh)
+cake0,3,blur,blur_ver,0.521972,blur_hor(hh)
+cake0,3,blur,blur_hor,0.498676,blur_hor(hh)
+cake0,4,blur,blur_ver,0.52519,blur_hor(hh)
+cake0,4,blur,blur_hor,0.499519,blur_hor(hh)
+cake0,0,blur,blur_ver,0.506252,blur_hor(ww)
+cake0,0,blur,blur_hor,0.498904,blur_hor(ww)
+cake0,1,blur,blur_ver,0.521282,blur_hor(ww)
+cake0,1,blur,blur_hor,0.4992,blur_hor(ww)
+cake0,2,blur,blur_ver,0.502368,blur_hor(ww)
+cake0,2,blur,blur_hor,0.500467,blur_hor(ww)
+cake0,3,blur,blur_ver,0.518388,blur_hor(ww)
+cake0,3,blur,blur_hor,0.497343,blur_hor(ww)
+cake0,4,blur,blur_ver,0.522487,blur_hor(ww)
+cake0,4,blur,blur_hor,0.498224,blur_hor(ww)
+cake0,0,blur,blur_ver,0.502031,blur_hor()
+cake0,0,blur,blur_hor,0.498988,blur_hor()
+cake0,1,blur,blur_ver,0.534294,blur_hor()
+cake0,1,blur,blur_hor,0.500403,blur_hor()
+cake0,2,blur,blur_ver,0.50009,blur_hor()
+cake0,2,blur,blur_hor,0.49767,blur_hor()
+cake0,3,blur,blur_ver,0.525851,blur_hor()
+cake0,3,blur,blur_hor,0.498027,blur_hor()
+cake0,4,blur,blur_ver,0.500816,blur_hor()
+cake0,4,blur,blur_hor,0.504244,blur_hor()

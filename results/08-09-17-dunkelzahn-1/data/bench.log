@@ -1,0 +1,480 @@
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan1() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size, t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(t) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2(size) */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2() */'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce',
+            'force' => '/* @spec Fan2() */'
+          }
+        ];
+

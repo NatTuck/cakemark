@@ -3,15 +3,34 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 our @ISA = qw(Exporter);
-our @EXPORT = qw(run_benchmark);
+our @EXPORT = qw(run_benchmark start_benchmark);
 
 our %TAGS = (
     parallel_bc => 'parallel_bc',
     execute     => 'execute',
 );
 
+our $LOG = "data/bench.log";
+
 use Cwd qw(getcwd);
 use Data::Dumper;
+use IO::Handle;
+
+sub start_benchmark {
+    my ($text) = @_;
+    open my $ll, ">", $LOG;
+    my $host = `hostname`; chomp $host;
+    my $date = `date`; chomp $date;
+    $ll->say("## Started test on $host at $date ##");
+    for my $line (split "\n", $text) {
+        $ll->say("# $line");
+    }
+    close $ll;
+
+    system("rm -f data/*.*");
+    system("rm -f charts/*.*");
+}
+
 
 # run_benchmark($bench, $plat, $opts)
 #
@@ -24,6 +43,10 @@ use Data::Dumper;
 sub run_benchmark ($$$) {
     my ($bench, $plat, $opts) = @_;
     my $cwd = getcwd();
+
+    open my $ll, ">>", $LOG;
+    $ll->say(Dumper([$bench, $plat, $opts]));
+    close $ll;
     
     $plat  ||= "cake";
 

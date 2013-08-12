@@ -2,18 +2,21 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our $BENCHMARK = "mmul";
-our %KERNELS   = (
-    fmma => [qw(nn spin)],
+our $BENCHMARK = "mandelbrot";
+our %KERNELS = (
+    mandelGPU => [qw(width height scale offsetX offsetY maxIterations)],
 );
+#our %KERNELS   = (
+#    blur_hor => [qw(ww hh sigma)],
+#    blur_ver => [qw(ww hh sigma)],
+#);
 
 
 use Cake::OptFlags; 
 
-our $OPT_EXTRA = "-O3"; #"-globaldce";
-our $OPT_EARLY = Cake::OptFlags::get_data('unroll');
+our $OPT_EXTRA = "-globaldce";
+our $OPT_EARLY = "";
 our $OPT_LATER = Cake::OptFlags::get_data('std');
-#our $OPT_LATER = 
 
 our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
@@ -21,6 +24,15 @@ our $EXECUTION  = "data/exec_times.csv";
 
 use Cake::Benchmark;
 use Cake::PrettyTime;
+
+start_benchmark(<<"EOF");
+Best Args
+Bench  = $BENCHMARK
+Early  = $OPT_EARLY
+Later  = $OPT_LATER
+Extra  = $OPT_EXTRA
+Repeat = $REPEAT
+EOF
 
 use Cwd qw(abs_path);
 use File::Basename;

@@ -6,8 +6,8 @@ our @BENCHMARKS = qw(mmul blur gaussian mandelbrot nas-ft particlefilter);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-lu nas-sp particlefilter);
 
-#our $OPT_EARLY = ""; # Flags sets go here.
-our $OPT_LATER = "";
+our $OPT_EARLY = ""; 
+#our $OPT_LATER = ""; # Flags sets go here.
 our $OPT_EXTRA = "-globaldce"; # Needs this for some reason.
 
 our $REPEAT     = 5;
@@ -43,8 +43,8 @@ for my $spec ((0, 1)) {
             my $opts = {};
             $opts->{spec}  = 1 if ($spec);
             
-            $opts->{early} = $flags;
-            $opts->{later} = $OPT_LATER;
+            $opts->{early} = $OPT_EARLY;
+            $opts->{later} = $flags;
             $opts->{extra} = $OPT_EXTRA;
 
             push @cases, [$pn, $bench, "cake", $opts, $label];

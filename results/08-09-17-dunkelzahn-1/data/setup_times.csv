@@ -1,0 +1,80 @@
+cake0,0,gaussian,Fan1,0.157151,"Fan1(size, t)"
+cake0,0,gaussian,Fan2,0.155171,"Fan1(size, t)"
+cake0,1,gaussian,Fan1,0.142271,"Fan1(size, t)"
+cake0,1,gaussian,Fan2,0.152962,"Fan1(size, t)"
+cake0,2,gaussian,Fan1,0.143126,"Fan1(size, t)"
+cake0,2,gaussian,Fan2,0.154944,"Fan1(size, t)"
+cake0,3,gaussian,Fan1,0.144939,"Fan1(size, t)"
+cake0,3,gaussian,Fan2,0.153174,"Fan1(size, t)"
+cake0,4,gaussian,Fan1,0.141737,"Fan1(size, t)"
+cake0,4,gaussian,Fan2,0.152594,"Fan1(size, t)"
+cake0,0,gaussian,Fan1,0.14155,Fan1(t)
+cake0,0,gaussian,Fan2,0.153718,Fan1(t)
+cake0,1,gaussian,Fan1,0.14191,Fan1(t)
+cake0,1,gaussian,Fan2,0.153787,Fan1(t)
+cake0,2,gaussian,Fan1,0.14204,Fan1(t)
+cake0,2,gaussian,Fan2,0.153439,Fan1(t)
+cake0,3,gaussian,Fan1,0.238807,Fan1(t)
+cake0,3,gaussian,Fan2,0.154076,Fan1(t)
+cake0,4,gaussian,Fan1,0.142541,Fan1(t)
+cake0,4,gaussian,Fan2,0.157054,Fan1(t)
+cake0,0,gaussian,Fan1,0.142108,Fan1(size)
+cake0,0,gaussian,Fan2,0.152834,Fan1(size)
+cake0,1,gaussian,Fan1,0.142235,Fan1(size)
+cake0,1,gaussian,Fan2,0.15291,Fan1(size)
+cake0,2,gaussian,Fan1,0.142079,Fan1(size)
+cake0,2,gaussian,Fan2,0.153991,Fan1(size)
+cake0,3,gaussian,Fan1,0.142576,Fan1(size)
+cake0,3,gaussian,Fan2,0.154843,Fan1(size)
+cake0,4,gaussian,Fan1,0.142222,Fan1(size)
+cake0,4,gaussian,Fan2,0.153406,Fan1(size)
+cake0,0,gaussian,Fan1,0.14278,Fan1()
+cake0,0,gaussian,Fan2,0.154809,Fan1()
+cake0,1,gaussian,Fan1,0.142037,Fan1()
+cake0,1,gaussian,Fan2,0.154125,Fan1()
+cake0,2,gaussian,Fan1,0.142078,Fan1()
+cake0,2,gaussian,Fan2,0.154062,Fan1()
+cake0,3,gaussian,Fan1,0.141991,Fan1()
+cake0,3,gaussian,Fan2,0.154112,Fan1()
+cake0,4,gaussian,Fan1,0.14335,Fan1()
+cake0,4,gaussian,Fan2,0.154191,Fan1()
+cake0,0,gaussian,Fan1,0.144753,"Fan2(size, t)"
+cake0,0,gaussian,Fan2,0.153887,"Fan2(size, t)"
+cake0,1,gaussian,Fan1,0.143052,"Fan2(size, t)"
+cake0,1,gaussian,Fan2,0.152969,"Fan2(size, t)"
+cake0,2,gaussian,Fan1,0.141234,"Fan2(size, t)"
+cake0,2,gaussian,Fan2,0.152691,"Fan2(size, t)"
+cake0,3,gaussian,Fan1,0.144063,"Fan2(size, t)"
+cake0,3,gaussian,Fan2,0.153533,"Fan2(size, t)"
+cake0,4,gaussian,Fan1,0.141496,"Fan2(size, t)"
+cake0,4,gaussian,Fan2,0.154359,"Fan2(size, t)"
+cake0,0,gaussian,Fan1,0.141703,Fan2(t)
+cake0,0,gaussian,Fan2,0.154007,Fan2(t)
+cake0,1,gaussian,Fan1,0.142667,Fan2(t)
+cake0,1,gaussian,Fan2,0.153254,Fan2(t)
+cake0,2,gaussian,Fan1,0.142384,Fan2(t)
+cake0,2,gaussian,Fan2,0.152363,Fan2(t)
+cake0,3,gaussian,Fan1,0.141327,Fan2(t)
+cake0,3,gaussian,Fan2,0.152988,Fan2(t)
+cake0,4,gaussian,Fan1,0.142336,Fan2(t)
+cake0,4,gaussian,Fan2,0.153279,Fan2(t)
+cake0,0,gaussian,Fan1,0.142836,Fan2(size)
+cake0,0,gaussian,Fan2,0.15383,Fan2(size)
+cake0,1,gaussian,Fan1,0.14329,Fan2(size)
+cake0,1,gaussian,Fan2,0.152984,Fan2(size)
+cake0,2,gaussian,Fan1,0.142133,Fan2(size)
+cake0,2,gaussian,Fan2,0.154154,Fan2(size)
+cake0,3,gaussian,Fan1,0.142325,Fan2(size)
+cake0,3,gaussian,Fan2,0.152678,Fan2(size)
+cake0,4,gaussian,Fan1,0.14212,Fan2(size)
+cake0,4,gaussian,Fan2,0.153957,Fan2(size)
+cake0,0,gaussian,Fan1,0.14213,Fan2()
+cake0,0,gaussian,Fan2,0.153407,Fan2()
+cake0,1,gaussian,Fan1,0.142794,Fan2()
+cake0,1,gaussian,Fan2,0.154108,Fan2()
+cake0,2,gaussian,Fan1,0.143254,Fan2()
+cake0,2,gaussian,Fan2,0.153344,Fan2()
+cake0,3,gaussian,Fan1,0.142155,Fan2()
+cake0,3,gaussian,Fan2,0.153141,Fan2()
+cake0,4,gaussian,Fan1,0.142391,Fan2()
+cake0,4,gaussian,Fan2,0.152069,Fan2()
