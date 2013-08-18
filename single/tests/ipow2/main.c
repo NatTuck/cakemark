@@ -7,10 +7,9 @@
 #define POW 7
 #endif
 
-#define CAKE_TIMER_FAST_LINK 1
 #include "cake/timer.h"
 
-int ipow(int, int);
+int ipow2(int, int);
 
 int
 main(int argc, char* argv[])
@@ -33,7 +32,7 @@ main(int argc, char* argv[])
 
     int yy = xx;
     for (int ii = 0; ii < zz; ++ii) {
-        yy = ipow(yy, kk);
+        yy = ipow2(yy, kk);
     }
 
     double secs = cake_timer_read(&tm);

@@ -1,18 +1,21 @@
 
 # make FLAGS="-mem2reg -sccp -loop-rotate -loop-unroll -simplifycfg"
+# -instcombine -argpromotion
+
 
 BASE := ../..
 
-CFLAGS := -I$(BASE)/include
+NAME := mmul
+NN   ?= 512
+
+CFLAGS := -I$(BASE)/include -DNN=$(NN)
 LDLIBS := 
 
 SLIB := $(BASE)/spec/libspec.so
-NAME := ipow
 
-POW ?= 7
 
 FLAGS ?= -domtree
-SPEC  ?= -spec-text="kk=$(POW)"
+SPEC  ?= -spec-text="nn=$(NN)"
 
 ifneq ($(SPEC),) 
 SPEC1 := -specialize -kernel=$(NAME) $(SPEC)
@@ -34,7 +37,7 @@ $(NAME)-opt.bc: $(NAME).bc
 $(NAME).ll: $(NAME).bc
 	llvm-dis $(NAME).bc
 
-%.bc: %.c
+%.bc: %.c Makefile
 	clang -c -emit-llvm $(CFLAGS) -o $@ $<
 
 %.ll: %.bc
@@ -42,8 +45,15 @@ $(NAME).ll: $(NAME).bc
 
 $(NAME).bc: $(NAME).c
 
-clean:
-	rm -f *.bc *.ll *.s *.o $(NAME) *~
+charts: mmul.bars
+	$(BASE)/scripts/barchart.pl mmul.bars "mmul (nn = $(NN))"
 
-.PHONY: all static spec clean
+show-run:
+	make charts
+	okular *run-time.pdf &
+
+clean:
+	rm -f *.bc *.ll *.s *.o $(NAME) *~ *.pdf
+
+.PHONY: all static spec clean charts show-run
 

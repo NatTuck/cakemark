@@ -2,10 +2,12 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our $KERNEL  = "ipow";
+our $KERNEL  = "blur";
 our $REPEAT  = 10;
 our $OUTF    = "$KERNEL.bars";
 our $SPECLIB = "../../spec/libspec.so";
+
+our $SPECTXT = "ww=1024,hh=768,sigma=3";
 
 sub flags ($);
 
@@ -15,10 +17,13 @@ my %OPTS = (
     C_O3_re     => flags('O3') . ' ' . flags('reassoc'),
     D_unroll    => flags('unroll'),
     E_unroll_re => flags('unroll') . ' ' . flags('reassoc'),
+    #F_unroll_bv => flags('unroll') . ' -bb-vectorize',
+    #G_unroll_lr => flags('unrollr'),
 );
 
 use IO::Handle;
 use Time::HiRes qw(time);
+use File::Temp;
 
 open my $out, ">", $OUTF;
 
@@ -27,8 +32,8 @@ sub test_run {
 
     my $spec_flags = "";
     if ($spec) {
-        my @sfs = (qq{-load "$SPECLIB"}, flags('spec'), qq{-kernel="$KERNEL"});
-        $spec_flags = join(' ', @sfs);
+        $spec_flags = qq{-load "$SPECLIB" -specialize -kernel="$KERNEL" } .
+                      qq{-spec-text="$SPECTXT"};
     }
 
     system(qq{rm -f $KERNEL-opt.bc});
@@ -43,9 +48,18 @@ sub test_run {
 
     system(qq{make});
 
-    my $out = `./$KERNEL | grep ^time:`;
-    $out =~ /^time: ([\d\.]+)/;
-    my $rt = $1;
+    my $tmp = File::Temp->new();
+    system("./$KERNEL > $tmp");
+
+    my $ok = `grep "[cake: OK]" $tmp`;
+    unless ($ok =~ /OK/) {
+        system("cat $tmp");
+        die "Giving up";
+    }
+
+    my $out = `grep ^time: $tmp`;
+    $out =~ /^time: ([\d\.]+)/ or die "No time";
+    my $rt = ($1);
     return (0.0 + $ot, 0.0 + $rt);
 }
 
@@ -91,7 +105,9 @@ sub flags ($) {
 }
 
 __DATA__
-spec: -specialize -spec-text="kk=7"
+spec: -specialize
 unroll: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg
+unrollr: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
+unroll2: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
 reassoc: -reassociate
 O3: -O3

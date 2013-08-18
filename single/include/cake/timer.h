@@ -14,6 +14,17 @@ typedef struct cake_timer {
     struct timespec ts;
 } cake_timer;
 
+#ifdef CAKE_TIMER_FAST_LINK
+
+inline static
+void
+cake_timer_init()
+{
+    // do nothing
+}
+
+#else
+
 extern FILE* cake_timer_out;
 
 inline static
@@ -28,6 +39,8 @@ cake_timer_init()
         }
     }
 }
+
+#endif
 
 inline static
 void 
@@ -57,6 +70,8 @@ cake_timer_read(cake_timer* tt)
     return ss1 - ss0;
 }
 
+#ifndef CAKE_TIMER_FAST_LINK
+
 inline static
 void
 cake_timer_log(cake_timer* tt, const char* kernel, const char* label)
@@ -78,6 +93,8 @@ cake_timer_note(const char* note)
         fprintf(cake_timer_out, "%s\n", note);
     }
 }
+
+#endif
 
 #ifdef __cplusplus
 }

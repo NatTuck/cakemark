@@ -2,10 +2,14 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our $KERNEL  = "ipow";
+our $KERNEL  = "mmul";
 our $REPEAT  = 10;
 our $OUTF    = "$KERNEL.bars";
 our $SPECLIB = "../../spec/libspec.so";
+#our $NN      = 512;
+our $NN      = 256;
+
+our $SPECTXT = "nn=$NN";
 
 sub flags ($);
 
@@ -15,10 +19,13 @@ my %OPTS = (
     C_O3_re     => flags('O3') . ' ' . flags('reassoc'),
     D_unroll    => flags('unroll'),
     E_unroll_re => flags('unroll') . ' ' . flags('reassoc'),
+    #F_unroll_bv => flags('unroll') . ' -bb-vectorize',
+    #G_unroll_lr => flags('unrollr'),
 );
 
 use IO::Handle;
 use Time::HiRes qw(time);
+use File::Temp;
 
 open my $out, ">", $OUTF;
 
@@ -27,8 +34,8 @@ sub test_run {
 
     my $spec_flags = "";
     if ($spec) {
-        my @sfs = (qq{-load "$SPECLIB"}, flags('spec'), qq{-kernel="$KERNEL"});
-        $spec_flags = join(' ', @sfs);
+        $spec_flags = qq{-load "$SPECLIB" -specialize -kernel="$KERNEL" } .
+                      qq{-spec-text="$SPECTXT"};
     }
 
     system(qq{rm -f $KERNEL-opt.bc});
@@ -41,16 +48,25 @@ sub test_run {
     my $opt_end   = time();
     my $ot = $opt_end - $opt_start;
 
-    system(qq{make});
+    system(qq{make NN=$NN});
 
-    my $out = `./$KERNEL | grep ^time:`;
+    my $tmp = File::Temp->new();
+    system("./$KERNEL > $tmp");
+
+    my $ok = `grep "[cake: OK]" $tmp`;
+    unless ($ok =~ /OK/) {
+        system("cat $tmp");
+        die "Giving up";
+    }
+
+    my $out = `grep ^time: $tmp`;
     $out =~ /^time: ([\d\.]+)/;
     my $rt = $1;
     return (0.0 + $ot, 0.0 + $rt);
 }
 
 system("make clean");
-system("make");
+system("make NN=$NN");
 
 $out->say("Opt_Flags opt-time run-time");
 
@@ -91,7 +107,9 @@ sub flags ($) {
 }
 
 __DATA__
-spec: -specialize -spec-text="kk=7"
+spec: -specialize
 unroll: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg
+unrollr: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
+unroll2: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
 reassoc: -reassociate
 O3: -O3

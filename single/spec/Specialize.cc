@@ -126,10 +126,16 @@ Specialize::runOnModule(Module& M)
 
         if (sa.spec) {
             if (type == "i64") {
-                assert(sa.size == sizeof(int64_t));
-                int64_t vv64 = *((int64_t*)sa.value);
+                int64_t vv64;
+                if (sa.size == sizeof(int64_t))
+                    vv64 = *((int64_t*)sa.value);
+                else if (sa.size == sizeof(int32_t))
+                    vv64 = (int64_t) *((int32_t*)sa.value);
+                else
+                    carp("Size mismatch");
                 printf("   --> Spec as i64 with value %ld\n", vv64);
                 Value* sp_vv64 = ConstantInt::getSigned(tt, vv64);
+                it->replaceAllUsesWith(sp_vv64);
             }
             else if (type == "i32") {
                 assert(sa.size == sizeof(int32_t));

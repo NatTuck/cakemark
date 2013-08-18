@@ -4,10 +4,10 @@
 BASE := ../..
 
 CFLAGS := -I$(BASE)/include
-LDLIBS := 
+LDLIBS := $(BASE)/cake/libcake.a
 
 SLIB := $(BASE)/spec/libspec.so
-NAME := ipow
+NAME := ipow2
 
 POW ?= 7
 

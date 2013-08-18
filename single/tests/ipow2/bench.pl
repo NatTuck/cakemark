@@ -2,7 +2,7 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our $KERNEL  = "ipow";
+our $KERNEL  = "ipow2";
 our $REPEAT  = 10;
 our $OUTF    = "$KERNEL.bars";
 our $SPECLIB = "../../spec/libspec.so";

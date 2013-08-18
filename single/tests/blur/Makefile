@@ -1,18 +1,19 @@
 
 # make FLAGS="-mem2reg -sccp -loop-rotate -loop-unroll -simplifycfg"
+# -instcombine -argpromotion
+
 
 BASE := ../..
 
-CFLAGS := -I$(BASE)/include
-LDLIBS := 
+NAME := blur
+
+CFLAGS := -I$(BASE)/include -DNN=$(NN)
+LDLIBS := -lm
 
 SLIB := $(BASE)/spec/libspec.so
-NAME := ipow
-
-POW ?= 7
 
 FLAGS ?= -domtree
-SPEC  ?= -spec-text="kk=$(POW)"
+SPEC  ?= -spec-text="ww=1024,hh=768,sigma=3"
 
 ifneq ($(SPEC),) 
 SPEC1 := -specialize -kernel=$(NAME) $(SPEC)
@@ -34,7 +35,7 @@ $(NAME)-opt.bc: $(NAME).bc
 $(NAME).ll: $(NAME).bc
 	llvm-dis $(NAME).bc
 
-%.bc: %.c
+%.bc: %.c Makefile
 	clang -c -emit-llvm $(CFLAGS) -o $@ $<
 
 %.ll: %.bc
@@ -42,8 +43,16 @@ $(NAME).ll: $(NAME).bc
 
 $(NAME).bc: $(NAME).c
 
-clean:
-	rm -f *.bc *.ll *.s *.o $(NAME) *~
+charts: $(NAME).bars
+	$(BASE)/scripts/barchart.pl $(NAME).bars
 
-.PHONY: all static spec clean
+show-run:
+	make charts
+	okular *run-time.pdf &
+
+clean:
+	rm -f *.bc *.ll *.s *.o $(NAME) *~ *.pdf
+	rm -f balloon_blurred.pgm
+
+.PHONY: all static spec clean charts show-run
 
