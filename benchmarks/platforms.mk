@@ -16,14 +16,9 @@ ifeq ($(OPENCL),amd)
 	OCL_LDPATH = /usr/lib 
 endif
 
-ifeq ($(OPENCL),bzr)
-	OCL_LDLIBS = -lpocl -lltdl
-	OCL_LDPATH = $(HOME)/Apps/pocl-bzr/lib
-endif
-
-ifeq ($(OPENCL),eight)
-	OCL_LDLIBS = -lpocl -lltdl
-	OCL_LDPATH = $(HOME)/Apps/pocl-0.8/lib
+ifeq ($(OPENCL),clover)
+	OCL_LDLIBS = -lOpenCL
+	OCL_LDPATH = /usr/local/lib
 endif
 
 export OPENCL

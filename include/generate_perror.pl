@@ -7,6 +7,9 @@ use IO::Handle;
 
 my $CL_H = "/usr/include/CL/cl.h";
 
+$CL_H = "/usr/local/include/CL/cl.h"
+    if (-e "/usr/local/include/CL/cl.h");
+
 unless (-e $CL_H) {
     say "Requires OpenCL Headers";
     say;

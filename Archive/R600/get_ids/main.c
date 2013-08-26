@@ -8,7 +8,7 @@
 
 #include "pclu.h"
 
-#define LOAD_BINARY 1
+#define LOAD_BINARY 0
 
 #define COUNT 64
 #define SIZE  (COUNT * sizeof(cl_uint))
@@ -45,7 +45,6 @@ cl_get_ids(pclu_context* pclu, cl_int* ids)
 
     pclu_range range = pclu_range_1d(COUNT);
 
-    /* Blur horizontally */
     cl_kernel get_ids = pclu_get_kernel(pgm, "get_ids");
     pclu_set_arg_buf(get_ids, 0, ids_buf);
 

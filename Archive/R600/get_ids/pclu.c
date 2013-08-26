@@ -279,12 +279,15 @@ pclu_load_binary(pclu_context* pclu, const char* path)
     
     /* Read the binary from disk */
     /* "Binary" is assembly, so this works */
-    char* binary = pclu_slurp_file(path);
+    unsigned char* binary = pclu_slurp_file(path);
     size_t  size = strlen(binary);
 
-    const char** binaries = (const char**) &binary;
+    const unsigned char** binaries = (const unsigned char**) &binary;
 
-    pgm->program = clCreateProgramWithSource(pclu->context, 1, binaries, &size, &errcode);
+    cl_device_id dev = pclu->device;
+
+    pgm->program = clCreateProgramWithBinary(pclu->context, 1, &dev, 
+            &size, binaries, 0, &errcode);
     pclu_check_call("clCreateProgramWithBinary", errcode);
 
     free(binary);
@@ -435,6 +438,8 @@ pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
 #ifndef NO_CL_EVENTS
     pclu_check_call("clWaitForEvents", clWaitForEvents(1, &kernel_done));
 #endif
+
+    pclu_check_call("clFinish", clFinish(pgm->pclu->queue));
 
     //pclu_check_call("clReleaseKernel", clReleaseKernel(kern));
 }

@@ -24,7 +24,7 @@ then
 fi
 
 (cd llvm &&
-    C=gcc CXX=g++ ./configure --enable-shared &&
+    C=gcc CXX=g++ ./configure --enable-shared --enable-targets=all --enable-experimental-targets=R600 --enable-libffi &&
     make -j$J)
 
 # Need to build and install llvm first here?
