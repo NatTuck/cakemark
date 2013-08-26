@@ -7,7 +7,7 @@ BASE := ../..
 
 NAME := blur
 
-CFLAGS := -I$(BASE)/include -DNN=$(NN)
+CFLAGS := -I$(BASE)/include
 LDLIBS := -lm
 
 SLIB := $(BASE)/spec/libspec.so

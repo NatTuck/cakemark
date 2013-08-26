@@ -3,27 +3,29 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 our $KERNEL  = "blur";
-our $REPEAT  = 10;
+our $REPEAT  = 5;
 our $OUTF    = "$KERNEL.bars";
 our $SPECLIB = "../../spec/libspec.so";
 
 our $SPECTXT = "ww=1024,hh=768,sigma=3";
 
 sub flags ($);
+sub isp ($$);
 
 my %OPTS = (
-    A_notopt    => "",
-    B_O3        => flags('O3'),
-    C_O3_re     => flags('O3') . ' ' . flags('reassoc'),
-    D_unroll    => flags('unroll'),
-    E_unroll_re => flags('unroll') . ' ' . flags('reassoc'),
-    #F_unroll_bv => flags('unroll') . ' -bb-vectorize',
-    #G_unroll_lr => flags('unrollr'),
+    A_notopt     => "",
+    B_O3         => flags('O3'),
+    C_s_ibasic   => join(' ', flags('setup'), isp(flags('fixup'), flags('basic'))),
+    D_sb_unroll  => join(' ', flags('setup'), 
+        isp(flags('fixup'), flags('basic')), flags('unroll'), flags('fixup')),
+    E_sb_vector  => join(' ', flags('setup'), 
+        isp(flags('fixup'), flags('basic')), flags('loopvec'), flags('fixup')),
 );
 
 use IO::Handle;
 use Time::HiRes qw(time);
 use File::Temp;
+use Algorithm::Combinatorics qw(permutations);
 
 open my $out, ">", $OUTF;
 
@@ -91,6 +93,12 @@ close $out;
 say "--";
 say "Results written to: $OUTF";
 
+sub isp ($$) {
+    my ($sep, $flags) = @_;
+    my @flags = split /\s+/, $flags;
+    my $tmp = join(" $sep ", @flags);
+    return "$sep $tmp $sep";
+}
 
 sub flags ($) {
     my ($tag) = @_;
@@ -105,9 +113,15 @@ sub flags ($) {
 }
 
 __DATA__
-spec: -specialize
-unroll: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg
-unrollr: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
-unroll2: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
-reassoc: -reassociate
-O3: -O3
+setup: -mem2reg -inline -globaldce
+fixup: -instcombine -reassociate -simplifycfg -reassociate -instcombine -dse -adce
+basic: -correlated-propagation -jump-threading -gvn -sink -sccp
+loop0: -loop-simplify -lcssa -loop-rotate -licm -lcssa
+loop1: -loop-unswitch -loop-unroll -loop-vectorize
+loop2: -loop-deletion -loop-reduce
+other: -bb-vectorize
+
+unroll: -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
+unroll2: -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
+loopvec: -mem2reg -sccp -loop-simplify -loop-rotate -lcssa -loop-vectorize -reassociate
+O3: -O3 -reassociate

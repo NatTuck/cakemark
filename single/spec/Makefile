@@ -1,7 +1,7 @@
 
 CXXFLAGS := -std=gnu++11 -I../include $(shell llvm-config --cxxflags)
 LDFLAGS  := $(shell llvm-config --ldflags)
-LDLIBS   := ../cake/libcake.a -lLLVM-3.3 -lgc -lbsd
+LDLIBS   := -lLLVM-3.3 -lgc -lbsd
 
 SRCS := $(wildcard *.cc)
 OBJS := $(SRCS:.cc=.o)

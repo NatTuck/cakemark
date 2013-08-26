@@ -33,6 +33,10 @@ bench:
 	make all
 	make test
 
+time-bench:
+	CAKE_TIMINGS=/tmp/mmul.time.txt make bench
+	cat /tmp/mmul.time.txt
+
 clean:
 	rm -f *.o *~ $(BINF) pclu_perror.c pclu_perror.h
 
