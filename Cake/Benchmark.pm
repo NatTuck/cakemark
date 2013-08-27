@@ -6,8 +6,8 @@ our @ISA = qw(Exporter);
 our @EXPORT = qw(run_benchmark start_benchmark);
 
 our %TAGS = (
-    parallel_bc => 'parallel_bc',
-    execute     => 'execute',
+    opt => 'opt',
+    run => 'run',
 );
 
 our $LOG = "data/bench.log";
