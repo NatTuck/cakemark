@@ -3,20 +3,20 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 our %OG = (
-    '-adce' => {},
-    '-bb-vectorize' => {},
-    '-correlated-propagation' => {},
-    '-dse' => {},
-    '-early-cse' => {},
+    '-adce' => {},                       # DCE
+    '-bb-vectorize' => {},               # Unroll
+    '-correlated-propagation' => {},     # Prop
+    '-dse' => {},                        # DCE
+    '-early-cse' => {},                  # Prop
     '-gvn' => {},
-    '-indvars' => {},
+    '-indvars' => {},                    # Loop
     '-instcombine' => {},
     '-jump-threading' => {},
-    '-lcssa' => {},
+    '-lcssa' => {},                      # Loop
     '-licm' => {},
-    '-loop-deletion' => {},
-    '-loop-reduce' => {},
-    '-loop-rotate' => {},
+    '-loop-deletion' => {},              # DCE
+    '-loop-reduce' => {},                # Loop
+    '-loop-rotate' => {}, 
     '-loop-simplify' => {},
     '-loop-unroll' => { req => qw(-loop-rotate) },
     '-loop-unswitch' => { req => qw(-licm) },
@@ -29,10 +29,20 @@ our %OG = (
     '-sroa' => {},
 );
 
+<<<<<<< HEAD:Cake/OptGraph.pm
+our @OPTS = qw(-bb-vectorize);
+our @EARLY = qw();
+our @LOOPS = qw();
+our @LATE  = qw(-dse);
+=======
+>>>>>>> 3525cbe71c563409366c8a2e5630595bfbd048e5:lab/Cake/OptGraph.pm
 our @EXPENSIVE = qw(-gvn -indvars -instcombine -loops -loop-unroll -loop-rotate 
                     -simplifycfg -earlycse -jump-threading -correlated-propagation
                     -loop-simplify -licm -lcssa);
 
+<<<<<<< HEAD:Cake/OptGraph.pm
+
+=======
 =head1
 
 Setup Opts:
@@ -57,3 +67,4 @@ Later opts:
   (Same as early opts)
 
 =cut
+>>>>>>> 3525cbe71c563409366c8a2e5630595bfbd048e5:lab/Cake/OptGraph.pm
