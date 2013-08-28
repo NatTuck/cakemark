@@ -2,7 +2,7 @@
 /* Matrix multiply and accumulate */
 
 kernel void
-fmma(global float *C, global float *A, global float *B, long nn, long spin)
+fmma(global float *C, global float *A, global float *B, int nn, int spin)
 /* @spec fmma(nn, spin) */
 {
     const int xx = get_global_id(0);
