@@ -1,0 +1,42 @@
+$VAR1 = [
+          'mmul',
+          'cake',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'cake',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'cake',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+

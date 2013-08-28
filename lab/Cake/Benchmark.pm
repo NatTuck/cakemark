@@ -76,7 +76,7 @@ sub run_benchmark ($$$) {
         $env .= qq{CAKE_SPEC_FORCE="$force" };
     }
 
-    my $dir = "$cwd/benchmarks/$bench";
+    my $dir = "$cwd/../benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 

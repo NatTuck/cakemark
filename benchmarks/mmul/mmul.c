@@ -7,7 +7,7 @@
 #include "pclu.h"
 #include "timer.h"
 
-#define SIZE   2048
+#define SIZE   1024
 #define SPIN   1
 #define DTYPE  float
 #define FORMAT "%.02f"
@@ -184,8 +184,8 @@ matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
 
     pclu_range range = pclu_range_2d(cc->rows, cc->cols);
 
-    cl_int nn = SIZE;
-    cl_int spin = SPIN;
+    cl_long nn = SIZE;
+    cl_long spin = SPIN;
 
     timer* tt = timer_alloc();
 
@@ -193,9 +193,9 @@ matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
     pclu_set_arg_buf(kernel, 0, cc_buf); 
     pclu_set_arg_buf(kernel, 1, aa_buf); 
     pclu_set_arg_buf(kernel, 2, bb_buf); 
-    printf("nn = %d = 0x%x\n", nn, nn);
+    printf("nn = %ld = 0x%lx\n", nn, nn);
     pclu_set_arg_lit(kernel, 3, nn);
-    printf("spin = %d = 0x%x\n", spin, spin);
+    printf("spin = %ld = 0x%lx\n", spin, spin);
     pclu_set_arg_lit(kernel, 4, spin);
    
     range.local[0] = XBS;

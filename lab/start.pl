@@ -8,7 +8,7 @@ our @BENCHMARKS = qw(mmul);
 
 use Cake::OptFlags; 
 
-our $OPENCL    = "clover";
+our $OPENCL    = "cake";
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 
