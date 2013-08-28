@@ -1,0 +1,42 @@
+
+-instcombine # combine redundant instructions
+-simplifycfg # combine basic blocks connected by unconditional branches
+-sroa # promote structs to registers
+-early-cse # simple redundant instruction elimination
+-jump-threading
+-correlated-propagation
+-simplifycfg
+-instcombine
+-simplifycfg
+-reassociate
+-bb-vectorize
+
+# Loops
+-loop-simplify
+-lcssa # prepare for loop passes
+-loop-rotate
+-licm
+-lcssa
+-loop-unswitch
+-instcombine
+-loop-simplify
+-lcssa
+-indvars
+-loop-deletion
+-loop-unroll
+# Where is strength reduction?
+-loop-reduce
+-loop-vectorize
+
+-gvn 
+-sccp
+-instcombine
+-jump-threading
+-correlated-propagation # Huh?
+-dse # Dead store elimination
+-adce
+-simplifycfg
+-instcombine
+-strip-dead-prototypes
+-globaldce
+-constmerge

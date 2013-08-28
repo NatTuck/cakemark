@@ -2,16 +2,17 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mmul mandelbrot);
+our @BENCHMARKS = qw(mmul);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
+our $OPENCL    = "cake";
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 
-our $REPEAT     = 5;
+our $REPEAT     = 1;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -49,9 +50,8 @@ for my $spec ((0, 1)) {
             my $label = "default";
 
             if ($opt == 1) {
-                $label = "unroll-2";
-                $opts->{early} = "-mem2reg -sccp -loop-rotate -loop-unroll ".
-                                 "-unroll-allow-partial -simplifycfg -reassociate";
+                $label = "unroll";
+                $opts->{early} = $OPT_FLAGS;
             }
 
             if ($opt == 2) {
@@ -65,7 +65,7 @@ for my $spec ((0, 1)) {
                 $label = "$label-spec";
             }
 
-            push @cases, [$pn, $bench, "cake", $opts, $label];
+            push @cases, [$pn, $bench, $OPENCL, $opts, $label];
         }
         $pn += 1;
     }
@@ -82,19 +82,19 @@ sub benchmark_once ($$$$$$) {
     my ($pn, $ii, $bench, $plat, $opts, $label) = @_;
 
     my $times = run_benchmark($bench, $plat, $opts);
-    die "No execute times" unless defined $times->{execute};
-    die "No setup times" unless defined $times->{parallel_bc};
+    die "No run times" unless defined $times->{run};
+    die "No opt times" unless defined $times->{opt};
 
     $plat = "$plat$pn";
     
-    for my $kk (keys %{$times->{parallel_bc}}) {
-        my $time = $times->{parallel_bc}{$kk};
+    for my $kk (keys %{$times->{opt}}) {
+        my $time = $times->{opt}{$kk};
         $csv->print($s_out, [$plat, $ii, $bench, $kk, $time, $label]);
         $s_out->print("\n");
     }
     
-    for my $kk (keys %{$times->{execute}}) {
-        my $time = $times->{execute}{$kk};
+    for my $kk (keys %{$times->{run}}) {
+        my $time = $times->{run}{$kk};
         $csv->print($e_out, [$plat, $ii, $bench, $kk, $time, $label]);
         $e_out->print("\n");
     }

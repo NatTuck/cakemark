@@ -1,0 +1,4 @@
+cake0,0,mmul,fmma,4.482789,default
+cake1,0,mmul,fmma,5.130305,unroll
+cake3,0,mmul,fmma,4.373491,default-spec
+cake4,0,mmul,fmma,5.328272,unroll-spec

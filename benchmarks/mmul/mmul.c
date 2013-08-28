@@ -184,8 +184,8 @@ matrix_multiply_cl(pclu_context * pclu, matrix * cc, matrix * aa, matrix * bb)
 
     pclu_range range = pclu_range_2d(cc->rows, cc->cols);
 
-    cl_int nn = SIZE;
-    cl_int spin = SPIN;
+    cl_long nn = SIZE;
+    cl_long spin = SPIN;
 
     timer* tt = timer_alloc();
 

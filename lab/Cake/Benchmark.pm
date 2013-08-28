@@ -6,8 +6,8 @@ our @ISA = qw(Exporter);
 our @EXPORT = qw(run_benchmark start_benchmark);
 
 our %TAGS = (
-    parallel_bc => 'parallel_bc',
-    execute     => 'execute',
+    opt => 'opt',
+    run => 'run',
 );
 
 our $LOG = "data/bench.log";
@@ -76,7 +76,7 @@ sub run_benchmark ($$$) {
         $env .= qq{CAKE_SPEC_FORCE="$force" };
     }
 
-    my $dir = "$cwd/benchmarks/$bench";
+    my $dir = "$cwd/../benchmarks/$bench";
     my $tim = "/tmp/cake-timings.$$.txt";
     my $log = "/tmp/cake-log.$$.txt";
 

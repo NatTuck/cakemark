@@ -3,27 +3,27 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 our $KERNEL  = "blur";
-our $REPEAT  = 1;
-our $OUTF    = "$KERNEL.bars";
+our $REPEAT  = 5;
+our $OUTF    = "$KERNEL.perms";
 our $SPECLIB = "../../spec/libspec.so";
 
 our $SPECTXT = "ww=1024,hh=768,sigma=3";
 
 sub flags ($);
+sub flag_sets ($);
 
-my %OPTS = (
-    A_notopt    => "",
-    B_O3        => flags('O3'),
-    C_O3_re     => flags('O3') . ' ' . flags('reassoc'),
-    D_unroll    => flags('unroll'),
-    E_unroll_re => flags('unroll') . ' ' . flags('reassoc'),
-    #F_unroll_bv => flags('unroll') . ' -bb-vectorize',
-    #G_unroll_lr => flags('unrollr'),
-);
+our $BEFORE  = flags('setup');
+our @PERMS   = flag_sets('basic');
+our $AFTER   = '';
 
 use IO::Handle;
 use Time::HiRes qw(time);
 use File::Temp;
+use Algorithm::Combinatorics qw(variations);
+use Data::Dumper;
+
+#say Dumper(\@PERMS);
+#exit 0;
 
 open my $out, ">", $OUTF;
 
@@ -66,22 +66,19 @@ sub test_run {
 system("make clean");
 system("make");
 
-$out->say("Opt_Flags opt-time run-time");
+$out->say("opt-time run-time spec flags");
 
-for my $opt (sort keys %OPTS) {
-    my $flags = $OPTS{$opt};
-    $opt =~ s/^\w_//;
-    $opt =~ y/_/-/;
+for my $optset (@PERMS) {
+    my $fixup = flags('fixup');
+    my $flags = "$fixup " . join(" $fixup ", @$optset) . " $fixup";
 
     for my $spec ((0, 1)) {
-        my $label = ($spec ? "spec-" : "") . $opt;
-
         my @ots = ();
         my @rts = ();
 
         for my $ii (1..$REPEAT) {
             my ($ot, $rt) = test_run($spec, $flags);
-            $out->say("$label\t$ot\t$rt");
+            $out->say("$ot\t$rt\t$spec\t$flags");
         }
     }
 }
@@ -91,6 +88,18 @@ close $out;
 say "--";
 say "Results written to: $OUTF";
 
+sub flag_sets ($) {
+    my ($tag) = @_;
+    my @flags = split /\s+/, flags($tag);
+
+    my @sets = ();
+
+    for (my $ii = 0; $ii <= scalar @flags; ++$ii) {
+        push @sets, variations(\@flags, $ii);
+    }
+
+    return @sets;
+}
 
 sub flags ($) {
     my ($tag) = @_;
@@ -105,9 +114,15 @@ sub flags ($) {
 }
 
 __DATA__
-spec: -specialize
-unroll: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg
-unrollr: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
-unroll2: -mem2reg -sccp -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
-reassoc: -reassociate
-O3: -O3
+setup: -mem2reg -inline -globaldce
+fixup: -instcombine -reassociate -simplifycfg -reassociate -instcombine -dse -adce
+basic: -gvn -sccp -sink -jump-threading -correlated-propagation 
+loop0: -loop-simplify -lcssa -loop-rotate -licm -lcssa
+loop1: -loop-unswitch -loop-unroll -loop-vectorize
+loop2: -loop-deletion -loop-reduce
+other: -bb-vectorize
+
+unroll: -loop-rotate -loop-unroll -unroll-allow-partial -simplifycfg -loop-reduce
+unroll2: -loop-rotate -loop-unroll -unroll-allow-partial -unroll-threshold=2 -simplifycfg
+loopvec: -mem2reg -sccp -loop-simplify -loop-rotate -lcssa -loop-vectorize -reassociate
+O3: -O3 -reassociate

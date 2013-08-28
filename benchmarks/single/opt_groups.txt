@@ -1,0 +1,10 @@
+
+setup: -sroa -inline -mem2reg -early-cse -jump-threading -correlated-propagation -simplifycfg -instcombine -reassociate -sccp
+
+unswitch: -loop-simplify -lcssa -loop-rotate -licm -lcssa -loop-unswitch -instcombine
+
+unroll: -loop-simplify -lcssa -loop-rotate -indvars -loop-deletion -loop-unroll
+
+reduce: -loop-reduce
+
+No, no, no. Opt graph.
