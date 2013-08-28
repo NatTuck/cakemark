@@ -3,7 +3,7 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 our $KERNEL  = "blur";
-our $REPEAT  = 10;
+our $REPEAT  = 1;
 our $OUTF    = "$KERNEL.bars";
 our $SPECLIB = "../../spec/libspec.so";
 
