@@ -36,7 +36,10 @@ keep-test: $(EXE)
 bench:
 	make clean
 	make all
-	make test
+	SPEC_TEXT="nn=1024,spin=1" SPEC_KERN="fmma" make test
+
+bench-clover:
+	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 clean: 
 	rm -f $(EXE) *.o 

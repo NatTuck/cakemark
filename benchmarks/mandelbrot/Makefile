@@ -1,14 +1,14 @@
-BASE = ../../
+BASE := $(shell readlink -f ../..)
 
 include $(BASE)/benchmarks/platforms.mk
 
-CC=g++
-CFLAGS =-g -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
-LDFLAGS=-g -L$(OCL_LDPATH)
-LDLIBS =$(OCL_LDLIBS) -lGL -lglut
+CC      := g++
+CFLAGS  := -g -Wall -I$(BASE)/include
+LDFLAGS := -g -L$(OCL_LDPATH)
+LDLIBS  := $(OCL_LDLIBS) -lGL -lglut
 
-DIR=MandelGPU-v1.3
-CMD=mandelGPU 1 0 preprocessed_rendering_kernel.cl 2048 2048 1024
+DIR := MandelGPU-v1.3
+CMD := mandelGPU 1 0 preprocessed_rendering_kernel.cl 2048 2048 1024
 
 all: build
 
@@ -27,6 +27,9 @@ bench:
 	make clean
 	make all
 	make test
+
+bench-clover:
+	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 clean:
 	(cd $(DIR) && rm -f image.ppm)

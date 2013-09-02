@@ -93,7 +93,8 @@ static int initialize(int use_gpu) {
     printf("clGetPlatformInfo: %s\n", info);
 
     cl_context_properties ctxprop[] = {CL_CONTEXT_PLATFORM, (cl_context_properties) platform_id[0], 0};
-    device_type = use_gpu ? CL_DEVICE_TYPE_GPU : CL_DEVICE_TYPE_CPU;
+    //device_type = use_gpu ? CL_DEVICE_TYPE_GPU : CL_DEVICE_TYPE_CPU;
+    device_type = CL_DEVICE_TYPE_ALL;
     context = clCreateContextFromType(ctxprop, device_type, NULL, NULL, &err);
 
     if (!context) {

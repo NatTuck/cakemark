@@ -411,6 +411,8 @@ pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
     pclu_check_call("clWaitForEvents", clWaitForEvents(1, &kernel_done));
 #endif
 
+    pclu_check_call("clFinish", clFinish(pgm->pclu->queue));
+
     //pclu_check_call("clReleaseKernel", clReleaseKernel(kern));
 }
 

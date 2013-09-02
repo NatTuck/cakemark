@@ -6,7 +6,14 @@ FLAGS=-load=$LIB
 
 if test "x$SPEC_TEXT" = "x"
 then
-    SPEC_TEXT="nn=2048,spin=1"
+    echo "ERROR: No SPEC_TEXT"
+    exit 1
+fi
+
+if test "x$SPEC_KERN" = "x"
+then
+    echo "ERROR: No SPEC_KERN"
+    exit 1
 fi
 
 if test "x$CAKE_SPEC" = "x1"

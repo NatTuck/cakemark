@@ -2,22 +2,28 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mmul);
+our @BENCHMARKS = qw(mmul gaussian);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
-our $OPENCL    = "cake";
+our $OPENCL    = "clover";
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 
-our $REPEAT     = 1;
+our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
 use Cake::Benchmark;
 use Cake::PrettyTime;
+
+#$Cake::Benchmark::VERBOSE = 1;
+use FindBin;
+if ($OPENCL eq "clover") {
+    $ENV{"CAKE_OPT"} = "$FindBin::Bin/../scripts/clover-opt.sh";
+}
 
 start_benchmark(<<"EOF");
 Comparison Test
@@ -55,9 +61,8 @@ for my $spec ((0, 1)) {
             }
 
             if ($opt == 2) {
-                next;
-                $label = "no height";
-                $opts->{early} = "";
+                $label = "O3";
+                $opts->{early} = "-O3";
             }
             
             if ($spec) {

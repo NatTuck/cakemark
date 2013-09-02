@@ -1,6 +1,6 @@
 $VAR1 = [
           'mmul',
-          'cake',
+          'clover',
           {
             'early' => '',
             'later' => '',
@@ -10,9 +10,9 @@ $VAR1 = [
 
 $VAR1 = [
           'mmul',
-          'cake',
+          'clover',
           {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'early' => '',
             'later' => '',
             'extra' => '-globaldce'
           }
@@ -20,7 +20,287 @@ $VAR1 = [
 
 $VAR1 = [
           'mmul',
-          'cake',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
           {
             'spec' => 1,
             'early' => '',
@@ -31,10 +311,318 @@ $VAR1 = [
 
 $VAR1 = [
           'mmul',
-          'cake',
+          'clover',
           {
             'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
+            'later' => '',
+            'extra' => '-globaldce'
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'clover',
+          {
+            'spec' => 1,
+            'early' => '-O3',
             'later' => '',
             'extra' => '-globaldce'
           }

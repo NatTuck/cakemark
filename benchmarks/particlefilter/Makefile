@@ -1,4 +1,4 @@
-BASE = ../../
+BASE := $(shell readlink -f ../..)
 
 include $(BASE)/benchmarks/platforms.mk
 
@@ -30,6 +30,9 @@ bench:
 	make clean
 	make all
 	make test
+
+bench-clover:
+	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 clean:
 	rm -f *.o *~ $(BIN)

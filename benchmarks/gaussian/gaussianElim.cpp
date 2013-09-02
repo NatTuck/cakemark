@@ -297,12 +297,14 @@ float eventTime(cl_event event,cl_command_queue command_queue){
     cl_int error=0;
     cl_ulong eventStart,eventEnd;
     clFinish(command_queue);
+#if 0
     error = clGetEventProfilingInfo(event,CL_PROFILING_COMMAND_START,
                                     sizeof(cl_ulong),&eventStart,NULL);
     cl_errChk(error,"ERROR in Event Profiling.",true); 
     error = clGetEventProfilingInfo(event,CL_PROFILING_COMMAND_END,
                                     sizeof(cl_ulong),&eventEnd,NULL);
     cl_errChk(error,"ERROR in Event Profiling.",true);
+#endif
 
     return (float)((eventEnd-eventStart)/1e9);
 }

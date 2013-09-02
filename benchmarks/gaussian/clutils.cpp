@@ -225,8 +225,10 @@ cl_context cl_init(char devicePreference)
     cl_errChk(status, "Creating context", true);
  
     // Create the command queue
+//    commandQueueProf = clCreateCommandQueue(context, device, 
+//                            CL_QUEUE_PROFILING_ENABLE, &status);
     commandQueueProf = clCreateCommandQueue(context, device, 
-                            CL_QUEUE_PROFILING_ENABLE, &status);
+                            NULL, &status);
     cl_errChk(status, "creating command queue", true);
 
     commandQueueNoProf = clCreateCommandQueue(context, device, 0, &status);
@@ -392,8 +394,10 @@ cl_context cl_init_context(int platform, int dev, int quiet) {
 
 #ifdef PROFILING
 
+//	commandQueue = clCreateCommandQueue(context,
+//						devices[device_touse], CL_QUEUE_PROFILING_ENABLE, &status);
 	commandQueue = clCreateCommandQueue(context,
-						devices[device_touse], CL_QUEUE_PROFILING_ENABLE, &status);
+						devices[device_touse], NULL, &status);
 
 #else
 
@@ -945,8 +949,9 @@ double cl_computeExecTime(cl_event event_time)
     cl_ulong starttime;
     cl_ulong endtime;
 
-    double elapsed;
+    double elapsed = 0.0;
 
+#if 0
     status = clGetEventProfilingInfo(event_time, CL_PROFILING_COMMAND_START,
                                           sizeof(cl_ulong), &starttime, NULL);
     cl_errChk(status, "profiling start", true);
@@ -957,6 +962,7 @@ double cl_computeExecTime(cl_event event_time)
 
     // Convert to ms
     elapsed = (double)(endtime-starttime)/1000000.0;
+#endif
 
     return elapsed;     
 }

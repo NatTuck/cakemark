@@ -86,7 +86,7 @@ sub gen_charts {
 
     for my $bench (keys %$benchs) {
         my $chart = Cake::BarChart->new(
-            "$bench - $input", "POCL Config", "Time");
+            "$bench - $input", "Optimizations", "Time");
         
         for my $plat (sort keys %$plats) {
             my $name = $labels->{$plat};

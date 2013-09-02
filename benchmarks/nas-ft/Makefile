@@ -1,5 +1,6 @@
+BASE := $(shell readlink -f ../..)
 
-include ../platforms.mk
+include $(BASE)/benchmarks/platforms.mk
 
 CLASS=B
 BENCH=ft
@@ -10,13 +11,16 @@ all:
 	
 test: all
 	(cd $(NPB)/bin && LD_LIBRARY_PATH="$(OCL_LDPATH)" \
-		./run_ocl_cpu.sh $(BENCH) $(CLASS)) |\
+		./run_ocl_$(OCL_DTYPE).sh $(BENCH) $(CLASS)) |\
 		perl $(NPB)/check-output.pl
 
 bench:
 	make clean
 	make all
 	make test
+
+bench-clover:
+	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 clean:
 	(cd $(NPB) && make veryclean)

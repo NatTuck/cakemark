@@ -33,6 +33,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <CL/cl.h>
 #endif
 
+#include <cl_perror.h>
+
 #include "displayfunc.h"
 
 // Options
@@ -153,6 +155,9 @@ static void SetUpOpenCL() {
 		else
 			dType = CL_DEVICE_TYPE_DEFAULT;
 	}
+
+    // Force device type all
+    dType = CL_DEVICE_TYPE_ALL;
 
     cl_uint numPlatforms;
 	cl_platform_id platform = NULL;
@@ -387,6 +392,12 @@ static void SetUpOpenCL() {
 	}
 
 	workGroupSize = (unsigned int) gsize;
+
+    if (workGroupSize == -1) {
+        fprintf(stderr, "Warning: Workgroup size hacked to 1.\n");
+        workGroupSize = 1;
+    }
+
 	fprintf(stderr, "OpenCL Device 0: kernel work group size = %d\n", workGroupSize);
 
 	cl_command_queue_properties prop = 0;
@@ -496,6 +507,7 @@ void UpdateMandel() {
 			&events[0]);
 	if (status != CL_SUCCESS) {
 		fprintf(stderr, "Failed to enqueue OpenCL work: %d\n", status);
+        cl_perror(status);
 		exit(-1);
 	}
 

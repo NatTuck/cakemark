@@ -47,8 +47,18 @@ ref_check: ref_blur
 	@cmp balloon_blurred.pgm correct.pgm && echo "OK"
 	@rm -f balloon.pgm correct.pgm
 
+cl_gdb: cl_blur
+	@zcat balloon.pgm.gz > balloon.pgm
+	LD_LIBRARY_PATH="$(OCL_LDPATH)" gdb ./cl_blur
+	@zcat correct.pgm.gz > correct.pgm
+	@cmp balloon_blurred.pgm correct.pgm && echo "[cake: OK]"
+	@rm -f balloon.pgm correct.pgm
+
 test:
 	(make cl_check)
+
+bench-clover:
+	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 bench:
 	make clean

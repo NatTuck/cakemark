@@ -50,7 +50,7 @@ sub write {
         push @tics, qq{"$name" $ii};
         push @tops, $max;
 
-        $df->say("$ii $med $min $max 0.5");
+        $df->printf("$ii %.03f $min $max 0.5\n", $med);
     }
 
     my $gp = File::Temp->new();
@@ -62,16 +62,18 @@ sub write {
     
     $gp->say(<<"ENDGP");
 set encoding utf8
-set terminal pdfcairo
+set terminal pdfcairo mono dashed linewidth 2
 set output "$filename"
 set title  "${\$self->{title}}"
 set xlabel "${\$self->{xlabel}}"
 set ylabel "${\$self->{ylabel}}"
 set xrange [-0.5:$xtop]
 set yrange [0:$ytop]
-set xtics  ($xtics) rotate by 90
+set xtics  ($xtics) rotate by 90 offset 0.0,1.5
+unset key
 
-plot "$df" with boxerrorbars title "${\$self->{title}}"
+plot "$df" with boxerrorbars title "${\$self->{title}}", \\
+    '' u 0:($ytop*0.9):(\$2) with labels
 ENDGP
    
     say "  == gnuplot script:";

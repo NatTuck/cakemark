@@ -10,6 +10,7 @@ our %TAGS = (
     run => 'run',
 );
 
+our $VERBOSE = 0;
 our $LOG = "data/bench.log";
 
 use Cwd qw(getcwd);
@@ -85,6 +86,10 @@ sub run_benchmark ($$$) {
                    qq{make bench OPENCL="$plat" > "$log" };
     say "test cmd = $test_cmd"; 
     system($test_cmd);
+
+    if ($VERBOSE) {
+        system(qq{cat "$log"});
+    }
                    
     chdir $cwd;
 

@@ -149,18 +149,18 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
     int    rr = 3 * sigma;
 
     /* Generate the blur vector */
-    size_t bvec_size = (2 * rr + 1) * sizeof(double);
-    double* bvec = (double*) alloca(bvec_size);
-    double  bsum = 0.0;
+    size_t bvec_size = (2 * rr + 1) * sizeof(float);
+    float* bvec = (float*) alloca(bvec_size);
+    float  bsum = 0.0;
 
     for (int kk = -rr; kk <= rr; ++kk) {
         int ii = kk + rr;
-        bvec[ii] = gauss(kk, 0.0, sigma);
+        bvec[ii] = (float) gauss(kk, 0.0, sigma);
         bsum += bvec[ii];
     }
 
     for (int ii = 0; ii < 2 * rr + 1; ++ii) {
-        bvec[ii] *= 1.0 / bsum;
+        bvec[ii] *= 1.0f / bsum;
     }
 
     image* im1 = alloc_image(ww, hh);
