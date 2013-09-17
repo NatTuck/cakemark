@@ -1,5 +1,6 @@
+BASE := ../..
 
-CXXFLAGS := -std=gnu++11 -I../include $(shell llvm-config --cxxflags)
+CXXFLAGS := -std=gnu++11 -I$(BASE)/include $(shell llvm-config --cxxflags)
 LDFLAGS  := $(shell llvm-config --ldflags)
 LDLIBS   := -lLLVM-3.3 -lgc -lbsd
 

@@ -3,10 +3,11 @@ BASE = ../../
 include $(BASE)/benchmarks/platforms.mk
 
 CC=g++
-CFLAGS =-g -Wall -I$(BASE)/include
-LDFLAGS=-g -L$(OCL_LDPATH)
-LDLIBS =$(OCL_LDLIBS) -lgc -lbsd
+CFLAGS =-g -Wall -I$(BASE)/include -I$(PANCAKE)/include
+LDFLAGS=-g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDLIBS =$(OCL_LDLIBS) -lgc -lbsd -lpancake
 
+CXXFLAGS = $(CFLAGS)
 
 CC = g++
 SRCS = $(wildcard *.cpp)

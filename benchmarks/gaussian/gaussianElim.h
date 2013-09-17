@@ -18,6 +18,9 @@
     #include <CL/opencl.h>
 #endif 
 
+#include <pancake/shim.h>
+
+
 float *OpenClGaussianElimination(
 	cl_context context,
 	int timing);

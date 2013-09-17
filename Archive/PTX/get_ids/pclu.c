@@ -5,8 +5,6 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include <pancake/shim.h>
-
 #include "pclu.h"
 
 void
@@ -206,6 +204,7 @@ pclu_range_1d(size_t cols)
     pclu_range range;
     range.nd = 1;
     range.global[0] = cols;
+    range.local[0] = 0;
     return range;
 }
 
@@ -269,28 +268,63 @@ pclu_slurp_file(const char* path)
     return (char*) realloc(data, size);
 }
 
+void 
+pclu_dump_binary(pclu_program* pgm, const char* path)
+{
+    int errcode;
+    size_t bin_size;
+
+    errcode = clGetProgramInfo(pgm->program, CL_PROGRAM_BINARY_SIZES,
+            sizeof(size_t), &bin_size, 0);
+    pclu_check_call("clGetProgramInfo(BIN_SIZE)", errcode);
+
+    cl_uchar* binary = (cl_uchar*) malloc(bin_size);
+    errcode = clGetProgramInfo(pgm->program, CL_PROGRAM_BINARIES, bin_size, &binary, 0);
+    pclu_check_call("clGetProgramInfo(BINARIES)", errcode);
+
+    FILE* bf = fopen(path, "w");
+    fwrite((void*)binary, bin_size, 1, bf);
+    fclose(bf);
+
+    free(binary);
+}
+
 pclu_program* 
-pclu_create_program(pclu_context* pclu, const char* path)
+pclu_load_binary(pclu_context* pclu, const char* path)
 {
     int errcode;
 
     pclu_program* pgm = (pclu_program*) malloc(sizeof(pclu_program));
     pgm->pclu      = pclu;
     pgm->build_log = 0;
+    
+    /* Read the binary from disk */
+    /* "Binary" is assembly, so this works */
+    unsigned char* binary = pclu_slurp_file(path);
+    size_t  size = strlen(binary);
 
-    /* Read the source from disk */
-    char* source = pclu_slurp_file(path);
-    size_t  size = strlen(source);
+    const unsigned char** binaries = (const unsigned char**) &binary;
 
-    const char** sources = (const char**) &source;
+    cl_device_id dev = pclu->device;
 
-    pgm->program = clCreateProgramWithSource(pclu->context, 1, sources, &size, &errcode);
-    pclu_check_call("clCreateProgramWithSource", errcode);
+    pgm->program = clCreateProgramWithBinary(pclu->context, 1, &dev, 
+            &size, binaries, 0, &errcode);
+    pclu_check_call("clCreateProgramWithBinary", errcode);
 
-    free(source);
+    free(binary);
+    
+    pclu_build_program(pclu, pgm);
+
+    return pgm;
+}
+
+void
+pclu_build_program(pclu_context* pclu, pclu_program* pgm)
+{
+    int errcode;
 
     /* Compile for the device */
-    errcode = clBuildProgram(pgm->program, 1, &(pclu->device), "", 0, 0);
+    errcode = clBuildProgram(pgm->program, 1, &(pclu->device), "-cl-opt-disable", 0, 0);
 
     /* Print out errors on failure */
     if (errcode == CL_BUILD_PROGRAM_FAILURE) {
@@ -312,6 +346,29 @@ pclu_create_program(pclu_context* pclu, const char* path)
     }
 
     pclu_check_call("clBuildProgram", errcode);
+}
+
+pclu_program* 
+pclu_create_program(pclu_context* pclu, const char* path)
+{
+    int errcode;
+
+    pclu_program* pgm = (pclu_program*) malloc(sizeof(pclu_program));
+    pgm->pclu      = pclu;
+    pgm->build_log = 0;
+
+    /* Read the source from disk */
+    char* source = pclu_slurp_file(path);
+    size_t  size = strlen(source);
+
+    const char** sources = (const char**) &source;
+
+    pgm->program = clCreateProgramWithSource(pclu->context, 1, sources, &size, &errcode);
+    pclu_check_call("clCreateProgramWithSource", errcode);
+
+    free(source);
+
+    pclu_build_program(pclu, pgm);
 
     /* Get the kernels */
 
@@ -412,6 +469,7 @@ pclu_call_kernel(pclu_program* pgm, cl_kernel kernel, pclu_range range)
 #ifndef NO_CL_EVENTS
     pclu_check_call("clWaitForEvents", clWaitForEvents(1, &kernel_done));
 #endif
+
     pclu_check_call("clFinish", clFinish(pgm->pclu->queue));
 
     //pclu_check_call("clReleaseKernel", clReleaseKernel(kern));

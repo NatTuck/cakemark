@@ -2,13 +2,13 @@
 kernel
 void
 blur_hor(global uchar* im1, global uchar* im0, global float* bvec, 
-        int ww, int hh, int sigma)
-/* @spec blur_hor(ww, hh, sigma) global_size(0, 1) */
+        int ww, int hh, int rr)
+/* @spec blur_hor(ww, hh, rr) global_size(0, 1) */
 {
     int ii = get_global_id(0);
     int jj = get_global_id(1);
    
-    int   rr = 3 * sigma;
+    //int   rr = 3 * sigma;
     float pp = 0.0f;
 
     for (int kk = -rr; kk <= rr; ++kk) {
@@ -22,13 +22,13 @@ blur_hor(global uchar* im1, global uchar* im0, global float* bvec,
 kernel
 void
 blur_ver(global uchar* im1, global uchar* im0, global float* bvec, 
-        int ww, int hh, int sigma)
-/* @spec blur_ver(ww, hh, sigma) global_size(0, 1) */
+        int ww, int hh, int rr)
+/* @spec blur_ver(ww, hh, rr) global_size(0, 1) */
 {
     int ii = get_global_id(0);
     int jj = get_global_id(1);
    
-    int   rr = 3 * sigma;
+    //int   rr = 3 * sigma;
     float pp = 0.0f;
 
     for (int kk = -rr; kk <= rr; ++kk) {

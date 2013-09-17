@@ -1,18 +1,17 @@
-BASE = ../../
+BASE := $(shell readlink -f ../..)
 
 include $(BASE)/benchmarks/platforms.mk
 
 XBS ?= 8
 YBS ?= 1
 
-CC=g++
-CFLAGS =-g -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
-LDFLAGS=-g -L$(OCL_LDPATH)
-LDLIBS =$(OCL_LDLIBS)
+CFLAGS  := -g -Wall -std=gnu99 -I$(PANCAKE)/include -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
+LDFLAGS := -g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDLIBS  := $(OCL_LDLIBS) -lpancake
 
-BINF=mmul
-SRCS=$(wildcard *.c)
-OBJS=$(SRCS:.c=.o)
+BINF := mmul
+SRCS := $(wildcard *.c)
+OBJS := $(SRCS:.c=.o)
 
 all:
 	(cd $(BASE) && make include/cl_perror.h)

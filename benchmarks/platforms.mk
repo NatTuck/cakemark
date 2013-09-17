@@ -25,6 +25,12 @@ ifeq ($(OPENCL),clover)
 	OCL_DTYPE  = gpu
 endif
 
+ifeq ($(OPENCL),nvidia)
+	OCL_LDLIBS = -lOpenCL
+    OCL_LDPATH = "/usr/lib:$(PANCAKE)/lib"
+	OCL_DTYPE  = gpu
+endif
+
 export OPENCL
 export OCL_LDLIBS
 export OCL_LDPATH

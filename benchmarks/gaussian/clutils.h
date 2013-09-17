@@ -54,6 +54,8 @@
 
 #include <CL/cl.h>
 
+#include <pancake/shim.h>
+
 // The cl_time type is OS specific
 #ifdef _WIN32
 #include <tchar.h>

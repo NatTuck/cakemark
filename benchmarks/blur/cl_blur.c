@@ -193,7 +193,7 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
     pclu_set_arg_buf(blur_hor, 2, bvc_buf);
     pclu_set_arg_lit(blur_hor, 3, ww32);
     pclu_set_arg_lit(blur_hor, 4, hh32);
-    pclu_set_arg_lit(blur_hor, 5, sigma);
+    pclu_set_arg_lit(blur_hor, 5, rr);
 
     pclu_call_kernel(pgm, blur_hor, range);
 
@@ -204,7 +204,7 @@ cl_gaussian_blur(pclu_context* pclu, image* im0, int sigma)
     pclu_set_arg_buf(blur_ver, 2, bvc_buf);
     pclu_set_arg_lit(blur_ver, 3, ww32);
     pclu_set_arg_lit(blur_ver, 4, hh32);
-    pclu_set_arg_lit(blur_ver, 5, sigma);
+    pclu_set_arg_lit(blur_ver, 5, rr);
     
     pclu_call_kernel(pgm, blur_ver, range);
 

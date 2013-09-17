@@ -5,8 +5,6 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include <pancake/shim.h>
-
 #include "pclu.h"
 
 void
@@ -273,10 +271,28 @@ pclu_program*
 pclu_create_program(pclu_context* pclu, const char* path)
 {
     int errcode;
-
+    
     pclu_program* pgm = (pclu_program*) malloc(sizeof(pclu_program));
     pgm->pclu      = pclu;
     pgm->build_log = 0;
+
+#define LOAD_BINS 1
+
+#if LOAD_BINS
+
+    const char* binary = (const char*) pclu_slurp_file("fmma.ptx");
+    size_t size = strlen(binary);
+
+    const unsigned char** bins = (const unsigned char**) binary;
+    int status;
+
+    pgm->program = clCreateProgramWithBinary(pclu->context, 1, &(pclu->device), 
+            &size, bins, &status, &errcode);
+
+    pclu_check_call("clCreateProgramWithBinary", errcode);
+    pclu_check_call("clCreateProgramWithBinary status", status);
+
+#else
 
     /* Read the source from disk */
     char* source = pclu_slurp_file(path);
@@ -312,6 +328,25 @@ pclu_create_program(pclu_context* pclu, const char* path)
     }
 
     pclu_check_call("clBuildProgram", errcode);
+#endif
+
+#if DUMP_BINS
+    /* Dump the Binaries */
+    size_t bin_size;
+    errcode = clGetProgramInfo(pgm->program, CL_PROGRAM_BINARY_SIZES, 
+            sizeof(size_t), &bin_size, 0);
+    pclu_check_call("clGetProgramInfo(BIN_SIZE)", errcode);
+
+    cl_uchar* binary = (cl_uchar*) malloc(bin_size);
+    errcode = clGetProgramInfo(pgm->program, CL_PROGRAM_BINARIES, bin_size, &binary, 0);
+    pclu_check_call("clGetProgramInfo(BINARIES)", errcode);
+
+    FILE* bf = fopen("opencl.bin", "w");
+    fwrite((void*)binary, bin_size, 1, bf);
+    fclose(bf);
+
+    free(binary);
+#endif
 
     /* Get the kernels */
 

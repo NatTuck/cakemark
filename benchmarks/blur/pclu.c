@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdarg.h>
 
+#include <pancake/shim.h>
+
 #include "pclu.h"
 
 void

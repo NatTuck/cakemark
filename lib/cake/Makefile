@@ -1,5 +1,6 @@
+BASE := ../..
 
-CFLAGS := -std=gnu99 -I../include -fPIC
+CFLAGS := -std=gnu99 -I$(BASE)/include -fPIC
 
 SRCS := $(wildcard *.c)
 OBJS := $(SRCS:.c=.o)

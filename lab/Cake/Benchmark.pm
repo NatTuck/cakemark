@@ -54,7 +54,7 @@ sub run_benchmark ($$$) {
     my $env = '';
 
     if ($opts->{spec}) {
-        $env .= qq{CAKE_SPEC="1" };
+        $env .= qq{CAKE_SPEC="1" PANCAKE_SPEC="1" };
     }
 
     if ($opts->{early}) {
@@ -101,7 +101,7 @@ sub run_benchmark ($$$) {
 
     my $times = {};
 
-    open my $ct, "<", $tim;
+    open my $ct, "<", $tim or die "open($tim) failed: $!";
     while (<$ct>) {
         if (/^timer_log\((\w+),\s*(\w+)\):\s*([\d\.]+)/) {
             my ($kern, $tag, $tt) = ($1, $2, $3);

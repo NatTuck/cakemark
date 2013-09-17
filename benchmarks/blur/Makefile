@@ -8,9 +8,9 @@ YBS ?= 1
 
 OUTPUT = balloon.pgm balloon_blurred.pgm
 
-CFLAGS  = -g -std=gnu99 -Wall -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
-LDFLAGS = -g -L$(OCL_LDPATH)
-LDLIBS  = -lm $(OCL_LDLIBS)
+CFLAGS  = -g -std=gnu99 -Wall -I$(BASE)/include -I$(PANCAKE)/include -DXBS=$(XBS) -DYBS=$(YBS)
+LDFLAGS = -g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDLIBS  = -lm $(OCL_LDLIBS) -lpancake
 
 all: perror cl_blur ref_blur
 
