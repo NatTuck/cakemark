@@ -2,9 +2,9 @@
 OPENCL ?= cake
 
 ifeq ($(OPENCL),pocl)
-	OCL_LDLIBS = -lpocl -lltdl
-	OCL_LDPATH = $(HOME)/Apps/pocl-baseline/lib
-	OCL_DTYPE  = cpu
+	OCL_LDLIBS  = -lpocl -lltdl
+	OCL_LDPATH  = $(HOME)/Apps/pocl-baseline/lib
+	OCL_DTYPE   = cpu
 endif
 
 ifeq ($(OPENCL),cake)
@@ -25,11 +25,15 @@ ifeq ($(OPENCL),clover)
 	OCL_DTYPE  = gpu
 endif
 
+
 ifeq ($(OPENCL),nvidia)
-	OCL_LDLIBS = -lOpenCL
-    OCL_LDPATH = "/usr/lib:$(PANCAKE)/lib"
-	OCL_DTYPE  = gpu
+	OCL_LDLIBS  = -lOpenCL
+    OCL_LDPATH  = /usr/lib
+	OCL_DTYPE   = gpu
 endif
+
+OCL_LDFLAGS = -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+OCL_LDPATH := "/usr/lib:$(OCL_LDPATH):$(PANCAKE)/lib"
 
 export OPENCL
 export OCL_LDLIBS
