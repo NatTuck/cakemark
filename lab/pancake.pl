@@ -2,7 +2,7 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(blur);
+our @BENCHMARKS = qw(mandelbrot);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
 

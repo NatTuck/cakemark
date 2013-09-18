@@ -1,35 +1,35 @@
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {}
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {}
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {}
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {}
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {}
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {
             'spec' => 1
@@ -37,7 +37,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {
             'spec' => 1
@@ -45,7 +45,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {
             'spec' => 1
@@ -53,7 +53,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {
             'spec' => 1
@@ -61,7 +61,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
+          'mandelbrot',
           'nvidia',
           {
             'spec' => 1

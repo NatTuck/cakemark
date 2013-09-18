@@ -17,7 +17,7 @@ default: all
 all: mandelGPU preprocessed_kernels
 
 mandelGPU: mandelGPU.c displayfunc.c Makefile displayfunc.h
-	$(CC) $(CFLAGS) $(LDFLAGS) -o mandelGPU mandelGPU.c displayfunc.c $(LDLIBS)
+	$(CC) -g $(CFLAGS) $(LDFLAGS) -o mandelGPU mandelGPU.c displayfunc.c $(LDLIBS)
 #mandelGPU: mandelGPU.c
 #	$(CC) $(CCFLAGS) -o mandelGPU mandelGPU.c
 

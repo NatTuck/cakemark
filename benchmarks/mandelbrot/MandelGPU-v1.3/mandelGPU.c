@@ -33,6 +33,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <CL/cl.h>
 #endif
 
+#include <pancake/shim.h>
+
 #include <cl_perror.h>
 
 #include "displayfunc.h"
@@ -378,6 +380,7 @@ static void SetUpOpenCL() {
 		exit(-1);
 	}
 
+#if 0
 	// LordCRC's patch for better workGroupSize
 	size_t gsize = 0;
 	status = clGetKernelWorkGroupInfo(kernel,
@@ -392,6 +395,9 @@ static void SetUpOpenCL() {
 	}
 
 	workGroupSize = (unsigned int) gsize;
+#else
+    workGroupSize = 64;
+#endif
 
     if (workGroupSize == -1) {
         fprintf(stderr, "Warning: Workgroup size hacked to 1.\n");

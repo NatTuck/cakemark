@@ -3,16 +3,17 @@ BASE := $(shell readlink -f ../..)
 include $(BASE)/benchmarks/platforms.mk
 
 CC      := g++
-CFLAGS  := -g -Wall -I$(BASE)/include
-LDFLAGS := -g -L$(OCL_LDPATH)
-LDLIBS  := $(OCL_LDLIBS) -lGL -lglut
+CFLAGS  := -g -Wall -I$(BASE)/include -I$(PANCAKE)/include
+LDFLAGS := -g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDLIBS  := $(OCL_LDLIBS) -lGL -lglut -lpancake
 
 DIR := MandelGPU-v1.3
-CMD := mandelGPU 1 0 preprocessed_rendering_kernel.cl 2048 2048 1024
+CMD := mandelGPU 1 1 preprocessed_rendering_kernel.cl 2048 2048 1024
 
 all: build
 
 build:
+	(cd $(BASE) && make include/cl_perror.h)
 	(cd $(DIR) && make CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" LDLIBS="$(LDLIBS)")
 
 test: build
