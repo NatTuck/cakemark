@@ -2,6 +2,15 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
+my $text = '';
+
 while (<>) {
-    say "[cake: OK]" if /Verification\s+=\s+SUCCESSFUL/;
+    $text .= $_;
+    if (/Verification\s+=\s+SUCCESSFUL/) {
+        say "[cake: OK]";
+        exit(0);
+    }
 }
+
+say $text;
+say "\n\nVerification failed.";

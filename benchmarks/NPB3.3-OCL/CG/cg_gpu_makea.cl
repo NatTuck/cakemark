@@ -78,7 +78,7 @@ __kernel void makea_0(__global int *arow,
   aelt = (__global double (*)[NONZER+1])g_aelt;
 
   //---------------------------------------------------------------------
-  // Generate nonzero positions and save for the use in sparse.
+  // Generate nonzero positions and save forthe use in sparse.
   //---------------------------------------------------------------------
   num_threads = get_global_size(0);
   myid = get_global_id(0);

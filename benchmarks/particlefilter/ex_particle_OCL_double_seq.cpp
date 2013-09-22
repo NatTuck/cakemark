@@ -9,6 +9,7 @@
 #include <time.h>
 #include <sys/time.h>
 #include <CL/cl.h>
+#include <pancake/shim.h>
 //#include "OpenCL_helper_library.h"
 
 #define BLOCK_X 16

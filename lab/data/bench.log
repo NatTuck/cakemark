@@ -1,38 +1,18 @@
 $VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {}
-        ];
-
-$VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {}
-        ];
-
-$VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {}
-        ];
-
-$VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {}
-        ];
-
-$VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {}
-        ];
-
-$VAR1 = [
-          'mandelbrot',
+          'blur',
           'nvidia',
           {
-            'spec' => 1
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
           }
         ];
 
@@ -40,31 +20,26 @@ $VAR1 = [
           'mandelbrot',
           'nvidia',
           {
-            'spec' => 1
+            'spec' => 1,
+            'nospec' => 1
           }
         ];
 
 $VAR1 = [
-          'mandelbrot',
+          'mmul',
           'nvidia',
           {
-            'spec' => 1
+            'spec' => 1,
+            'nospec' => 1
           }
         ];
 
 $VAR1 = [
-          'mandelbrot',
+          'nas-cg',
           'nvidia',
           {
-            'spec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'mandelbrot',
-          'nvidia',
-          {
-            'spec' => 1
+            'spec' => 1,
+            'nospec' => 1
           }
         ];
 

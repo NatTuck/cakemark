@@ -57,6 +57,14 @@ sub run_benchmark ($$$) {
         $env .= qq{CAKE_SPEC="1" PANCAKE_SPEC="1" };
     }
 
+    if ($opts->{nospec}) {
+        $env .= qq{PANCAKE_SPEC="1" PANCAKE_NOSPEC="1" };
+    }
+    
+    if ($opts->{unroll}) {
+        $env .= qq{PANCAKE_UNROLL="1" };
+    }
+
     if ($opts->{early}) {
         my $early = $opts->{early};
         $env .= qq{CAKE_OPT_EARLY="$early" };

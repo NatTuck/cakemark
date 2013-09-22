@@ -2,14 +2,16 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mandelbrot);
+#our @BENCHMARKS = qw(mandelbrot);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-is
+                     nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
 our $OPENCL     = "nvidia";
-our $REPEAT     = 5;
+our $REPEAT     = 1;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -37,18 +39,29 @@ my @cases = ();
 my $pn = 0;
 
 for my $spec ((0, 1)) {
-    for my $bench (@BENCHMARKS) {
-        my $opts = {};
-        my $label = "default";
+    for my $unroll ((0, 1)) {
+        for my $bench (@BENCHMARKS) {
+            my $opts = {};
+            my $label = "default";
+            
+            if ($spec) {
+                $opts->{spec} = 1;
+                $label = "$label-spec";
+            }
+            else {
+                $opts->{spec} = 1;
+                $opts->{nospec} = 1;
+            }
 
-        if ($spec) {
-            $opts->{spec} = 1;
-            $label = "$label-spec";
+            if ($unroll) {
+                $opts->{unroll} = 1;
+                $label = "$label-unroll";
+            }
+
+            push @cases, [$pn, $bench, $OPENCL, $opts, $label];
         }
-
-        push @cases, [$pn, $bench, $OPENCL, $opts, $label];
+        $pn += 1;
     }
-    $pn += 1;
 }
 
 my $count = scalar @cases;

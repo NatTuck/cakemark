@@ -1,10 +1,6 @@
-nvidia0,0,mandelbrot,mandelGPU,0,default
-nvidia0,1,mandelbrot,mandelGPU,0,default
-nvidia0,2,mandelbrot,mandelGPU,0,default
-nvidia0,3,mandelbrot,mandelGPU,0,default
-nvidia0,4,mandelbrot,mandelGPU,0,default
-nvidia1,0,mandelbrot,mandelGPU,0.049884,default-spec
-nvidia1,1,mandelbrot,mandelGPU,0.049667,default-spec
-nvidia1,2,mandelbrot,mandelGPU,0.050169,default-spec
-nvidia1,3,mandelbrot,mandelGPU,0.049418,default-spec
-nvidia1,4,mandelbrot,mandelGPU,0.051559,default-spec
+nvidia0,0,blur,blur_ver,0.131348,default
+nvidia0,0,blur,blur_hor,0.052456,default
+nvidia0,0,gaussian,Fan1,0.049996,default
+nvidia0,0,gaussian,Fan2,0.048876,default
+nvidia0,0,mandelbrot,mandelGPU,0.049195,default
+nvidia0,0,mmul,fmma,0.049652,default

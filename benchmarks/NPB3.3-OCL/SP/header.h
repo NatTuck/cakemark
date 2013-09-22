@@ -103,6 +103,7 @@ void verify(int no_time_steps, char *Class, logical *verified);
 
 
 #include <CL/cl.h>
+#include <pancake/shim.h>
 #include "cl_util.h"
 
 #define TIMER_OPENCL    20

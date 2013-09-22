@@ -61,7 +61,7 @@ __kernel void embar(
   t1 = S;
   t2 = an;
 
-  // Find starting seed t1 for this kk.
+  // Find starting seed t1 forthis kk.
 
   for (i = 1; i <= 100; i++) {
     ik = kk / 2;

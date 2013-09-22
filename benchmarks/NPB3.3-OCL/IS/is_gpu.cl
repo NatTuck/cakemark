@@ -46,7 +46,7 @@ __kernel void create_seq(__global INT_TYPE *key_array, double seed, double a)
   int myid, num_procs;
   INT_TYPE mq;
 
-  // initialization for randlc
+  // initialization forrandlc
   double R23, R46, T23, T46;
   R23 = 1.0;
   R46 = 1.0;
@@ -221,7 +221,7 @@ __kernel void rank3_2(__global INT_TYPE *src,
 
 /* This is the partial verify test section */
 /* Observe that test_rank_array vals are   */
-/* shifted differently for different cases */
+/* shifted differently fordifferent cases */
 __kernel void rank4(__global INT_TYPE *partial_verify_vals,
                     __global INT_TYPE *key_buff_ptr,
                     __global const INT_TYPE *test_rank_array,
@@ -233,7 +233,7 @@ __kernel void rank4(__global INT_TYPE *partial_verify_vals,
 
   /* This is the partial verify test section */
   /* Observe that test_rank_array vals are   */
-  /* shifted differently for different cases */
+  /* shifted differently fordifferent cases */
   for( i=0; i<TEST_ARRAY_SIZE; i++ )
   {                                             
     k = partial_verify_vals[i];          /* test vals were put here */

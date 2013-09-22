@@ -4,9 +4,9 @@ include $(BASE)/benchmarks/platforms.mk
 
 # C compiler
 CC=g++
-CFLAGS  = -g -Wall -I$(BASE)/include
-LDFLAGS = -g -L$(OCL_LDPATH)
-LDLIBS  = $(OCL_LDLIBS)
+CFLAGS  = -g -Wall -I$(BASE)/include -I$(PANCAKE)/include
+LDFLAGS = -g $(OCL_LDFLAGS) -L$(PANCAKE)/lib
+LDLIBS  = $(OCL_LDLIBS) -lpancake
 
 SRCS = $(wildcard *.cpp)
 HDRS = $(wildcard *.h)

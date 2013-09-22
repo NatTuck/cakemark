@@ -1368,7 +1368,7 @@ __kernel void x_solve(__global double *g_us,
   __global double (*lhsm)[5] = (__global double (*)[5])&g_lhsm[my_offset];
 
   //---------------------------------------------------------------------
-  // zap the whole left hand side for starters
+  // zap the whole left hand side forstarters
   // set all diagonal values to 1. This is overkill, but convenient
   //---------------------------------------------------------------------
   for (m = 0; m < 5; m++) {
@@ -1387,7 +1387,7 @@ __kernel void x_solve(__global double *g_us,
   lhsm[nx2+1][2] = 1.0;
 
   //---------------------------------------------------------------------
-  // Computes the left hand side for the three x-factors  
+  // Computes the left hand side forthe three x-factors  
   // first fill the lhs for the u-eigenvalue                   
   // add fourth order dissipation                             
   // subsequently, fill the other factors (u+c), (u-c) by adding to 
@@ -1733,7 +1733,7 @@ __kernel void x_solve(__global double *g_us,
     (__global double (*)[IMAXP+1][5])&g_lhsm[my_offset];
 
   //---------------------------------------------------------------------
-  // zap the whole left hand side for starters
+  // zap the whole left hand side forstarters
   // set all diagonal values to 1. This is overkill, but convenient
   //---------------------------------------------------------------------
   for (j = 1; j <= ny2; j++) {
@@ -1754,11 +1754,11 @@ __kernel void x_solve(__global double *g_us,
   }
 
   //---------------------------------------------------------------------
-  // Computes the left hand side for the three x-factors  
+  // Computes the left hand side forthe three x-factors  
   //---------------------------------------------------------------------
 
   //---------------------------------------------------------------------
-  // first fill the lhs for the u-eigenvalue                   
+  // first fill the lhs forthe u-eigenvalue                   
   //---------------------------------------------------------------------
   for (j = 1; j <= ny2; j++) {
     for (i = 0; i < gp0; i++) {
@@ -2296,7 +2296,7 @@ __kernel void y_solve(__global double *g_vs,
 
   //---------------------------------------------------------------------
   // The last two rows in this grid block are a bit different, 
-  // since they for (not have two more rows available for the
+  // since theyfor (not have two more rows available for the
   // elimination of off-diagonal entries
   //---------------------------------------------------------------------
   j  = gp1-2;
@@ -2630,7 +2630,7 @@ __kernel void y_solve(__global double *g_vs,
 
   //---------------------------------------------------------------------
   // The last two rows in this grid block are a bit different, 
-  // since they for (not have two more rows available for the
+  // since theyfor (not have two more rows available for the
   // elimination of off-diagonal entries
   //---------------------------------------------------------------------
   j  = gp1-2;
@@ -2657,7 +2657,7 @@ __kernel void y_solve(__global double *g_vs,
   }
 
   //---------------------------------------------------------------------
-  // for (the u+c and the u-c factors                 
+  // xfor (the u+c and the u-c factors                 
   //---------------------------------------------------------------------
   for (j = 0; j <= gp1-3; j++) {
     j1 = j + 1;
@@ -3060,7 +3060,7 @@ __kernel void z_solve(__global double *g_ws,
 
   //---------------------------------------------------------------------
   // The last two rows in this grid block are a bit different, 
-  // since they for (not have two more rows available for the
+  // since theyfor (not have two more rows available for the
   // elimination of off-diagonal entries
   //---------------------------------------------------------------------
   k  = gp2-2;
@@ -3096,7 +3096,7 @@ __kernel void z_solve(__global double *g_ws,
   }
 
   //---------------------------------------------------------------------
-  // for (the u+c and the u-c factors               
+  // xfor (the u+c and the u-c factors               
   //---------------------------------------------------------------------
   p_lhspp1[2] = lhsp[0][2]; p_lhspp1[3] = lhsp[0][3];
   p_lhspp2[1] = lhsp[1][1]; p_lhspp2[2] = lhsp[1][2];
@@ -3292,11 +3292,11 @@ __kernel void z_solve(__global double *g_ws,
   }
 
   //---------------------------------------------------------------------
-  // Computes the left hand side for the three z-factors   
+  // Computes the left hand side forthe three z-factors   
   //---------------------------------------------------------------------
 
   //---------------------------------------------------------------------
-  // first fill the lhs for the u-eigenvalue                          
+  // first fill the lhs forthe u-eigenvalue                          
   //---------------------------------------------------------------------
   for (i = 1; i <= nx2; i++) {
     for (k = 0; k <= nz2+1; k++) {
@@ -3400,7 +3400,7 @@ __kernel void z_solve(__global double *g_ws,
 
   //---------------------------------------------------------------------
   // The last two rows in this grid block are a bit different, 
-  // since they for (not have two more rows available for the
+  // since theyfor (not have two more rows available for the
   // elimination of off-diagonal entries
   //---------------------------------------------------------------------
   k  = gp2-2;
@@ -3428,7 +3428,7 @@ __kernel void z_solve(__global double *g_ws,
   }
 
   //---------------------------------------------------------------------
-  // for (the u+c and the u-c factors               
+  // xfor (the u+c and the u-c factors               
   //---------------------------------------------------------------------
   for (k = 0; k <= gp2-3; k++) {
     k1 = k + 1;

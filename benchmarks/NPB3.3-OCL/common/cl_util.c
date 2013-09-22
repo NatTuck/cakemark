@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 #include <CL/cl.h>
-
+#include <pancake/shim.h>
 #include "cl_util.h"
 
 typedef int     BOOL;

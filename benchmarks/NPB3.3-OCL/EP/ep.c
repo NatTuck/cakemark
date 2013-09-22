@@ -55,6 +55,7 @@
 #include "print_results.h"
 
 #include <CL/cl.h>
+#include <pancake/shim.h>
 #include "cl_util.h"
 
 //#define TIMER_DETAIL

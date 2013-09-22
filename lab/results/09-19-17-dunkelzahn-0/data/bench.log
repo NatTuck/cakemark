@@ -1,0 +1,1620 @@
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'gaussian',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-ep',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
