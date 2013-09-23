@@ -6,7 +6,7 @@ XBS ?= 8
 YBS ?= 1
 
 CFLAGS  := -g -Wall -std=gnu99 -I$(PANCAKE)/include -I$(BASE)/include -DXBS=$(XBS) -DYBS=$(YBS)
-LDFLAGS := -g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDFLAGS := -g $(OCL_LDFLAGS) -L$(PANCAKE)/lib
 LDLIBS  := $(OCL_LDLIBS) -lpancake
 
 BINF := mmul
@@ -30,7 +30,8 @@ keep-test: $(BINF)
 bench:
 	make clean
 	make all
-	SPEC_TEXT="nn=1024,spin=1" SPEC_KERN="fmma" make test
+#SPEC_TEXT="nn=1024,spin=1" SPEC_KERN="fmma" make test
+	make test
 
 bench-clover:
 	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench

@@ -116,7 +116,7 @@ CFLAGS += -g -Wall -O3 -mcmodel=medium
 # Global *link time* flags. Flags for increasing maximum executable 
 # size usually go here. 
 #---------------------------------------------------------------------------
-CLINKFLAGS = -L$(OCL_LDPATH) -O3 -mcmodel=medium
+CLINKFLAGS = $(OCL_LDFLAGS) -O3 -mcmodel=medium
 
 
 #---------------------------------------------------------------------------

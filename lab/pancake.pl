@@ -5,13 +5,12 @@ use warnings FATAL => 'all';
 #our @BENCHMARKS = qw(mandelbrot);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-is
-                     nas-sp particlefilter);
+our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is  nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
-our $OPENCL     = "nvidia";
-our $REPEAT     = 1;
+our $OPENCL     = "amdgpu";
+our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 

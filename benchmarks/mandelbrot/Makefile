@@ -4,13 +4,16 @@ include $(BASE)/benchmarks/platforms.mk
 
 CC      := g++
 CFLAGS  := -g -Wall -I$(BASE)/include -I$(PANCAKE)/include
-LDFLAGS := -g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
-LDLIBS  := $(OCL_LDLIBS) -lGL -lglut -lpancake
+LDFLAGS := -g $(OCL_LDFLAGS) -L$(PANCAKE)/lib -L/usr/local/lib
+LDLIBS  := $(OCL_LDLIBS) -lGL -lglut -lpancake -ldrip
 
 DIR := MandelGPU-v1.3
 CMD := mandelGPU 1 1 preprocessed_rendering_kernel.cl 2048 2048 1024
 
-all: build
+all: fuzzy_check build
+
+fuzzy_check: fuzzy_check.c
+	gcc -o fuzzy_check -L/usr/local/lib fuzzy_check.c -ldrip
 
 build:
 	(cd $(BASE) && make include/cl_perror.h)
@@ -33,6 +36,7 @@ bench-clover:
 	OPENCL=clover CAKE_OPT=$(BASE)/scripts/clover-opt.sh make bench
 
 clean:
+	rm -f *.o fuzzy_check
 	(cd $(DIR) && rm -f image.ppm)
 	(cd $(DIR) && make clean)
 

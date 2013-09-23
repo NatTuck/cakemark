@@ -6,15 +6,15 @@
 #include <drip/lio.h>
 #include <drip/carp.h>
 
-const int FUZZ = 5;
+const int FUZZ = 20;
 
 void
 read_header(FILE* ff)
 {
     char* ftype = lgetline(ff);
 
-    if (!streq(ftype, "P2\n"))
-        carp("That's not an ASCII PGM");
+    if (!streq(ftype, "P2\n") && !streq(ftype, "P3\n"))
+        carp("That's not an ASCII PGM or PPM");
 
     int ch;
     while ((ch = fgetc(ff)) == '#') {
