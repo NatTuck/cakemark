@@ -88,7 +88,7 @@ CLINK	= $(CC)
 #---------------------------------------------------------------------------
 # These macros are passed to the linker 
 #---------------------------------------------------------------------------
-C_LIB  = -lm $(OCL_LDLIBS) -L$(PANCAKE)/lib -lpancake
+C_LIB  = $(OCL_LDFLAGS) -lm $(OCL_LDLIBS) -L$(PANCAKE)/lib -lpancake
 
 #---------------------------------------------------------------------------
 # These macros are passed to the compiler 

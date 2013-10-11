@@ -1,0 +1,3 @@
+
+	=== setup ===
+speedups	       b/o        b/s       b/os       o/os       s/os

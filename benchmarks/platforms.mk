@@ -44,3 +44,4 @@ OCL_LDPATH  := $(OCL_LDPATH):/usr/local/lib:$(PANCAKE)/lib
 export OPENCL
 export OCL_LDLIBS
 export OCL_LDPATH
+export OCL_LDFLAGS

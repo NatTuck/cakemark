@@ -4,7 +4,7 @@ include $(BASE)/benchmarks/platforms.mk
 
 CC=g++
 CFLAGS =-g -Wall -I$(BASE)/include -I$(PANCAKE)/include
-LDFLAGS=-g -L$(OCL_LDPATH) -L$(PANCAKE)/lib
+LDFLAGS=-g $(OCL_LDFLAGS) -L$(PANCAKE)/lib
 LDLIBS =$(OCL_LDLIBS) -lgc -lbsd -lpancake
 
 CXXFLAGS = $(CFLAGS)
