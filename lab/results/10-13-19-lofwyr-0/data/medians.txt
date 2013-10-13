@@ -1,0 +1,6 @@
+clover0	mmul	5.732334
+clover1	mmul	5.732466
+clover2	mmul	5.732261
+clover3	mmul	5.596238
+clover4	mmul	2.732181
+clover5	mmul	5.586787

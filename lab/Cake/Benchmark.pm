@@ -55,6 +55,10 @@ sub run_benchmark ($$$) {
 
     if ($opts->{spec}) {
         $env .= qq{CAKE_SPEC="1" PANCAKE_SPEC="1" };
+
+        if ($plat eq 'clover') {
+            $env .= qq{SPEC_TEXT="nn=1024,spin=1" SPEC_KERN="fmma" };
+        }
     }
 
     if ($opts->{nospec}) {
