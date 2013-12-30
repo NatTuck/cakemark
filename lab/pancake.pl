@@ -2,14 +2,14 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-#our @BENCHMARKS = qw(mandelbrot);
+our @BENCHMARKS = qw(blur);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is  nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is  nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
-our $OPENCL     = "amdgpu";
+our $OPENCL     = "nvidia";
 our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
@@ -126,5 +126,5 @@ my $ping_host = `hostname`; chomp $ping_host;
 my $ping_body = uri_encode("Test run done on $ping_host: " .
     "$total tests in $pretty_elapsed");
 
-system(qq{curl "http://www.ferrus.net/ping.php?} .
-    qq{subject=$ping_subj&message=$ping_body"});
+#system(qq{curl "http://www.ferrus.net/ping.php?} .
+#    qq{subject=$ping_subj&message=$ping_body"});

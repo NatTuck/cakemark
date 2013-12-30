@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include <drip/lstring.h>
 #include <drip/lio.h>
@@ -29,7 +30,8 @@ int
 read_int(FILE* ff)
 {
     int nn;
-    fscanf(ff, "%d", &nn);
+    int rv = fscanf(ff, "%d", &nn);
+    assert(rv == 1 || rv == EOF);
     return nn;
 }
 
