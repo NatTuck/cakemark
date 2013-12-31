@@ -1,13 +1,19 @@
+BASE := $(shell readlink -f ../..)
 
-HDRS=$(wildcard *.h)
-SRCS=$(wildcard *.c)
-OBJS=$(SRCS:.c=.o)
+include $(BASE)/benchmarks/platforms.mk
 
-LDLIBS=-lSDL2 -lgc
-CFLAGS=-g -std=gnu99
+HDRS := $(wildcard *.h)
+SRCS := $(wildcard *.c)
+OBJS := $(SRCS:.c=.o)
+
+THREADS := $(shell grep processor /proc/cpuinfo | wc -l)
+
+LDFLAGS=-L$(PANCAKE)/lib
+LDLIBS=-lpancake -lSDL2 -lgc -lm -lpthread
+CFLAGS=-g -O3 -std=gnu99 -Wall -Werror -I$(PANCAKE)/include -DTHREADS=$(THREADS)
 
 demo: $(OBJS)
-	gcc -g -o demo $(OBJS) $(LDLIBS)
+	gcc -g $(LDFLAGS) -o demo $(OBJS) $(LDLIBS)
 
 $(OBJS): $(SRCS) $(HDRS)
 

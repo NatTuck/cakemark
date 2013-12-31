@@ -3,6 +3,6 @@
 
 #include <stdint.h>
 
-void mandelbrot(uint32_t* image, int ww, int hh, int max);
+void mandelbrot(uint32_t* image, int ww, int hh, float xx, float yy, float zz, int max);
 
 #endif
