@@ -9,13 +9,18 @@ OBJS := $(SRCS:.c=.o)
 THREADS := $(shell grep processor /proc/cpuinfo | wc -l)
 
 LDFLAGS=-L$(PANCAKE)/lib
-LDLIBS=-lpancake -lSDL2 -lgc -lm -lpthread
-CFLAGS=-g -O3 -std=gnu99 -Wall -Werror -I$(PANCAKE)/include -DTHREADS=$(THREADS)
+LDLIBS=-lpancake -lSDL2 -lgc -lm -lpthread -lOpenCL
+CFLAGS=-g -O3 -std=gnu99 -Wall -Werror -I$(PANCAKE)/include -I$(BASE)/include -DTHREADS=$(THREADS)
 
-demo: $(OBJS)
+demo: $(OBJS) 
 	gcc -g $(LDFLAGS) -o demo $(OBJS) $(LDLIBS)
 
-$(OBJS): $(SRCS) $(HDRS)
+$(OBJS): $(SRCS) $(HDRS) perror
+
+perror:
+	(cd $(BASE) && make include/cl_perror.h)
 
 clean:
 	rm -f demo $(OBJS)
+
+.PHONY: perror clean
