@@ -1,8 +1,8 @@
 
-
 kernel
 void
 mandelbrot(global uint* image, int ww, int hh, float xc, float yc, float zz, int iters)
+/* @spec mandelbrot(ww, hh, iters) */
 {
     int ii = get_global_id(0);
     int jj = get_global_id(1);
@@ -24,3 +24,4 @@ mandelbrot(global uint* image, int ww, int hh, float xc, float yc, float zz, int
 
     image[ii * ww + jj] = kk * (2 << 25) / (kk + 2);
 }
+

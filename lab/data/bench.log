@@ -1,5 +1,5 @@
 $VAR1 = [
-          'blur',
+          'mbdemo',
           'nvidia',
           {
             'spec' => 1,
@@ -8,43 +8,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
+          'mbdemo',
           'nvidia',
           {
             'spec' => 1,
@@ -54,47 +18,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1,
-            'nospec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
+          'mbdemo',
           'nvidia',
           {
             'spec' => 1
@@ -102,75 +26,7 @@ $VAR1 = [
         ];
 
 $VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
-          'nvidia',
-          {
-            'spec' => 1,
-            'unroll' => 1
-          }
-        ];
-
-$VAR1 = [
-          'blur',
+          'mbdemo',
           'nvidia',
           {
             'spec' => 1,
