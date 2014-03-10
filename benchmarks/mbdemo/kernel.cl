@@ -13,13 +13,12 @@ mandelbrot(global uint* image, int ww, int hh, float xc, float yc, float zz, int
     float xx = 0.0f;
     float yy = 0.0f;
 
-    int kk = 0;
+    int kk;
 
-    while ((xx * xx + yy * yy < 4.0f) && (kk < iters)) {
+    for (kk = 0; (xx * xx + yy * yy < 4.0f) && (kk < iters); ++kk) {
         float x1 = x0 + xx * xx - yy * yy;
         yy = y0 + 2 * xx * yy;
         xx = x1;
-        kk += 1;
     }
 
     image[ii * ww + jj] = kk * (2 << 25) / (kk + 2);

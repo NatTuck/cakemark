@@ -19,6 +19,10 @@ use IO::Handle;
 
 sub start_benchmark {
     my ($text) = @_;
+
+    system("rm -f data/*.*");
+    system("rm -f charts/*.*");
+
     open my $ll, ">", $LOG;
     my $host = `hostname`; chomp $host;
     my $date = `date`; chomp $date;
@@ -27,9 +31,6 @@ sub start_benchmark {
         $ll->say("# $line");
     }
     close $ll;
-
-    system("rm -f data/*.*");
-    system("rm -f charts/*.*");
 }
 
 
@@ -51,7 +52,16 @@ sub run_benchmark ($$$) {
     
     $plat  ||= "cake";
 
-    my $env = '';
+    my $pstat = "/tmp/pancake.stat.$$";
+
+    my $env = qq{PANCAKE_STATUS="$pstat" };
+
+    if ($opts->{gpu}) {
+        $env .= qq{OPENCL_DEVICE_TYPE="GPU" };
+    }
+    else {
+        $env .= qq{OPENCL_DEVICE_TYPE="CPU" };
+    }
 
     if ($opts->{spec}) {
         $env .= qq{CAKE_SPEC="1" PANCAKE_SPEC="1" };
@@ -127,6 +137,8 @@ sub run_benchmark ($$$) {
     close $ct;
 
     system(qq{grep opt "$log"});
+
+    system(qq{cat "$pstat" >> $LOG});
 
     unlink $log;
     unlink $tim;

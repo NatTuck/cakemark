@@ -2,10 +2,10 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mbdemo);
+our @BENCHMARKS = qw(nas-ft);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
-#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is  nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
@@ -18,7 +18,7 @@ use Cake::Benchmark;
 use Cake::PrettyTime;
 
 start_benchmark(<<"EOF");
-Comparison Test
+Pancake Comparison Test
 Benchs = ${\ join(' ', @BENCHMARKS) }
 Repeat = $REPEAT
 EOF
@@ -42,7 +42,9 @@ for my $spec ((0, 1)) {
         for my $bench (@BENCHMARKS) {
             my $opts = {};
             my $label = "default";
-            
+           
+            $opts->{gpu} = 1;
+
             if ($spec) {
                 $opts->{spec} = 1;
                 $label = "$label-spec";

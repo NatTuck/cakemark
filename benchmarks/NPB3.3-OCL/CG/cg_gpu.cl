@@ -46,6 +46,7 @@ void main_0(__global int *colidx,
             __global int *rowstr,
             int firstcol,
             int n)
+/* @spec main_0(n) */
 {
   int j = (int)(get_global_id(0) / LSIZE);
   int lid = get_local_id(0);
@@ -70,6 +71,7 @@ __kernel void main_2(__global double *q,
                      __global double *r,
                      __global double *p,
                      int n)
+/* @spec main_2(n) global_size(0) */
 {
   int j = get_global_id(0);
   if (j >= n) return;
@@ -87,6 +89,7 @@ __kernel void main_3(__global double *x,
                      __local double *l_norm_temp1,
                      __local double *l_norm_temp2,
                      int n)
+/* @spec main_3(n) global_size(0) */
 {
   int j = get_global_id(0);
   int lid = get_local_id(0);
@@ -122,6 +125,7 @@ __kernel void main_4(__global double *x,
                      __global double *z,
                      double norm_temp2,
                      int n)
+/* @spec main_4(n) global_size(0) */
 {
   int j = get_global_id(0);
   if (j >= n) return;
@@ -161,6 +165,7 @@ __kernel void conj_grad_1(__global double *r,
                           __global double *g_rho,
                           int n,
                           __local double *l_rho)
+/* @spec conj_grad_1(n) global_size(0) */
 {
   int j = get_global_id(0);
   int lid = get_local_id(0);
@@ -194,6 +199,7 @@ void conj_grad_2(__global int *rowstr,
                  __global int *colidx,
                  __global double *q,
                  int n)
+/* @spec conj_grad_2(n) global_size(0) */
 {
   __local double l_sum[LSIZE];
 
@@ -226,6 +232,7 @@ __kernel void conj_grad_3(__global double *p,
                           __global double *g_d,
                           int n,
                           __local double *l_d)
+/* @spec conj_grad_3(n) global_size(0) */
 {
   int j = get_global_id(0);
   int lid = get_local_id(0);
@@ -259,6 +266,7 @@ __kernel void conj_grad_4(__global double *p,
                           double alpha,
                           int n,
                           __local double *l_rho)
+/* @spec conj_grad_4(n) */
 {
   int j = get_global_id(0);
   int lid = get_local_id(0);
@@ -296,6 +304,7 @@ __kernel void conj_grad_5(__global double *p,
                           __global double *r,
                           const double beta,
                           int n)
+/* @spec conj_grad_5(n) */
 {
   int j = get_global_id(0);
   if (j >= n) return;
@@ -316,6 +325,7 @@ void conj_grad_6(__global int *rowstr,
                  __global int *colidx,
                  __global double *r,
                  int n)
+/* @spec conj_grad_6(n) */
 {
   __local double l_sum[LSIZE];
 
@@ -348,6 +358,7 @@ __kernel void conj_grad_7(__global double *x,
                           __global double *g_sum,
                           int n,
                           __local double *l_sum)
+/* @spec conj_grad_7(n) */
 {
   int j = get_global_id(0);
   int lid = get_local_id(0);

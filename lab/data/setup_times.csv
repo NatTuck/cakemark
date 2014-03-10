@@ -1,4 +1,4 @@
-nvidia0,0,mbdemo,mandelbrot,0.937544000000014,default
-nvidia1,0,mbdemo,mandelbrot,0.0544680000000005,default-unroll
-nvidia2,0,mbdemo,mandelbrot,0.884479000000012,default-spec
-nvidia3,0,mbdemo,mandelbrot,0.0536700000000005,default-spec-unroll
+nvidia0,0,nas-ft,init_ui,0.072724,default
+nvidia1,0,nas-ft,init_ui,0.059244,default-unroll
+nvidia2,0,nas-ft,init_ui,0.936905,default-spec
+nvidia3,0,nas-ft,init_ui,0.064163,default-spec-unroll
