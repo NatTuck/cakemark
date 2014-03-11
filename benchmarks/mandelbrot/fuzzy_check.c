@@ -6,7 +6,7 @@
 #include <drip/lio.h>
 #include <drip/carp.h>
 
-const int FUZZ = 20;
+const int FUZZ = 128;
 
 void
 read_header(FILE* ff)

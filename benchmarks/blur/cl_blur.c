@@ -66,10 +66,12 @@ read_image(const char* filename)
     size_t size = 16;
     size_t ww, hh;
     int    cc;
+    int    rv;
 
     FILE* imf = fopen(filename, "r");
     
-    getline(&line, &size, imf);
+    rv = getline(&line, &size, imf);
+    assert(rv != -1);
     if (!streq(line, "P2\n"))
         carp("Bad image file; not ASCII PGM");
 
@@ -85,16 +87,20 @@ read_image(const char* filename)
         }
     }
 
-    fscanf(imf, "%ld", &ww);
-    fscanf(imf, "%ld", &hh);
-    fscanf(imf, "%d",  &cc);
+    rv = fscanf(imf, "%ld", &ww);
+    assert(rv == 1);
+    rv = fscanf(imf, "%ld", &hh);
+    assert(rv == 1);
+    rv = fscanf(imf, "%d",  &cc);
+    assert(rv == 1);
 
     assert(cc == 255);
     
     image* im = alloc_image(ww, hh);
 
     for (int ii = 0; ii < ww * hh; ++ii) {
-        fscanf(imf, "%d", &cc);
+        rv = fscanf(imf, "%d", &cc);
+        assert(rv == 1);
         im->data[ii] = (byte) cc;
     }
 

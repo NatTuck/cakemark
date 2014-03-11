@@ -57,13 +57,16 @@ __kernel void mandelGPU(
 		float y = y0;
 		float x2 = x * x;
 		float y2 = y * y;
-		for (iter[t] = 0; (x2 + y2 <= 4.f) && (iter[t] < maxIterations); ++iter[t]) {
+
+        int ii = 0;
+		for (ii = 0; (x2 + y2 <= 4.f) && (ii < maxIterations); ++ii) {
 			y = 2 * x * y + y0;
 			x = x2 - y2 + x0;
 
 			x2 = x * x;
 			y2 = y * y;
 		}
+        iter[t] = ii;
 
 		if (iter[t] == maxIterations)
 			iter[t] = 0;

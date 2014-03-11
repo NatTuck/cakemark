@@ -2,7 +2,7 @@ BASE := $(shell readlink -f ../..)
 
 include $(BASE)/benchmarks/platforms.mk
 
-CLASS=B
+CLASS=A
 BENCH=ft
 NPB  =../NPB3.3-OCL
 

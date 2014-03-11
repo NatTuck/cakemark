@@ -2,15 +2,15 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-#our @BENCHMARKS = qw(mandelbrot);
+our @BENCHMARKS = qw(nas-ft);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
-our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is  nas-sp particlefilter);
+#our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-is nas-sp particlefilter);
 
 use Cake::OptFlags; 
 
-our $OPENCL     = "amdgpu";
-our $REPEAT     = 5;
+our $OPENCL     = "nvidia";
+our $REPEAT     = 1;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";
 
@@ -18,7 +18,7 @@ use Cake::Benchmark;
 use Cake::PrettyTime;
 
 start_benchmark(<<"EOF");
-Comparison Test
+Pancake Comparison Test
 Benchs = ${\ join(' ', @BENCHMARKS) }
 Repeat = $REPEAT
 EOF
@@ -42,7 +42,9 @@ for my $spec ((0, 1)) {
         for my $bench (@BENCHMARKS) {
             my $opts = {};
             my $label = "default";
-            
+           
+            $opts->{gpu} = 1;
+
             if ($spec) {
                 $opts->{spec} = 1;
                 $label = "$label-spec";
@@ -126,5 +128,5 @@ my $ping_host = `hostname`; chomp $ping_host;
 my $ping_body = uri_encode("Test run done on $ping_host: " .
     "$total tests in $pretty_elapsed");
 
-system(qq{curl "http://www.ferrus.net/ping.php?} .
-    qq{subject=$ping_subj&message=$ping_body"});
+#system(qq{curl "http://www.ferrus.net/ping.php?} .
+#    qq{subject=$ping_subj&message=$ping_body"});

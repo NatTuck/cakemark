@@ -2,13 +2,14 @@
 use 5.12.0;
 use warnings FATAL => 'all';
 
-our @BENCHMARKS = qw(mmul);
+#our @BENCHMARKS = qw(mmul gaussian);
 #our @BENCHMARKS = qw(blur gaussian mandelbrot mmul nas-cg nas-ep nas-ft nas-is
 #                     nas-sp particlefilter);
+our @BENCHMARKS = qw(blur);
 
 use Cake::OptFlags; 
 
-our $OPENCL    = "clover";
+our $OPENCL    = "nvidia";
 our $OPT_EXTRA = "-globaldce";
 our $OPT_FLAGS = Cake::OptFlags::get_data('unroll');
 

@@ -8,7 +8,8 @@ YBS ?= 1
 
 OUTPUT = balloon.pgm balloon_blurred.pgm
 
-CFLAGS  = -g -std=gnu99 -O2 -Wall -I$(BASE)/include -I$(PANCAKE)/include -DXBS=$(XBS) -DYBS=$(YBS)
+#CFLAGS  = -g -std=gnu99 -O2 -Wall -I$(BASE)/include -I$(PANCAKE)/include -DXBS=$(XBS) -DYBS=$(YBS)
+CFLAGS  = -g -std=gnu99 -O2 -Wall -Werror -I$(BASE)/include -I$(PANCAKE)/include
 LDFLAGS = -g $(OCL_LDFLAGS) -L/usr/local/lib
 LDLIBS  = -lm $(OCL_LDLIBS) -lpancake -ldrip
 

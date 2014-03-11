@@ -1,315 +1,52 @@
+## Started test on dunkelzahn at Sun Mar  9 21:31:57 EDT 2014 ##
+# Pancake Comparison Test
+# Benchs = nas-ft
+# Repeat = 1
 $VAR1 = [
-          'mmul',
-          'clover',
+          'nas-ft',
+          'nvidia',
           {
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
+            'gpu' => 1,
             'spec' => 1,
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
+            'nospec' => 1
           }
         ];
 
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
 $VAR1 = [
-          'mmul',
-          'clover',
+          'nas-ft',
+          'nvidia',
           {
+            'gpu' => 1,
             'spec' => 1,
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
+            'unroll' => 1,
+            'nospec' => 1
           }
         ];
 
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
 $VAR1 = [
-          'mmul',
-          'clover',
+          'nas-ft',
+          'nvidia',
           {
-            'spec' => 1,
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
+            'gpu' => 1,
+            'spec' => 1
           }
         ];
 
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
 $VAR1 = [
-          'mmul',
-          'clover',
+          'nas-ft',
+          'nvidia',
           {
+            'gpu' => 1,
             'spec' => 1,
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
+            'unroll' => 1
           }
         ];
 
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-reassociate -loop-simplify -indvars -licm -loop-unswitch -loop-unroll -gvn -sccp -loop-deletion -instcombine -reassociate -adce -simplifycfg -loop-simplify -unroll-allow-partial',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
-$VAR1 = [
-          'mmul',
-          'clover',
-          {
-            'spec' => 1,
-            'early' => '-O3',
-            'later' => '',
-            'extra' => '-globaldce'
-          }
-        ];
-
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti

@@ -1,5 +1,5 @@
 
-OPENCL ?= cake
+OPENCL ?= nvidia
 
 ifeq ($(OPENCL),pocl)
 	OCL_LDLIBS  := -lpocl -lltdl
