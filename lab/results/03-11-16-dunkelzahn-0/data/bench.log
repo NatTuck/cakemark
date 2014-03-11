@@ -1,0 +1,2644 @@
+## Started test on dunkelzahn at Tue Mar 11 14:15:27 EDT 2014 ##
+# Pancake Comparison Test
+# Benchs = blur mandelbrot mbdemo mmul nas-cg nas-is nas-sp nv-bs nv-dct nv-fdtd particlefilter
+# Repeat = 5
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'blur',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mandelbrot',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mmul',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-cg',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-is',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nas-sp',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-bs',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-dct',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'nv-fdtd',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'particlefilter',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
