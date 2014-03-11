@@ -20,6 +20,9 @@ void
 opencl_setup()
 {
     pclu = pclu_create_context();
+
+    printf("%s\n", pclu_context_info(pclu));
+
     pgm  = pclu_create_program(pclu, "kernel.cl");
     char *log = pclu_program_build_log(pgm);
     if (strlen(log) > 0)
@@ -42,8 +45,9 @@ mandelbrot_cl(uint32_t* image, int ww, int hh, float zz, int iters)
     pclu_set_arg_lit(kernel, 6, iters);
 
     pclu_range range = pclu_range_2d(hh, ww);
-    range.local[0] = 32;
-    range.local[1] = 32;
+    range.local[0] = 8;
+    range.local[1] = 8;
+    range.local[2] = 1;
 
     pclu_call_kernel(pgm, kernel, range);
 

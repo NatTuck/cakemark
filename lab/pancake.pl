@@ -3,11 +3,12 @@ use 5.12.0;
 use warnings FATAL => 'all';
 
 #our @BENCHMARKS = qw(nas-ft);
-our @BENCHMARKS = qw(mbdemo);
+our @BENCHMARKS = qw(blur mandelbrot mbdemo mmul nas-sp nas-cg
+                     nv-bs nv-dct nv-fdtd particlefilter);
 
 use Cake::OptFlags; 
 
-our $OPENCL     = "nvidia";
+our $OPENCL     = "amdgpu";
 our $REPEAT     = 5;
 our $SETUP      = "data/setup_times.csv";
 our $EXECUTION  = "data/exec_times.csv";

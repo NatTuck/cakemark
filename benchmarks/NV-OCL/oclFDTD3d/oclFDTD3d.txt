@@ -3,6 +3,8 @@
 Set-up, based upon target device GMEM size...
  getTargetDeviceGlobalMemSize
  oclGetPlatformID
+WARNING: NVIDIA OpenCL platform not found - defaulting to first platform!
+
  clGetDeviceIDs
  clCreateContext
  clGetDeviceInfo
@@ -11,7 +13,7 @@ Set-up, based upon target device GMEM size...
  malloc coeff
  generateRandomData
 
-FDTD on 376 x 376 x 376 volume with symmetric filter radius 4 for 5 timesteps...
+FDTD on 312 x 312 x 312 volume with symmetric filter radius 4 for 5 timesteps...
 
 fdtdReference...
  calloc intermediate
@@ -26,6 +28,8 @@ fdtdReference complete
  calloc device_output
 fdtdGPU...
  oclGetPlatformID...
+WARNING: NVIDIA OpenCL platform not found - defaulting to first platform!
+
  clGetDeviceIDs clCreateContext...
  clCreateCommandQueue
  clCreateBuffer bufferOut
@@ -38,7 +42,7 @@ fdtdGPU...
  clCreateKernel
  clGetKernelWorkGroupInfo
  set local work group size to 32x8
- set total work size to 384x376
+ set total work size to 320x312
  clEnqueueWriteBuffer bufferIn
  clEnqueueWriteBuffer bufferOut
  clEnqueueWriteBuffer bufferCoeff

@@ -26,7 +26,7 @@ clean:
 	rm -f demo $(OBJS)
 
 test:
-	LD_LIBRARY_PATH=$(OCL_LDPATH) ./demo
+	LD_LIBRARY_PATH=$(OCL_LDPATH) OPENCL=1 ./demo
 
 bench:
 	make clean

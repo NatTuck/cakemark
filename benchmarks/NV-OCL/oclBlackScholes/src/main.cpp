@@ -245,5 +245,5 @@ int main(int argc, char **argv)
 
        if(cdDevices)free(cdDevices);
 
-        shrQAFinishExit(argc, (const char **)argv, ((L1call < 1E-6) && (L1put < 1E-6)) ? QA_PASSED : QA_FAILED );
+        shrQAFinishExit(argc, (const char **)argv, ((L1call < 1E-5) && (L1put < 1E-5)) ? QA_PASSED : QA_FAILED );
 }

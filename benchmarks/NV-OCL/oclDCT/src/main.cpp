@@ -160,5 +160,5 @@ int main(int argc, char **argv)
         free(h_Input);
 
         //Finish
-        shrQAFinishExit(argc, (const char **)argv, (L2norm < 1E-6) ? QA_PASSED : QA_FAILED);
+        shrQAFinishExit(argc, (const char **)argv, (L2norm < 1E-3) ? QA_PASSED : QA_FAILED);
 }

@@ -15,7 +15,7 @@ endif
 
 ifeq ($(OPENCL),amd)
 	OCL_LDLIBS := -lamdocl64
-	OCL_LDPATH := /usr/lib/fglrx
+	OCL_LDPATH := /usr/lib/fglrx:/usr/local/lib:
 	OCL_DTYPE  := cpu
 endif
 
