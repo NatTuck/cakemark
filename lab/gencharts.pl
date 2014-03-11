@@ -84,9 +84,12 @@ sub gen_charts {
     
     my $chart_dir = dirname(abs_path($0)) . "/charts";
 
+    my $type = "kernel execution";
+    $type = "kernel setup" if $input =~ /setup/;
+
     for my $bench (keys %$benchs) {
         my $chart = Cake::BarChart->new(
-            "$bench - $input", "OpenCL Configuration", "Time (s)");
+            "$bench - $type", "OpenCL Configuration", "Time (s)");
         
         for my $plat (sort keys %$plats) {
             my $name = $labels->{$plat};

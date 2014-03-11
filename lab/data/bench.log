@@ -1,9 +1,9 @@
-## Started test on dunkelzahn at Sun Mar  9 21:31:57 EDT 2014 ##
+## Started test on dunkelzahn at Tue Mar 11 16:20:44 EDT 2014 ##
 # Pancake Comparison Test
-# Benchs = nas-ft
-# Repeat = 1
+# Benchs = mbdemo
+# Repeat = 5
 $VAR1 = [
-          'nas-ft',
+          'mbdemo',
           'nvidia',
           {
             'gpu' => 1,
@@ -15,7 +15,55 @@ $VAR1 = [
 pancake: enabled no-spec no-unroll
 device: GeForce GTX 650 Ti
 $VAR1 = [
-          'nas-ft',
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
           'nvidia',
           {
             'gpu' => 1,
@@ -28,7 +76,59 @@ $VAR1 = [
 pancake: enabled no-spec unroll
 device: GeForce GTX 650 Ti
 $VAR1 = [
-          'nas-ft',
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1,
+            'nospec' => 1
+          }
+        ];
+
+pancake: enabled no-spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
           'nvidia',
           {
             'gpu' => 1,
@@ -39,7 +139,99 @@ $VAR1 = [
 pancake: enabled spec no-unroll
 device: GeForce GTX 650 Ti
 $VAR1 = [
-          'nas-ft',
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1
+          }
+        ];
+
+pancake: enabled spec no-unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
+          'nvidia',
+          {
+            'gpu' => 1,
+            'spec' => 1,
+            'unroll' => 1
+          }
+        ];
+
+pancake: enabled spec unroll
+device: GeForce GTX 650 Ti
+$VAR1 = [
+          'mbdemo',
           'nvidia',
           {
             'gpu' => 1,

@@ -9,10 +9,13 @@ LDFLAGS := -L../lib -L$(PANCAKE)/lib
 LDLIBS := -lnvcommon -lOpenCL -lpancake
 CFLAGS := -g -I../include -I$(PANCAKE)/include -I$(INCDIR)
 
-$(EXECUTABLE): $(SRCS)
+$(EXECUTABLE): $(SRCS) lib
 	g++ -o $(EXECUTABLE) $(SRCS) $(CFLAGS) $(LDFLAGS) $(LDLIBS)
 
-run:
+lib:
+	(cd ../lib && make)
+
+run: $(EXECUTABLE)
 	LD_LIBRARY_PATH="$(LD_LIBRARY_PATH):../lib" ./$(EXECUTABLE)
 
 clean:
